@@ -16,6 +16,7 @@
 		47F6F7AA1C0ACD1A00CD0C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F6F7A81C0ACD1A00CD0C48 /* LaunchScreen.storyboard */; };
 		47F6F7B51C0ACD1B00CD0C48 /* TimerPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F7B41C0ACD1B00CD0C48 /* TimerPlusTests.m */; };
 		47F6F7C01C0ACD1B00CD0C48 /* TimerPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F7BF1C0ACD1B00CD0C48 /* TimerPlusUITests.m */; };
+		5868BADC984C69F033DB5D5B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B398C8A1D5159FBD0F9BA2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101B7F1F2203F9754234A89F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		47F6F7941C0ACD1A00CD0C48 /* TimerPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F6F7981C0ACD1A00CD0C48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47F6F79A1C0ACD1A00CD0C48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		47F6F7BB1C0ACD1B00CD0C48 /* TimerPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F6F7BF1C0ACD1B00CD0C48 /* TimerPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerPlusUITests.m; sourceTree = "<group>"; };
 		47F6F7C11C0ACD1B00CD0C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4973EE24FA717F18125117 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		61B398C8A1D5159FBD0F9BA2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5868BADC984C69F033DB5D5B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,8 @@
 				47F6F7B31C0ACD1B00CD0C48 /* TimerPlusTests */,
 				47F6F7BE1C0ACD1B00CD0C48 /* TimerPlusUITests */,
 				47F6F7951C0ACD1A00CD0C48 /* Products */,
+				67912FA3C69E383201A69C01 /* Pods */,
+				D9CE561B07DCE058751758F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,23 @@
 			path = TimerPlusUITests;
 			sourceTree = "<group>";
 		};
+		67912FA3C69E383201A69C01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				101B7F1F2203F9754234A89F /* Pods.debug.xcconfig */,
+				4C4973EE24FA717F18125117 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9CE561B07DCE058751758F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61B398C8A1D5159FBD0F9BA2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47F6F7C41C0ACD1B00CD0C48 /* Build configuration list for PBXNativeTarget "TimerPlus" */;
 			buildPhases = (
+				033450148D56F6DB2C83636C /* Check Pods Manifest.lock */,
 				47F6F7901C0ACD1A00CD0C48 /* Sources */,
 				47F6F7911C0ACD1A00CD0C48 /* Frameworks */,
 				47F6F7921C0ACD1A00CD0C48 /* Resources */,
+				9D68CC410232ADC81DD115EA /* Embed Pods Frameworks */,
+				E0D069743B402DC829626364 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		033450148D56F6DB2C83636C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D68CC410232ADC81DD115EA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D069743B402DC829626364 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47F6F7901C0ACD1A00CD0C48 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		47F6F7C51C0ACD1B00CD0C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101B7F1F2203F9754234A89F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TimerPlus/Info.plist;
@@ -424,6 +500,7 @@
 		};
 		47F6F7C61C0ACD1B00CD0C48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4973EE24FA717F18125117 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TimerPlus/Info.plist;
@@ -500,6 +577,7 @@
 				47F6F7C61C0ACD1B00CD0C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47F6F7C71C0ACD1B00CD0C48 /* Build configuration list for PBXNativeTarget "TimerPlusTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +586,7 @@
 				47F6F7C91C0ACD1B00CD0C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47F6F7CA1C0ACD1B00CD0C48 /* Build configuration list for PBXNativeTarget "TimerPlusUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +595,7 @@
 				47F6F7CC1C0ACD1B00CD0C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

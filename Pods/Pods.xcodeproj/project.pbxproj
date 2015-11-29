@@ -1,0 +1,1724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057147F03F69B75FFE95B9DA3C3D4D95 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AAA85A8E821086B1162F285D4B8445 /* img3.png */; };
+		0F5AE962F85FFBC270D0FB6D494265E5 /* NIKFontAwesomeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FFD48B8E172E2B29D30A69351F027 /* NIKFontAwesomeImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		19743179650AC135BB5485C7426A1238 /* FontAwesomeIconFactory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B44FBCA4397A6BEF860BD85A8CF42C56 /* FontAwesomeIconFactory-dummy.m */; };
+		1A2247664F2C2F9F94A6893A59A4E160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		2428F22CAF49F5D7CB62E02EA74A50D7 /* NIKFontAwesomeIconFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB78311FE44CD71A0DF5115A6A57532 /* NIKFontAwesomeIconFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26F00BC67A940D4B772874C1D3376454 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 369294B9FB192FF1EFECA35F508DDE90 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DFE358135ADE191E55BFAD8841E8B1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		2E81D2ADC03665555F3D7CE4DF691D67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506A5B2617A7166468E55C721EA33493 /* UIKit.framework */; };
+		303AFC297F0B68BF84F86F646E3DB087 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DDD6E6D86B7C305F59326A95DE577 /* Pods-dummy.m */; };
+		3754EC58B60A41E89FC539B0BDE2AC47 /* Pods-TimerPlusTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A8BF762DA952988BD19ACD5B6AE3F /* Pods-TimerPlusTests-dummy.m */; };
+		3879D49FBA63EF506CC445D7C8750869 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 855BE2505CE1FF9973C8B98A5CA84C00 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C98E4BB808022E07C8052BF2752B6BF /* CircleProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63271C49FA7B7477F2E2B9EB7C41CA0B /* CircleProgressBar-dummy.m */; };
+		3D7EC3E7F6336B555B785B4DBB24633D /* NIKFontAwesomePathFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF32EA7728940C97E76C728D82BB313 /* NIKFontAwesomePathFactory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3F779FDA68C484ABC2AD01967B96B6F3 /* NIKFontAwesomeIconTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C819DAD7E003A0E0243A220E770B0CA /* NIKFontAwesomeIconTraits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		409CD8643DA13B60F043F92B1694A934 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F60DB8B11763A438820D808E35345BB7 /* SVProgressHUD.m */; };
+		47D674DCD1B67CCADDB872EA41E6C058 /* MZTimerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DBE6085C333AE4D640A0829FF0730B /* MZTimerLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D199CAE51059034BD3B46F502562E4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		502DC18333CAA39ED757CD5564973CEF /* MZTimerLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783664A9018E4AE35D4FEBC81548A3E /* MZTimerLabel-dummy.m */; };
+		51EBEC93407AD1E78FED5255132D814D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDCDC8219668A958122180B9FC509EB /* QuartzCore.framework */; };
+		54366F1705DC00755B7D24E443484F63 /* NIKFontAwesomeTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B19206FACDCBDACF4EA7A291F268D /* NIKFontAwesomeTabBarItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5C8EB4630C479A23936BF7EFD62A3CA8 /* JSKTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E89CF64F14604B4AD8C666C1287ACA /* JSKTimerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		608214ACF84E5388C4C92E5E2BE3C0F8 /* NIKFontAwesomeIconFactory+iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 55949BE17AE1DDC7EA0026D299352DBB /* NIKFontAwesomeIconFactory+iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61FB026E0A890C2A436D7D09561DA4AE /* JSKTimerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C30E7A10F41F937544D630439F1E3 /* JSKTimerView-dummy.m */; };
+		6B8B4FFB5ED7FAEDBB612247E7B1919E /* NIKFontAwesomeIconFactory+OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 648E2204B806F833EBBA464E0E78F378 /* NIKFontAwesomeIconFactory+OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C575DCD9060CBE2187C6B103CB9040E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		6D1A36A1810A046339122A0424733A20 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DB18DAC9D811970E7808035D197422 /* MZTimerLabel.m */; };
+		7152A770FC6B31F93EDAEB12BA115B84 /* NIKFontAwesomePathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B3D70F90A55368A336F8B4AB12EAA4 /* NIKFontAwesomePathRenderer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		76DC44F0D7883C4926E5DEB6250D84D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		80A24222B7DAC78AC5F4ECDE25716B1F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDCDC8219668A958122180B9FC509EB /* QuartzCore.framework */; };
+		830A1BD47FC453EF07A3717FB198B2B3 /* NIKFontAwesomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 859710ADE53FAEB1F217C98CFA6F9941 /* NIKFontAwesomeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		83B042153C557AD96321848E9CC05DE5 /* img0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C35AADB987E150BC1C6AFBD8DA3B19F /* img0.png */; };
+		87CD17990A95B57D4B6B745130466459 /* Pods-TimerPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C65704761B09879C3CCB80C055D7896E /* Pods-TimerPlus-dummy.m */; };
+		8C954A58782CDA83731EB344E27903DE /* JSKTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6FB0698F0D3054F9F439A3D85A591 /* JSKTimerView.m */; };
+		8F38DD2155792B05CAB7BF0CCCBEF1C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		9CA4DBDFD6F94F062ECBB9E5F8E7B89F /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5606E9CD188E5491DCDD3C8B8D5E1EE9 /* SVProgressHUD-dummy.m */; };
+		9DE41E2419CFE3EAEA415170F8498D70 /* NIKFontAwesomePathFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 17FFCE53DE50ADA8985FF8688316C5B7 /* NIKFontAwesomePathFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EDE64B208990EC36704498D79B6E292 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C934C761FCDD84CB7024EBDC91F50 /* SVIndefiniteAnimatedView.m */; };
+		9F7B736772CC7B9AA43594FC24470C5A /* CircleProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DB91BE3849D06776D00A83EF4AA49A /* CircleProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1BB775451B8AB602577E831B0173C99 /* NIKFontAwesomeImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDD2D5E39868BB01789FC98F22EFC13 /* NIKFontAwesomeImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2927C8F6E380D13E4AE162194E9D62B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		A76E4957A4049C7BA2D0AA0951093C8F /* NIKFontAwesomeIconFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C6DD80CFF251EB0CCABE4457DBA33E /* NIKFontAwesomeIconFactory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A8DF58383E433C0DB3576529500EFD6C /* Pods-TimerPlusUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3A8ECA7D7B3A7B0B22EF2D67C1D70 /* Pods-TimerPlusUITests-dummy.m */; };
+		B1C61D9B526142E2172365E982CD62A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C0AB3C85FA5E9164DD219A4ABB70A8 /* CoreGraphics.framework */; };
+		B36DCD69E7F87484B423A888F3FD243D /* NIKFontAwesomeIconTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CACA286B786C40FA45608286488A9D6 /* NIKFontAwesomeIconTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B77FAF006669C9A211954F0106FC89F6 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB4CD1FAD6AB9C342808F54EEE122AC /* CircleProgressBar.m */; };
+		C8F3B83F1F3E56AAE24F4D0D1D6F1E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		CA9736EC3BEB71040AFA6BA52FA207C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
+		CB696142320B10990415805CA6D334D0 /* NIKFontAwesomeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7B8FD98537CCE7A3EDB85CD71133DF /* NIKFontAwesomeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4DB5A22E7677A219A684D25D8C90910 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDF39A5A3FA3B0ABBDBA08537DD46E6 /* img2.png */; };
+		D531060C0B6343F4924360F4C08DA5D3 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 696BA7BCB07037ADE43ADC72235F6B3C /* img1.png */; };
+		D87114C766508DB3B963059C675BCEE9 /* NIKFontAwesomeTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFF8F0C67534DB9240F47DFECD3DCEC /* NIKFontAwesomeTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAED6554A9F15BFD63DE67440B0892B0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F81E8DFC2A3B3D39023F9D20076AAD /* CoreText.framework */; };
+		E1965CF66F0A33431DA09A48C9880F81 /* NIKFontAwesomeIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB8B843AA29FABC778D77F1D94992E4 /* NIKFontAwesomeIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3CA57D387C07FFF83D542B8C68936A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506A5B2617A7166468E55C721EA33493 /* UIKit.framework */; };
+		F8EF3D43C145361AF850AE59DF1FAD4E /* NIKFontAwesomePathRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9B2955B29240707865967B4D47EA15 /* NIKFontAwesomePathRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1C6357C62D516E3B617F9F395F2DD2 /* FontAwesomeIconFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE09546F9E4C65B6C9EF2B222DC3E43 /* FontAwesomeIconFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE9C306C8E62078371EC3C8B4ACF2FAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C0AB3C85FA5E9164DD219A4ABB70A8 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0435F94045ED280A78FEB0DE4D2658FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
+			remoteInfo = JSKTimerView;
+		};
+		0A894586545F619332C273EACE29DC3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
+			remoteInfo = FontAwesomeIconFactory;
+		};
+		0A9D4D315E697ADF8D1010D56B388617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B11857FE8088912A72E2AC44134F687A;
+			remoteInfo = SVProgressHUD;
+		};
+		0AC69C10ECD7BE3D627A21C114CDA27B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
+			remoteInfo = CircleProgressBar;
+		};
+		3D2F04BEDA3357723574D09887749FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B11857FE8088912A72E2AC44134F687A;
+			remoteInfo = SVProgressHUD;
+		};
+		497C1A3E79DC9A47218D499876528B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
+			remoteInfo = JSKTimerView;
+		};
+		49EB4B746A941A7E4D1EE74EAE1234AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
+			remoteInfo = CircleProgressBar;
+		};
+		59850AE710034474C99B84CACB441F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
+			remoteInfo = JSKTimerView;
+		};
+		61C801ED62CADA1FA91FFDFA92A29D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
+			remoteInfo = CircleProgressBar;
+		};
+		6DD1DBB67126E8D6287FA72CA452BA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
+			remoteInfo = FontAwesomeIconFactory;
+		};
+		6F46820DA8C156F0AA791EB432C3F23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B11857FE8088912A72E2AC44134F687A;
+			remoteInfo = SVProgressHUD;
+		};
+		7B1542E6F8B132D31D8E90CF9387FFD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
+			remoteInfo = CircleProgressBar;
+		};
+		840C3BE0341339FE2EE64FE18921E31F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
+			remoteInfo = JSKTimerView;
+		};
+		8E74964F793E2B70CD3D4092D1B6CDFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BD1F0F5C3FF7480748290491B0CE6C2;
+			remoteInfo = "JSKTimerView-JSKTimerView";
+		};
+		9F1142D72AE317D33C153DB183045EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
+			remoteInfo = MZTimerLabel;
+		};
+		A04D4CA0E4513AF48A0EF18D6223C54C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B11857FE8088912A72E2AC44134F687A;
+			remoteInfo = SVProgressHUD;
+		};
+		AD72FD7B26726243A49A4E33D7EA82CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
+			remoteInfo = MZTimerLabel;
+		};
+		C4C7D944F1E72D46C8A0A361484C3D2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
+			remoteInfo = MZTimerLabel;
+		};
+		CD95EC0DD695AB46DF0AFC7D9AB8076C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
+			remoteInfo = FontAwesomeIconFactory;
+		};
+		E0642FF7A27FAD80C7C52A30B37ECEB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
+			remoteInfo = FontAwesomeIconFactory;
+		};
+		F7C665C49F3BC3CC50C086D59AB184B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
+			remoteInfo = MZTimerLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006BC6DE9371A989FB691464252F7AE2 /* JSKTimerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSKTimerView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CA66C2E018EB1A29481AF2A793EF96D /* libMZTimerLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMZTimerLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		12AC8C6DEB924A8676FE8D4C46125CD8 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		14DB18DAC9D811970E7808035D197422 /* MZTimerLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = MZTimerLabel/MZTimerLabel.m; sourceTree = "<group>"; };
+		16E4E7CBF56667A8C69C95C25F5BA78B /* Pods-TimerPlusUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerPlusUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17FFCE53DE50ADA8985FF8688316C5B7 /* NIKFontAwesomePathFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomePathFactory.h; path = FontAwesomeIconFactory/NIKFontAwesomePathFactory.h; sourceTree = "<group>"; };
+		2338A5A0E832879E6540F40C2E768785 /* CircleProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		27E89CF64F14604B4AD8C666C1287ACA /* JSKTimerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSKTimerView.h; path = Pod/Classes/JSKTimerView.h; sourceTree = "<group>"; };
+		2CACA286B786C40FA45608286488A9D6 /* NIKFontAwesomeIconTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconTypes.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconTypes.h; sourceTree = "<group>"; };
+		31AAA85A8E821086B1162F285D4B8445 /* img3.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img3.png; path = Pod/Assets/img3.png; sourceTree = "<group>"; };
+		3371B9EA9E806DA2FD8A005F2F440948 /* Pods-TimerPlusTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlusTests-resources.sh"; sourceTree = "<group>"; };
+		339C934C761FCDD84CB7024EBDC91F50 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		369294B9FB192FF1EFECA35F508DDE90 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		3766EAE38AC8AA0C2D7F93D3FF964D77 /* Pods-TimerPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3783664A9018E4AE35D4FEBC81548A3E /* MZTimerLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZTimerLabel-dummy.m"; sourceTree = "<group>"; };
+		3860D7FD21A38648204B78061714D2E0 /* Pods-TimerPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		42A3A8ECA7D7B3A7B0B22EF2D67C1D70 /* Pods-TimerPlusUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerPlusUITests-dummy.m"; sourceTree = "<group>"; };
+		42C5CAAC19523A8BC30AB3B135AA76F6 /* Pods-TimerPlusTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerPlusTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		44078DF6907D51AE2939A039E3B27716 /* Pods-TimerPlusTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerPlusTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		45DCE0BB5B51458D01AF434AB3547B5B /* Pods-TimerPlus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerPlus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4713E8B2B82860B8A768AE605718FF9E /* CircleProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleProgressBar.xcconfig; sourceTree = "<group>"; };
+		47C6DD80CFF251EB0CCABE4457DBA33E /* NIKFontAwesomeIconFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeIconFactory.m; path = FontAwesomeIconFactory/NIKFontAwesomeIconFactory.m; sourceTree = "<group>"; };
+		49DBE6085C333AE4D640A0829FF0730B /* MZTimerLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = MZTimerLabel/MZTimerLabel.h; sourceTree = "<group>"; };
+		4AFF8F0C67534DB9240F47DFECD3DCEC /* NIKFontAwesomeTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeTabBarItem.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeTabBarItem.h; sourceTree = "<group>"; };
+		4CD140B099CEA72C6EF363FE2AD6AAAD /* libCircleProgressBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCircleProgressBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3F4C2E48278EC6DF283FD3F3B567C0 /* Pods-TimerPlusTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlusTests-frameworks.sh"; sourceTree = "<group>"; };
+		4D9AB6080E49DA1A7785364CFE48314A /* FontAwesomeIconFactory.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesomeIconFactory.xcconfig; sourceTree = "<group>"; };
+		4EDF39A5A3FA3B0ABBDBA08537DD46E6 /* img2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img2.png; path = Pod/Assets/img2.png; sourceTree = "<group>"; };
+		506A5B2617A7166468E55C721EA33493 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		512CE8A6EDAE91D4B2831BC5766AD3DA /* Pods-TimerPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55949BE17AE1DDC7EA0026D299352DBB /* NIKFontAwesomeIconFactory+iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NIKFontAwesomeIconFactory+iOS.h"; path = "FontAwesomeIconFactory/NIKFontAwesomeIconFactory+iOS.h"; sourceTree = "<group>"; };
+		5606E9CD188E5491DCDD3C8B8D5E1EE9 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		58ED29653F3748868180BEAE1C31A402 /* Pods-TimerPlusUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlusUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5B0FFD48B8E172E2B29D30A69351F027 /* NIKFontAwesomeImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeImageView.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeImageView.m; sourceTree = "<group>"; };
+		5EB4CD1FAD6AB9C342808F54EEE122AC /* CircleProgressBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CircleProgressBar.m; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.m; sourceTree = "<group>"; };
+		63271C49FA7B7477F2E2B9EB7C41CA0B /* CircleProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleProgressBar-dummy.m"; sourceTree = "<group>"; };
+		63EAF34487A90D23A61D06308769D7CE /* FontAwesomeIconFactory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeIconFactory-prefix.pch"; sourceTree = "<group>"; };
+		648E2204B806F833EBBA464E0E78F378 /* NIKFontAwesomeIconFactory+OSX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NIKFontAwesomeIconFactory+OSX.h"; path = "FontAwesomeIconFactory/NIKFontAwesomeIconFactory+OSX.h"; sourceTree = "<group>"; };
+		6688D63CE28A2F6AD7CEECCFEE102EFE /* Pods-TimerPlus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlus-resources.sh"; sourceTree = "<group>"; };
+		66CF00D6EBFC19AED5AA4FDB9C3074A4 /* libFontAwesomeIconFactory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFontAwesomeIconFactory.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		696BA7BCB07037ADE43ADC72235F6B3C /* img1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img1.png; path = Pod/Assets/img1.png; sourceTree = "<group>"; };
+		6C819DAD7E003A0E0243A220E770B0CA /* NIKFontAwesomeIconTraits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconTraits.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconTraits.h; sourceTree = "<group>"; };
+		6CF32EA7728940C97E76C728D82BB313 /* NIKFontAwesomePathFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomePathFactory.m; path = FontAwesomeIconFactory/NIKFontAwesomePathFactory.m; sourceTree = "<group>"; };
+		6E4462048D3C0765D34F202F9C248EE3 /* libPods-TimerPlusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7056D1EB6B52AFCF4574133F27877496 /* JSKTimerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSKTimerView-prefix.pch"; sourceTree = "<group>"; };
+		74EA082FED02DE642E8BDFD660101549 /* Pods-TimerPlusUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerPlusUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		756F4B952016EFD1094D80FCA38F01D9 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		758CEE2A4A63D3898299857A98E0550C /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = "Font-Awesome/fonts/FontAwesome.otf"; sourceTree = "<group>"; };
+		771C30E7A10F41F937544D630439F1E3 /* JSKTimerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSKTimerView-dummy.m"; sourceTree = "<group>"; };
+		7BC09DDBDE32DF798145E0B9CB4B535A /* Pods-TimerPlus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlus-frameworks.sh"; sourceTree = "<group>"; };
+		7C35AADB987E150BC1C6AFBD8DA3B19F /* img0.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img0.png; path = Pod/Assets/img0.png; sourceTree = "<group>"; };
+		7E4A9548D65FBBA687074776A3A6A74C /* Pods-TimerPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7EB8B843AA29FABC778D77F1D94992E4 /* NIKFontAwesomeIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIcon.h; path = FontAwesomeIconFactory/NIKFontAwesomeIcon.h; sourceTree = "<group>"; };
+		7F4352CCD818C773C0B07A8D02162660 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD9895962E26ED5DD900A613F3494F9 /* Pods-TimerPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlusTests.release.xcconfig"; sourceTree = "<group>"; };
+		855BE2505CE1FF9973C8B98A5CA84C00 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		859710ADE53FAEB1F217C98CFA6F9941 /* NIKFontAwesomeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeButton.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeButton.m; sourceTree = "<group>"; };
+		88A43B598F03E6C1DFD0D3BDC5F4FD70 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		8A9B2955B29240707865967B4D47EA15 /* NIKFontAwesomePathRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomePathRenderer.h; path = FontAwesomeIconFactory/NIKFontAwesomePathRenderer.h; sourceTree = "<group>"; };
+		8E4DDD6E6D86B7C305F59326A95DE577 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8E7B8FD98537CCE7A3EDB85CD71133DF /* NIKFontAwesomeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeButton.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeButton.h; sourceTree = "<group>"; };
+		962A8BF762DA952988BD19ACD5B6AE3F /* Pods-TimerPlusTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerPlusTests-dummy.m"; sourceTree = "<group>"; };
+		99DB91BE3849D06776D00A83EF4AA49A /* CircleProgressBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CircleProgressBar.h; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.h; sourceTree = "<group>"; };
+		9A05A9D932256DE3424764285884C777 /* Pods-TimerPlusUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlusUITests-resources.sh"; sourceTree = "<group>"; };
+		A40BAF392E13432DB221826792B9E6D3 /* MZTimerLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZTimerLabel.xcconfig; sourceTree = "<group>"; };
+		A4B8B5DEFE4DA31DD21AB410FE04F7ED /* Pods-TimerPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlus.release.xcconfig"; sourceTree = "<group>"; };
+		A6501FD8E100FE353C9F218ABD0A3CC3 /* MZTimerLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZTimerLabel-prefix.pch"; sourceTree = "<group>"; };
+		A7B3D70F90A55368A336F8B4AB12EAA4 /* NIKFontAwesomePathRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomePathRenderer.m; path = FontAwesomeIconFactory/NIKFontAwesomePathRenderer.m; sourceTree = "<group>"; };
+		AFE09546F9E4C65B6C9EF2B222DC3E43 /* FontAwesomeIconFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontAwesomeIconFactory.h; path = FontAwesomeIconFactory/FontAwesomeIconFactory.h; sourceTree = "<group>"; };
+		B44FBCA4397A6BEF860BD85A8CF42C56 /* FontAwesomeIconFactory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeIconFactory-dummy.m"; sourceTree = "<group>"; };
+		B55B19206FACDCBDACF4EA7A291F268D /* NIKFontAwesomeTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeTabBarItem.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeTabBarItem.m; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BCDD2D5E39868BB01789FC98F22EFC13 /* NIKFontAwesomeImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeImageView.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeImageView.h; sourceTree = "<group>"; };
+		BF2B7934A7365566295C280021101983 /* Pods-TimerPlus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerPlus-acknowledgements.plist"; sourceTree = "<group>"; };
+		BFBB270C70C6B5653461B57845E9BA9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C0AB3C85FA5E9164DD219A4ABB70A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C65704761B09879C3CCB80C055D7896E /* Pods-TimerPlus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerPlus-dummy.m"; sourceTree = "<group>"; };
+		CC49995310A52D3F638E0EF17E29DF46 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4E3C74663FF54E5900D2E0439163BA8 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		D4F1FB952BCE1F7E3615EA8A0B9043E8 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7182254BB68DD474D741FC93F19DAC7 /* libJSKTimerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSKTimerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91D1EF6A88FD9601AED9C7FF6D749AF /* libPods-TimerPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF2073C37711396EDA74C3C2646F78A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		DCB78311FE44CD71A0DF5115A6A57532 /* NIKFontAwesomeIconFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconFactory.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconFactory.h; sourceTree = "<group>"; };
+		DFB6FB0698F0D3054F9F439A3D85A591 /* JSKTimerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSKTimerView.m; path = Pod/Classes/JSKTimerView.m; sourceTree = "<group>"; };
+		E12AFBC09441E1D01694CC9682AAD948 /* libPods-TimerPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E367F2B2FD3C57D4D98236C12B303F8D /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		F60DB8B11763A438820D808E35345BB7 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		F9F81E8DFC2A3B3D39023F9D20076AAD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		FBDCDC8219668A958122180B9FC509EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FD3C4CD5D04DA97480036832261A57AF /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSKTimerView.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EFBB30FD6C017DD37F17A52E64F9600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9736EC3BEB71040AFA6BA52FA207C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3353BB8CC973F34090BB3F33115F7265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547565FFF5483FA6B42091091EB0EF01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D199CAE51059034BD3B46F502562E4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F62015C28C3D4C811BC185D93C853CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9C306C8E62078371EC3C8B4ACF2FAB /* CoreGraphics.framework in Frameworks */,
+				DAED6554A9F15BFD63DE67440B0892B0 /* CoreText.framework in Frameworks */,
+				C8F3B83F1F3E56AAE24F4D0D1D6F1E22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E5E56FD119471A36EC3016CDEEB67C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F38DD2155792B05CAB7BF0CCCBEF1C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBDD7589A0F21BE331F489AD9FB35954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C61D9B526142E2172365E982CD62A2 /* CoreGraphics.framework in Frameworks */,
+				6C575DCD9060CBE2187C6B103CB9040E /* Foundation.framework in Frameworks */,
+				F3CA57D387C07FFF83D542B8C68936A4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE43404FADFC5A3895832B6534862DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFE358135ADE191E55BFAD8841E8B1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6581EFBBA04479F25138A38C4ACF2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2927C8F6E380D13E4AE162194E9D62B /* Foundation.framework in Frameworks */,
+				51EBEC93407AD1E78FED5255132D814D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED0A41F3D4F9FE2CD8B37EFE43A4908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2247664F2C2F9F94A6893A59A4E160 /* Foundation.framework in Frameworks */,
+				80A24222B7DAC78AC5F4ECDE25716B1F /* QuartzCore.framework in Frameworks */,
+				2E81D2ADC03665555F3D7CE4DF691D67 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF107B769B3C9509DC47071C6869F275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76DC44F0D7883C4926E5DEB6250D84D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12B31F86AE133FEEC5DCC225EEE84A11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D9AB6080E49DA1A7785364CFE48314A /* FontAwesomeIconFactory.xcconfig */,
+				B44FBCA4397A6BEF860BD85A8CF42C56 /* FontAwesomeIconFactory-dummy.m */,
+				63EAF34487A90D23A61D06308769D7CE /* FontAwesomeIconFactory-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesomeIconFactory";
+			sourceTree = "<group>";
+		};
+		135FF1204A497B3E070107B60C5A0D18 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D048DE8FF6F282C5B3633A8441DEE14 /* Pods */,
+				A5E134FE0768D99C2E75538A2B7C3A83 /* Pods-TimerPlus */,
+				91D73610C69C8AC8C8952FE3B4577B4F /* Pods-TimerPlusTests */,
+				C34C92F45AA54BC2E91E7709A03701C8 /* Pods-TimerPlusUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67ACCD40386E4BF5A9E17B8DA0AF47A4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20BC9BDBC37C1807585BE277F40D79C9 /* JSKTimerView */ = {
+			isa = PBXGroup;
+			children = (
+				27E89CF64F14604B4AD8C666C1287ACA /* JSKTimerView.h */,
+				DFB6FB0698F0D3054F9F439A3D85A591 /* JSKTimerView.m */,
+				D27544AD7672DAFCAEF7FF1020EBFE16 /* Resources */,
+				91C5870C6AE0FE49AC58BCE14F986664 /* Support Files */,
+			);
+			path = JSKTimerView;
+			sourceTree = "<group>";
+		};
+		22BAA8B97D7A10288B6B1E3FA6C9BDD3 /* CircleProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				99DB91BE3849D06776D00A83EF4AA49A /* CircleProgressBar.h */,
+				5EB4CD1FAD6AB9C342808F54EEE122AC /* CircleProgressBar.m */,
+				EF99BB880CAA016A03DA2B19F0A3AA30 /* Support Files */,
+			);
+			path = CircleProgressBar;
+			sourceTree = "<group>";
+		};
+		2BAE13F0791609D862D4DFB61A69DB53 /* MZTimerLabel */ = {
+			isa = PBXGroup;
+			children = (
+				49DBE6085C333AE4D640A0829FF0730B /* MZTimerLabel.h */,
+				14DB18DAC9D811970E7808035D197422 /* MZTimerLabel.m */,
+				360FA7748037303F1CF406F725DCCCA4 /* Support Files */,
+			);
+			path = MZTimerLabel;
+			sourceTree = "<group>";
+		};
+		360FA7748037303F1CF406F725DCCCA4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A40BAF392E13432DB221826792B9E6D3 /* MZTimerLabel.xcconfig */,
+				3783664A9018E4AE35D4FEBC81548A3E /* MZTimerLabel-dummy.m */,
+				A6501FD8E100FE353C9F218ABD0A3CC3 /* MZTimerLabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZTimerLabel";
+			sourceTree = "<group>";
+		};
+		4D048DE8FF6F282C5B3633A8441DEE14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4F1FB952BCE1F7E3615EA8A0B9043E8 /* Pods-acknowledgements.markdown */,
+				756F4B952016EFD1094D80FCA38F01D9 /* Pods-acknowledgements.plist */,
+				8E4DDD6E6D86B7C305F59326A95DE577 /* Pods-dummy.m */,
+				12AC8C6DEB924A8676FE8D4C46125CD8 /* Pods-frameworks.sh */,
+				FD3C4CD5D04DA97480036832261A57AF /* Pods-resources.sh */,
+				88A43B598F03E6C1DFD0D3BDC5F4FD70 /* Pods.debug.xcconfig */,
+				CC49995310A52D3F638E0EF17E29DF46 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		5E68D4307CC79A4FA619FE6D864D70DA /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				369294B9FB192FF1EFECA35F508DDE90 /* SVIndefiniteAnimatedView.h */,
+				339C934C761FCDD84CB7024EBDC91F50 /* SVIndefiniteAnimatedView.m */,
+				855BE2505CE1FF9973C8B98A5CA84C00 /* SVProgressHUD.h */,
+				F60DB8B11763A438820D808E35345BB7 /* SVProgressHUD.m */,
+				BC1E4437F5C0C5E85C44207E64252177 /* Resources */,
+				91B53638DC443862C5FED54E6691A5AF /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		67ACCD40386E4BF5A9E17B8DA0AF47A4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2C0AB3C85FA5E9164DD219A4ABB70A8 /* CoreGraphics.framework */,
+				F9F81E8DFC2A3B3D39023F9D20076AAD /* CoreText.framework */,
+				D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */,
+				FBDCDC8219668A958122180B9FC509EB /* QuartzCore.framework */,
+				506A5B2617A7166468E55C721EA33493 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				B01A70E909123210CAFA281A2B793F34 /* Pods */,
+				F90D8FF8CF57D0171C80A3AF54529867 /* Products */,
+				135FF1204A497B3E070107B60C5A0D18 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91B53638DC443862C5FED54E6691A5AF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4E3C74663FF54E5900D2E0439163BA8 /* SVProgressHUD.xcconfig */,
+				5606E9CD188E5491DCDD3C8B8D5E1EE9 /* SVProgressHUD-dummy.m */,
+				E367F2B2FD3C57D4D98236C12B303F8D /* SVProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		91C5870C6AE0FE49AC58BCE14F986664 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */,
+				771C30E7A10F41F937544D630439F1E3 /* JSKTimerView-dummy.m */,
+				7056D1EB6B52AFCF4574133F27877496 /* JSKTimerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSKTimerView";
+			sourceTree = "<group>";
+		};
+		91D73610C69C8AC8C8952FE3B4577B4F /* Pods-TimerPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				42C5CAAC19523A8BC30AB3B135AA76F6 /* Pods-TimerPlusTests-acknowledgements.markdown */,
+				44078DF6907D51AE2939A039E3B27716 /* Pods-TimerPlusTests-acknowledgements.plist */,
+				962A8BF762DA952988BD19ACD5B6AE3F /* Pods-TimerPlusTests-dummy.m */,
+				4D3F4C2E48278EC6DF283FD3F3B567C0 /* Pods-TimerPlusTests-frameworks.sh */,
+				3371B9EA9E806DA2FD8A005F2F440948 /* Pods-TimerPlusTests-resources.sh */,
+				512CE8A6EDAE91D4B2831BC5766AD3DA /* Pods-TimerPlusTests.debug.xcconfig */,
+				7FD9895962E26ED5DD900A613F3494F9 /* Pods-TimerPlusTests.release.xcconfig */,
+			);
+			name = "Pods-TimerPlusTests";
+			path = "Target Support Files/Pods-TimerPlusTests";
+			sourceTree = "<group>";
+		};
+		A5E134FE0768D99C2E75538A2B7C3A83 /* Pods-TimerPlus */ = {
+			isa = PBXGroup;
+			children = (
+				45DCE0BB5B51458D01AF434AB3547B5B /* Pods-TimerPlus-acknowledgements.markdown */,
+				BF2B7934A7365566295C280021101983 /* Pods-TimerPlus-acknowledgements.plist */,
+				C65704761B09879C3CCB80C055D7896E /* Pods-TimerPlus-dummy.m */,
+				7BC09DDBDE32DF798145E0B9CB4B535A /* Pods-TimerPlus-frameworks.sh */,
+				6688D63CE28A2F6AD7CEECCFEE102EFE /* Pods-TimerPlus-resources.sh */,
+				3860D7FD21A38648204B78061714D2E0 /* Pods-TimerPlus.debug.xcconfig */,
+				A4B8B5DEFE4DA31DD21AB410FE04F7ED /* Pods-TimerPlus.release.xcconfig */,
+			);
+			name = "Pods-TimerPlus";
+			path = "Target Support Files/Pods-TimerPlus";
+			sourceTree = "<group>";
+		};
+		B01A70E909123210CAFA281A2B793F34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22BAA8B97D7A10288B6B1E3FA6C9BDD3 /* CircleProgressBar */,
+				F26692A5BF82309DA49C36C986270D66 /* FontAwesomeIconFactory */,
+				20BC9BDBC37C1807585BE277F40D79C9 /* JSKTimerView */,
+				2BAE13F0791609D862D4DFB61A69DB53 /* MZTimerLabel */,
+				5E68D4307CC79A4FA619FE6D864D70DA /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC1E4437F5C0C5E85C44207E64252177 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAF2073C37711396EDA74C3C2646F78A /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C34C92F45AA54BC2E91E7709A03701C8 /* Pods-TimerPlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16E4E7CBF56667A8C69C95C25F5BA78B /* Pods-TimerPlusUITests-acknowledgements.markdown */,
+				74EA082FED02DE642E8BDFD660101549 /* Pods-TimerPlusUITests-acknowledgements.plist */,
+				42A3A8ECA7D7B3A7B0B22EF2D67C1D70 /* Pods-TimerPlusUITests-dummy.m */,
+				58ED29653F3748868180BEAE1C31A402 /* Pods-TimerPlusUITests-frameworks.sh */,
+				9A05A9D932256DE3424764285884C777 /* Pods-TimerPlusUITests-resources.sh */,
+				3766EAE38AC8AA0C2D7F93D3FF964D77 /* Pods-TimerPlusUITests.debug.xcconfig */,
+				7E4A9548D65FBBA687074776A3A6A74C /* Pods-TimerPlusUITests.release.xcconfig */,
+			);
+			name = "Pods-TimerPlusUITests";
+			path = "Target Support Files/Pods-TimerPlusUITests";
+			sourceTree = "<group>";
+		};
+		CBCCFF7A37E45C1FA70E15BF2D258696 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				758CEE2A4A63D3898299857A98E0550C /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D27544AD7672DAFCAEF7FF1020EBFE16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C35AADB987E150BC1C6AFBD8DA3B19F /* img0.png */,
+				696BA7BCB07037ADE43ADC72235F6B3C /* img1.png */,
+				4EDF39A5A3FA3B0ABBDBA08537DD46E6 /* img2.png */,
+				31AAA85A8E821086B1162F285D4B8445 /* img3.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EF99BB880CAA016A03DA2B19F0A3AA30 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4713E8B2B82860B8A768AE605718FF9E /* CircleProgressBar.xcconfig */,
+				63271C49FA7B7477F2E2B9EB7C41CA0B /* CircleProgressBar-dummy.m */,
+				2338A5A0E832879E6540F40C2E768785 /* CircleProgressBar-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CircleProgressBar";
+			sourceTree = "<group>";
+		};
+		F26692A5BF82309DA49C36C986270D66 /* FontAwesomeIconFactory */ = {
+			isa = PBXGroup;
+			children = (
+				AFE09546F9E4C65B6C9EF2B222DC3E43 /* FontAwesomeIconFactory.h */,
+				8E7B8FD98537CCE7A3EDB85CD71133DF /* NIKFontAwesomeButton.h */,
+				859710ADE53FAEB1F217C98CFA6F9941 /* NIKFontAwesomeButton.m */,
+				7EB8B843AA29FABC778D77F1D94992E4 /* NIKFontAwesomeIcon.h */,
+				DCB78311FE44CD71A0DF5115A6A57532 /* NIKFontAwesomeIconFactory.h */,
+				47C6DD80CFF251EB0CCABE4457DBA33E /* NIKFontAwesomeIconFactory.m */,
+				55949BE17AE1DDC7EA0026D299352DBB /* NIKFontAwesomeIconFactory+iOS.h */,
+				648E2204B806F833EBBA464E0E78F378 /* NIKFontAwesomeIconFactory+OSX.h */,
+				6C819DAD7E003A0E0243A220E770B0CA /* NIKFontAwesomeIconTraits.h */,
+				2CACA286B786C40FA45608286488A9D6 /* NIKFontAwesomeIconTypes.h */,
+				BCDD2D5E39868BB01789FC98F22EFC13 /* NIKFontAwesomeImageView.h */,
+				5B0FFD48B8E172E2B29D30A69351F027 /* NIKFontAwesomeImageView.m */,
+				17FFCE53DE50ADA8985FF8688316C5B7 /* NIKFontAwesomePathFactory.h */,
+				6CF32EA7728940C97E76C728D82BB313 /* NIKFontAwesomePathFactory.m */,
+				8A9B2955B29240707865967B4D47EA15 /* NIKFontAwesomePathRenderer.h */,
+				A7B3D70F90A55368A336F8B4AB12EAA4 /* NIKFontAwesomePathRenderer.m */,
+				4AFF8F0C67534DB9240F47DFECD3DCEC /* NIKFontAwesomeTabBarItem.h */,
+				B55B19206FACDCBDACF4EA7A291F268D /* NIKFontAwesomeTabBarItem.m */,
+				CBCCFF7A37E45C1FA70E15BF2D258696 /* Resources */,
+				12B31F86AE133FEEC5DCC225EEE84A11 /* Support Files */,
+			);
+			path = FontAwesomeIconFactory;
+			sourceTree = "<group>";
+		};
+		F90D8FF8CF57D0171C80A3AF54529867 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				006BC6DE9371A989FB691464252F7AE2 /* JSKTimerView.bundle */,
+				4CD140B099CEA72C6EF363FE2AD6AAAD /* libCircleProgressBar.a */,
+				66CF00D6EBFC19AED5AA4FDB9C3074A4 /* libFontAwesomeIconFactory.a */,
+				D7182254BB68DD474D741FC93F19DAC7 /* libJSKTimerView.a */,
+				0CA66C2E018EB1A29481AF2A793EF96D /* libMZTimerLabel.a */,
+				BFBB270C70C6B5653461B57845E9BA9E /* libPods.a */,
+				D91D1EF6A88FD9601AED9C7FF6D749AF /* libPods-TimerPlus.a */,
+				6E4462048D3C0765D34F202F9C248EE3 /* libPods-TimerPlusTests.a */,
+				E12AFBC09441E1D01694CC9682AAD948 /* libPods-TimerPlusUITests.a */,
+				7F4352CCD818C773C0B07A8D02162660 /* libSVProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38FD5F6EF9067FC0D715BE263841B7FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C8EB4630C479A23936BF7EFD62A3CA8 /* JSKTimerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E10859393E3C6910E59DAA53E18C36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D674DCD1B67CCADDB872EA41E6C058 /* MZTimerLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BEB957D587B532F19F78DCEA33E072E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1C6357C62D516E3B617F9F395F2DD2 /* FontAwesomeIconFactory.h in Headers */,
+				CB696142320B10990415805CA6D334D0 /* NIKFontAwesomeButton.h in Headers */,
+				E1965CF66F0A33431DA09A48C9880F81 /* NIKFontAwesomeIcon.h in Headers */,
+				608214ACF84E5388C4C92E5E2BE3C0F8 /* NIKFontAwesomeIconFactory+iOS.h in Headers */,
+				6B8B4FFB5ED7FAEDBB612247E7B1919E /* NIKFontAwesomeIconFactory+OSX.h in Headers */,
+				2428F22CAF49F5D7CB62E02EA74A50D7 /* NIKFontAwesomeIconFactory.h in Headers */,
+				3F779FDA68C484ABC2AD01967B96B6F3 /* NIKFontAwesomeIconTraits.h in Headers */,
+				B36DCD69E7F87484B423A888F3FD243D /* NIKFontAwesomeIconTypes.h in Headers */,
+				A1BB775451B8AB602577E831B0173C99 /* NIKFontAwesomeImageView.h in Headers */,
+				9DE41E2419CFE3EAEA415170F8498D70 /* NIKFontAwesomePathFactory.h in Headers */,
+				F8EF3D43C145361AF850AE59DF1FAD4E /* NIKFontAwesomePathRenderer.h in Headers */,
+				D87114C766508DB3B963059C675BCEE9 /* NIKFontAwesomeTabBarItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8675A379F4207C3B577AFF078FCDF0B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7B736772CC7B9AA43594FC24470C5A /* CircleProgressBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0688168D068C1EBB7D59E9A1ECCCC32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F00BC67A940D4B772874C1D3376454 /* SVIndefiniteAnimatedView.h in Headers */,
+				3879D49FBA63EF506CC445D7C8750869 /* SVProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3F8F97420F7975303EE4D8B98B765640 /* Pods-TimerPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889DE60672E8B1E0741EECC2B2C74B82 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusUITests" */;
+			buildPhases = (
+				FE2B5E5D874EBE090ED00B2B95A6A6EF /* Sources */,
+				CE43404FADFC5A3895832B6534862DE4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5439C734165E752BA1C44C8E2BB88CA4 /* PBXTargetDependency */,
+				C7535D65002AA62014A9BA9CEA0967D3 /* PBXTargetDependency */,
+				261651A4E2699A1C629E33D7F009E43C /* PBXTargetDependency */,
+				EB0B8A3B6FF63D49E2A16E0E7D09FE64 /* PBXTargetDependency */,
+				0AA32279BF6CDA324DBE3BDADDB8DF7F /* PBXTargetDependency */,
+			);
+			name = "Pods-TimerPlusUITests";
+			productName = "Pods-TimerPlusUITests";
+			productReference = E12AFBC09441E1D01694CC9682AAD948 /* libPods-TimerPlusUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		53EE98CF0C086911FC7552A87CFE1B3C /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E85C4E6C5A9D708DAE4E2C1E477620B9 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				52D64D25BF0B61AECCF76A09A69A5463 /* Sources */,
+				94E5E56FD119471A36EC3016CDEEB67C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3B041CF2F074485E586A0993FDE3DE /* PBXTargetDependency */,
+				09373CE74D0915A63E82C74AE02BA451 /* PBXTargetDependency */,
+				2FAEDDCC262A3BFBFE12B14F227E8B2F /* PBXTargetDependency */,
+				D43463309FA3B755E42D4816B256CBEB /* PBXTargetDependency */,
+				7C21D4230D4000D3A8EC7F53B7682DB0 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = BFBB270C70C6B5653461B57845E9BA9E /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		975767608F8B9ACC7C3B10095E6703E6 /* Pods-TimerPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76C20271BB557BC3BFE4D5A237D6D63 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusTests" */;
+			buildPhases = (
+				E288D883675423A9D0E7A70394096327 /* Sources */,
+				547565FFF5483FA6B42091091EB0EF01 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00E3E7FB7AFD533CCF8A14AC927C8A1 /* PBXTargetDependency */,
+				B18F39FB1370C978C2CDE704B9E050AC /* PBXTargetDependency */,
+				726FC830C7E455A593D90619D8ED6C04 /* PBXTargetDependency */,
+				06E4A0361C5FD4A56D3E22ADFD0787F2 /* PBXTargetDependency */,
+				94DD0D815E3FB2981D255A60A10E36D1 /* PBXTargetDependency */,
+			);
+			name = "Pods-TimerPlusTests";
+			productName = "Pods-TimerPlusTests";
+			productReference = 6E4462048D3C0765D34F202F9C248EE3 /* libPods-TimerPlusTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9BD1F0F5C3FF7480748290491B0CE6C2 /* JSKTimerView-JSKTimerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A901E6E87113ADEB794C09E22AE58C49 /* Build configuration list for PBXNativeTarget "JSKTimerView-JSKTimerView" */;
+			buildPhases = (
+				81760B28DF6982F6A271AA03D6F77391 /* Sources */,
+				3353BB8CC973F34090BB3F33115F7265 /* Frameworks */,
+				366C858E4868D09263C4A59B4B57505D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JSKTimerView-JSKTimerView";
+			productName = "JSKTimerView-JSKTimerView";
+			productReference = 006BC6DE9371A989FB691464252F7AE2 /* JSKTimerView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7614F818B813FB52E2F6852EDD4D12A8 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				B883C5048E562D0E856A42CAB302015E /* Sources */,
+				D6581EFBBA04479F25138A38C4ACF2D1 /* Frameworks */,
+				D0688168D068C1EBB7D59E9A1ECCCC32 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 7F4352CCD818C773C0B07A8D02162660 /* libSVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9228A44FEC797F393359B38A12BCE09 /* Build configuration list for PBXNativeTarget "MZTimerLabel" */;
+			buildPhases = (
+				987EB033EA9ECA0183445F3208DF8FA5 /* Sources */,
+				0EFBB30FD6C017DD37F17A52E64F9600 /* Frameworks */,
+				51E10859393E3C6910E59DAA53E18C36 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZTimerLabel;
+			productName = MZTimerLabel;
+			productReference = 0CA66C2E018EB1A29481AF2A793EF96D /* libMZTimerLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B8791EC8A22E56A7969AC8182F5BE3E0 /* Pods-TimerPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E09CE71C8915378303B71644F801DCD3 /* Build configuration list for PBXNativeTarget "Pods-TimerPlus" */;
+			buildPhases = (
+				0C96137E5D74F951E444BD77230DD30B /* Sources */,
+				FF107B769B3C9509DC47071C6869F275 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC40895BFA1E8D46A1E1C2DF6B3EF230 /* PBXTargetDependency */,
+				48818B7DD276ED46DA58C286E5A2A9B1 /* PBXTargetDependency */,
+				06EBAC2018ABC20EC24AA71182891642 /* PBXTargetDependency */,
+				2B7B1BCED422CD960D1BC51DBCB9E9C9 /* PBXTargetDependency */,
+				74583456B50501A626ECF928F022B868 /* PBXTargetDependency */,
+			);
+			name = "Pods-TimerPlus";
+			productName = "Pods-TimerPlus";
+			productReference = D91D1EF6A88FD9601AED9C7FF6D749AF /* libPods-TimerPlus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5ACE1E20A7E086488522917A4EFA4ED /* Build configuration list for PBXNativeTarget "JSKTimerView" */;
+			buildPhases = (
+				7F2423011E58223A64EF82C60F0617B7 /* Sources */,
+				BBDD7589A0F21BE331F489AD9FB35954 /* Frameworks */,
+				38FD5F6EF9067FC0D715BE263841B7FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				445AF8A894BBF83E6E18089BDCA9FEDE /* PBXTargetDependency */,
+			);
+			name = JSKTimerView;
+			productName = JSKTimerView;
+			productReference = D7182254BB68DD474D741FC93F19DAC7 /* libJSKTimerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8FFB31AEE5BD246892CA5E200F0ED62 /* Build configuration list for PBXNativeTarget "FontAwesomeIconFactory" */;
+			buildPhases = (
+				0CE6E00666DFA1C10B1FAB148592992C /* Sources */,
+				6F62015C28C3D4C811BC185D93C853CF /* Frameworks */,
+				5BEB957D587B532F19F78DCEA33E072E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontAwesomeIconFactory;
+			productName = FontAwesomeIconFactory;
+			productReference = 66CF00D6EBFC19AED5AA4FDB9C3074A4 /* libFontAwesomeIconFactory.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243E6D786F65B7FA177169D604DF6079 /* Build configuration list for PBXNativeTarget "CircleProgressBar" */;
+			buildPhases = (
+				59681DEC08D1A31169C84F0DD1D2AE66 /* Sources */,
+				EED0A41F3D4F9FE2CD8B37EFE43A4908 /* Frameworks */,
+				8675A379F4207C3B577AFF078FCDF0B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleProgressBar;
+			productName = CircleProgressBar;
+			productReference = 4CD140B099CEA72C6EF363FE2AD6AAAD /* libCircleProgressBar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F90D8FF8CF57D0171C80A3AF54529867 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */,
+				ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */,
+				B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */,
+				9BD1F0F5C3FF7480748290491B0CE6C2 /* JSKTimerView-JSKTimerView */,
+				B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */,
+				53EE98CF0C086911FC7552A87CFE1B3C /* Pods */,
+				B8791EC8A22E56A7969AC8182F5BE3E0 /* Pods-TimerPlus */,
+				975767608F8B9ACC7C3B10095E6703E6 /* Pods-TimerPlusTests */,
+				3F8F97420F7975303EE4D8B98B765640 /* Pods-TimerPlusUITests */,
+				B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		366C858E4868D09263C4A59B4B57505D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B042153C557AD96321848E9CC05DE5 /* img0.png in Resources */,
+				D531060C0B6343F4924360F4C08DA5D3 /* img1.png in Resources */,
+				D4DB5A22E7677A219A684D25D8C90910 /* img2.png in Resources */,
+				057147F03F69B75FFE95B9DA3C3D4D95 /* img3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C96137E5D74F951E444BD77230DD30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87CD17990A95B57D4B6B745130466459 /* Pods-TimerPlus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CE6E00666DFA1C10B1FAB148592992C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19743179650AC135BB5485C7426A1238 /* FontAwesomeIconFactory-dummy.m in Sources */,
+				830A1BD47FC453EF07A3717FB198B2B3 /* NIKFontAwesomeButton.m in Sources */,
+				A76E4957A4049C7BA2D0AA0951093C8F /* NIKFontAwesomeIconFactory.m in Sources */,
+				0F5AE962F85FFBC270D0FB6D494265E5 /* NIKFontAwesomeImageView.m in Sources */,
+				3D7EC3E7F6336B555B785B4DBB24633D /* NIKFontAwesomePathFactory.m in Sources */,
+				7152A770FC6B31F93EDAEB12BA115B84 /* NIKFontAwesomePathRenderer.m in Sources */,
+				54366F1705DC00755B7D24E443484F63 /* NIKFontAwesomeTabBarItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D64D25BF0B61AECCF76A09A69A5463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303AFC297F0B68BF84F86F646E3DB087 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59681DEC08D1A31169C84F0DD1D2AE66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C98E4BB808022E07C8052BF2752B6BF /* CircleProgressBar-dummy.m in Sources */,
+				B77FAF006669C9A211954F0106FC89F6 /* CircleProgressBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2423011E58223A64EF82C60F0617B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FB026E0A890C2A436D7D09561DA4AE /* JSKTimerView-dummy.m in Sources */,
+				8C954A58782CDA83731EB344E27903DE /* JSKTimerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81760B28DF6982F6A271AA03D6F77391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		987EB033EA9ECA0183445F3208DF8FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502DC18333CAA39ED757CD5564973CEF /* MZTimerLabel-dummy.m in Sources */,
+				6D1A36A1810A046339122A0424733A20 /* MZTimerLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B883C5048E562D0E856A42CAB302015E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EDE64B208990EC36704498D79B6E292 /* SVIndefiniteAnimatedView.m in Sources */,
+				9CA4DBDFD6F94F062ECBB9E5F8E7B89F /* SVProgressHUD-dummy.m in Sources */,
+				409CD8643DA13B60F043F92B1694A934 /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E288D883675423A9D0E7A70394096327 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3754EC58B60A41E89FC539B0BDE2AC47 /* Pods-TimerPlusTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2B5E5D874EBE090ED00B2B95A6A6EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DF58383E433C0DB3576529500EFD6C /* Pods-TimerPlusUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06E4A0361C5FD4A56D3E22ADFD0787F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZTimerLabel;
+			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
+			targetProxy = AD72FD7B26726243A49A4E33D7EA82CD /* PBXContainerItemProxy */;
+		};
+		06EBAC2018ABC20EC24AA71182891642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSKTimerView;
+			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
+			targetProxy = 59850AE710034474C99B84CACB441F24 /* PBXContainerItemProxy */;
+		};
+		09373CE74D0915A63E82C74AE02BA451 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeIconFactory;
+			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
+			targetProxy = E0642FF7A27FAD80C7C52A30B37ECEB3 /* PBXContainerItemProxy */;
+		};
+		0AA32279BF6CDA324DBE3BDADDB8DF7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */;
+			targetProxy = 3D2F04BEDA3357723574D09887749FEF /* PBXContainerItemProxy */;
+		};
+		261651A4E2699A1C629E33D7F009E43C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSKTimerView;
+			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
+			targetProxy = 0435F94045ED280A78FEB0DE4D2658FD /* PBXContainerItemProxy */;
+		};
+		2B7B1BCED422CD960D1BC51DBCB9E9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZTimerLabel;
+			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
+			targetProxy = C4C7D944F1E72D46C8A0A361484C3D2B /* PBXContainerItemProxy */;
+		};
+		2FAEDDCC262A3BFBFE12B14F227E8B2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSKTimerView;
+			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
+			targetProxy = 840C3BE0341339FE2EE64FE18921E31F /* PBXContainerItemProxy */;
+		};
+		445AF8A894BBF83E6E18089BDCA9FEDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JSKTimerView-JSKTimerView";
+			target = 9BD1F0F5C3FF7480748290491B0CE6C2 /* JSKTimerView-JSKTimerView */;
+			targetProxy = 8E74964F793E2B70CD3D4092D1B6CDFF /* PBXContainerItemProxy */;
+		};
+		48818B7DD276ED46DA58C286E5A2A9B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeIconFactory;
+			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
+			targetProxy = 0A894586545F619332C273EACE29DC3F /* PBXContainerItemProxy */;
+		};
+		5439C734165E752BA1C44C8E2BB88CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleProgressBar;
+			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
+			targetProxy = 0AC69C10ECD7BE3D627A21C114CDA27B /* PBXContainerItemProxy */;
+		};
+		726FC830C7E455A593D90619D8ED6C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSKTimerView;
+			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
+			targetProxy = 497C1A3E79DC9A47218D499876528B60 /* PBXContainerItemProxy */;
+		};
+		74583456B50501A626ECF928F022B868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */;
+			targetProxy = A04D4CA0E4513AF48A0EF18D6223C54C /* PBXContainerItemProxy */;
+		};
+		7C21D4230D4000D3A8EC7F53B7682DB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */;
+			targetProxy = 6F46820DA8C156F0AA791EB432C3F23C /* PBXContainerItemProxy */;
+		};
+		94DD0D815E3FB2981D255A60A10E36D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */;
+			targetProxy = 0A9D4D315E697ADF8D1010D56B388617 /* PBXContainerItemProxy */;
+		};
+		B00E3E7FB7AFD533CCF8A14AC927C8A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleProgressBar;
+			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
+			targetProxy = 49EB4B746A941A7E4D1EE74EAE1234AD /* PBXContainerItemProxy */;
+		};
+		B18F39FB1370C978C2CDE704B9E050AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeIconFactory;
+			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
+			targetProxy = CD95EC0DD695AB46DF0AFC7D9AB8076C /* PBXContainerItemProxy */;
+		};
+		BC40895BFA1E8D46A1E1C2DF6B3EF230 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleProgressBar;
+			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
+			targetProxy = 61C801ED62CADA1FA91FFDFA92A29D98 /* PBXContainerItemProxy */;
+		};
+		C7535D65002AA62014A9BA9CEA0967D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeIconFactory;
+			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
+			targetProxy = 6DD1DBB67126E8D6287FA72CA452BA48 /* PBXContainerItemProxy */;
+		};
+		CB3B041CF2F074485E586A0993FDE3DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleProgressBar;
+			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
+			targetProxy = 7B1542E6F8B132D31D8E90CF9387FFD3 /* PBXContainerItemProxy */;
+		};
+		D43463309FA3B755E42D4816B256CBEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZTimerLabel;
+			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
+			targetProxy = F7C665C49F3BC3CC50C086D59AB184B3 /* PBXContainerItemProxy */;
+		};
+		EB0B8A3B6FF63D49E2A16E0E7D09FE64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZTimerLabel;
+			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
+			targetProxy = 9F1142D72AE317D33C153DB183045EC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0025B81C452C8142D5549E48CA076719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88A43B598F03E6C1DFD0D3BDC5F4FD70 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		09A6778DDA5EFEDE4B13DF86E0B3A7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JSKTimerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0F05D134B8B215C25AFE2A50481B2B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3766EAE38AC8AA0C2D7F93D3FF964D77 /* Pods-TimerPlusUITests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		176AB6FB9FAD80C605EFC3C07E0B20D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40BAF392E13432DB221826792B9E6D3 /* MZTimerLabel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZTimerLabel/MZTimerLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		32EC6EBB1D47D84DCCB8C240C31A3A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4713E8B2B82860B8A768AE605718FF9E /* CircleProgressBar.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CircleProgressBar/CircleProgressBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		39FF1B9ACBB2D14DA05C15D8F053FE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4A9548D65FBBA687074776A3A6A74C /* Pods-TimerPlusUITests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		614E54B0C5DD12A1223EE86E5CF6609F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9AB6080E49DA1A7785364CFE48314A /* FontAwesomeIconFactory.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeIconFactory/FontAwesomeIconFactory-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6534229CDD80E662E688DA0B558CD3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9AB6080E49DA1A7785364CFE48314A /* FontAwesomeIconFactory.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeIconFactory/FontAwesomeIconFactory-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		67532D88E69ED2904E6E6AF9C457CD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JSKTimerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6994F8413D40BE73A70DC465149346E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E3C74663FF54E5900D2E0439163BA8 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		73438EAA553CE5A1AE83950D2E039011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD9895962E26ED5DD900A613F3494F9 /* Pods-TimerPlusTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8327A385B41FF8D850C14CC7C661F280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40BAF392E13432DB221826792B9E6D3 /* MZTimerLabel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZTimerLabel/MZTimerLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8CEF72FBDABA911D603DBD36C0684FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E3C74663FF54E5900D2E0439163BA8 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8EC09E5667746A01C32F981AF8510077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512CE8A6EDAE91D4B2831BC5766AD3DA /* Pods-TimerPlusTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A4C4562E304A3A40AE54B4BD615EDAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC49995310A52D3F638E0EF17E29DF46 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C0D1CEB83B6F3516F5813C332AC447A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3860D7FD21A38648204B78061714D2E0 /* Pods-TimerPlus.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C7797EF45024833E2A6D3F33A30D9F65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSKTimerView/JSKTimerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C9BA221F9BED3BC932F209D972B9EFEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B8B5DEFE4DA31DD21AB410FE04F7ED /* Pods-TimerPlus.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E0B2601AAE95580A2969AAFC67A1985C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4713E8B2B82860B8A768AE605718FF9E /* CircleProgressBar.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CircleProgressBar/CircleProgressBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE469745C1D849F023B2E7DA8FDA3A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSKTimerView/JSKTimerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		243E6D786F65B7FA177169D604DF6079 /* Build configuration list for PBXNativeTarget "CircleProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B2601AAE95580A2969AAFC67A1985C /* Debug */,
+				32EC6EBB1D47D84DCCB8C240C31A3A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7614F818B813FB52E2F6852EDD4D12A8 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CEF72FBDABA911D603DBD36C0684FFD /* Debug */,
+				6994F8413D40BE73A70DC465149346E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		889DE60672E8B1E0741EECC2B2C74B82 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F05D134B8B215C25AFE2A50481B2B3D /* Debug */,
+				39FF1B9ACBB2D14DA05C15D8F053FE80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A901E6E87113ADEB794C09E22AE58C49 /* Build configuration list for PBXNativeTarget "JSKTimerView-JSKTimerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A6778DDA5EFEDE4B13DF86E0B3A7EA /* Debug */,
+				67532D88E69ED2904E6E6AF9C457CD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9228A44FEC797F393359B38A12BCE09 /* Build configuration list for PBXNativeTarget "MZTimerLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8327A385B41FF8D850C14CC7C661F280 /* Debug */,
+				176AB6FB9FAD80C605EFC3C07E0B20D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5ACE1E20A7E086488522917A4EFA4ED /* Build configuration list for PBXNativeTarget "JSKTimerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7797EF45024833E2A6D3F33A30D9F65 /* Debug */,
+				FE469745C1D849F023B2E7DA8FDA3A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E09CE71C8915378303B71644F801DCD3 /* Build configuration list for PBXNativeTarget "Pods-TimerPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0D1CEB83B6F3516F5813C332AC447A5 /* Debug */,
+				C9BA221F9BED3BC932F209D972B9EFEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E85C4E6C5A9D708DAE4E2C1E477620B9 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0025B81C452C8142D5549E48CA076719 /* Debug */,
+				A4C4562E304A3A40AE54B4BD615EDAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76C20271BB557BC3BFE4D5A237D6D63 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC09E5667746A01C32F981AF8510077 /* Debug */,
+				73438EAA553CE5A1AE83950D2E039011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8FFB31AEE5BD246892CA5E200F0ED62 /* Build configuration list for PBXNativeTarget "FontAwesomeIconFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6534229CDD80E662E688DA0B558CD3B8 /* Debug */,
+				614E54B0C5DD12A1223EE86E5CF6609F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
