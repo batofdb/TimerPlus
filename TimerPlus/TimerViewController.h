@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Timer;
+@class Exercise;
 
 @interface TimerViewController : UIViewController
+
+@property Timer *timer;
 
 @end

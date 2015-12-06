@@ -7,8 +7,15 @@
 //
 
 #import "TimerSetupViewController.h"
+#import "TimerViewController.h"
+#import "Timer.h"
+#import "Exercise.h"
 
-@interface TimerSetupViewController ()
+@interface TimerSetupViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic) Timer *timer;
+@property (nonatomic) NSMutableArray *inputExercises;
 
 @end
 
@@ -16,22 +23,248 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.timer = [[Timer alloc]init];
+    self.timer.exercises = [NSMutableArray new];
+    self.inputExercises = [NSMutableArray new];
+
+    [self.tableView reloadData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    UITextField *insertTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 200, 30)];
+    insertTextField.textColor = [UIColor blackColor];
+    insertTextField.backgroundColor = [UIColor clearColor];
+    insertTextField.adjustsFontSizeToFitWidth = YES;
+    insertTextField.textAlignment = NSTextAlignmentRight;
+    insertTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    insertTextField.delegate = self;
+
+
+    switch (indexPath.section) {
+        case 0:
+            if (indexPath.row == 0) {
+                cell.textLabel.text = @"Name";
+                insertTextField.text = self.timer.name;
+            } else if (indexPath.row == 1) {
+                cell.textLabel.text = @"Number of sets";
+                insertTextField.text = [NSString stringWithFormat:@"%li",self.timer.sets];
+            }
+            cell.accessoryView = insertTextField;
+            break;
+        case 1:
+            if (self.timer.exercises.count == 0) {
+                cell.textLabel.text = @"No exercises";
+            } else {
+                //Add exercises
+                Exercise *exercise = self.timer.exercises[indexPath.row];
+                cell.textLabel.text = exercise.name;
+                insertTextField.text = [NSString stringWithFormat:@"%li", exercise.seconds];
+                cell.accessoryView = insertTextField;
+            }
+            break;
+        case 2:
+            if (indexPath.row == 0) {
+                cell.textLabel.text = @"Rest between reps";
+                insertTextField.text = [NSString stringWithFormat:@"%li", self.timer.interval_between_reps];
+            } else if (indexPath.row == 1) {
+                cell.textLabel.text = @"Rest between sets";
+                insertTextField.text = [NSString stringWithFormat:@"%li",self.timer.interval_between_sets];
+            }
+            cell.accessoryView = insertTextField;
+            break;
+        case 3:
+            if (indexPath.row == 0) {
+                cell.textLabel.text = @"Warmup";
+                insertTextField.text = [NSString stringWithFormat:@"%li",self.timer.warmup];
+            } else if (indexPath.row == 1) {
+                cell.textLabel.text = @"Cooldown";
+                insertTextField.text = [NSString stringWithFormat:@"%li",self.timer.cooldown];
+            }
+            cell.accessoryView = insertTextField;
+            break;
+        default:
+            cell.textLabel.text = @"test";
+            break;
+    }
+
+    return cell;
 }
 
-/*
-#pragma mark - Navigation
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+    NSInteger rows;
+    switch (section)
+    {
+        case 0:
+            rows = 2;
+            break;
+        case 1:
+            if (self.timer.exercises.count > 0)
+                rows = self.timer.exercises.count;
+            else
+                rows = 1;
+
+            break;
+        case 2:
+            rows = 2;
+            break;
+        case 3:
+            rows = 2;
+            break;
+        default:
+            rows = 0;
+            break;
+    }
+    return rows;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    CGFloat height = 40.0;
+    return height;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 4;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+
+
+    // create the parent view that will hold header Label
+    UIView* customView = [[UIView alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 30.0)];
+    [customView setBackgroundColor:UIColorFromRGB(0xFAFAFA)];
+
+
+    // create the button object if seccion == 1
+    if (section == 1) {
+        UIButton * headerBtn = [[UIButton alloc] initWithFrame:CGRectZero];
+        headerBtn.backgroundColor = [UIColor clearColor];
+        headerBtn.opaque = NO;
+
+        double widthButton = 100.0;
+
+        headerBtn.frame = CGRectMake( self.view.frame.size.width-widthButton-12, 0.0, widthButton, 30.0);
+        [headerBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [headerBtn setTitle:@"<Put here whatever you want to display>" forState:UIControlStateNormal];
+        [headerBtn addTarget:self action:@selector(onAddExerciseButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+        [customView addSubview:headerBtn];
+    }
+
+    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
+
+    [headerLabel setTextColor:[UIColor blackColor]];
+    [headerLabel setBackgroundColor:[UIColor clearColor]];
+    [headerLabel setFont:[UIFont fontWithName: @"HelveticaNeue-Bold" size: 14.0f]];
+
+    switch (section)
+    {
+        case 0:
+            [headerLabel setText:@"INFO"];
+            break;
+        case 1:
+            [headerLabel setText:@"EXERCISES"];
+            break;
+        case 2:
+            [headerLabel setText:@"REST"];
+            break;
+        case 3:
+            [headerLabel setText:@"PRE/POST"];
+            break;
+        default:
+            [headerLabel setText:@""];
+            break;
+    }
+
+    [customView addSubview:headerLabel];
+
+    
+    return customView;
+
+}
+
+
+- (void)onAddExerciseButtonTapped {
+    NSLog(@"Button Pressed");
+    Exercise *newExercise = [Exercise new];
+    newExercise.name = [NSString stringWithFormat:@"Exercise %li",self.timer.exercises.count+1];
+    newExercise.seconds = 0;
+
+    NSMutableArray *tempExercises = [NSMutableArray arrayWithArray:self.inputExercises];
+    [tempExercises addObject:newExercise];
+
+    self.inputExercises = tempExercises;
+}
+
+
+- (void)setInputExercises:(NSMutableArray *)inputExercises {
+    _inputExercises = inputExercises;
+    self.timer.exercises = inputExercises;
+    [self.tableView reloadData];
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+
+    NSString *proposedNewString = [[textField text] stringByReplacingCharactersInRange:range withString:string];
+
+    //New input string
+    NSLog(@"%@",proposedNewString);
+
+    //Find IndexPath
+    UIView *cell = textField;
+    while (cell && ![cell isKindOfClass:[UITableViewCell class]])
+        cell = cell.superview;
+
+    //use the UITableViewcell superview to get the NSIndexPath
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:cell.center];
+    NSLog(@"%li %li",indexPath.section, indexPath.row);
+
+    switch (indexPath.section)
+    {
+        case 0:
+            if(indexPath.row == 0)
+                self.timer.name = proposedNewString;
+
+            if(indexPath.row == 1)
+                self.timer.sets = [proposedNewString integerValue];
+            break;
+        case 1:
+            self.timer.exercises = self.inputExercises;
+            break;
+        case 2:
+            if (indexPath.row == 0)
+                self.timer.interval_between_reps = [proposedNewString integerValue];
+
+            if (indexPath.row == 1)
+                self.timer.interval_between_sets = [proposedNewString integerValue];
+
+            break;
+        case 3:
+            if (indexPath.row == 0)
+                self.timer.warmup = [proposedNewString integerValue];
+
+            if (indexPath.row == 1)
+                self.timer.cooldown = [proposedNewString integerValue];
+
+            break;
+        default:
+            break;
+    }
+
+    return YES;
+}
+
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    TimerViewController *vc = [segue destinationViewController];
+    vc.timer = self.timer;
 }
-*/
 
 @end
