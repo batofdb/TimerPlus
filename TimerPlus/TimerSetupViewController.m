@@ -11,6 +11,9 @@
 #import "Timer.h"
 #import "Exercise.h"
 
+#define SECONDSFIELD 0;
+#define NAMEFIELD 1;
+
 @interface TimerSetupViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -38,6 +41,8 @@
     insertTextField.adjustsFontSizeToFitWidth = YES;
     insertTextField.textAlignment = NSTextAlignmentRight;
     insertTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    [insertTextField setKeyboardType:UIKeyboardTypeNumberPad];
+    insertTextField.tag = SECONDSFIELD;
     insertTextField.delegate = self;
 
 
@@ -48,7 +53,7 @@
                 insertTextField.text = self.timer.name;
             } else if (indexPath.row == 1) {
                 cell.textLabel.text = @"Number of sets";
-                insertTextField.text = [NSString stringWithFormat:@"%li",self.timer.sets];
+                insertTextField.text = [NSString stringWithFormat:@"%i",self.timer.sets];
             }
             cell.accessoryView = insertTextField;
             break;
@@ -57,29 +62,45 @@
                 cell.textLabel.text = @"No exercises";
             } else {
                 //Add exercises
+                cell.textLabel.text = @"";
                 Exercise *exercise = self.timer.exercises[indexPath.row];
-                cell.textLabel.text = exercise.name;
-                insertTextField.text = [NSString stringWithFormat:@"%li", exercise.seconds];
+
+                if (![cell.contentView viewWithTag:1]) {
+                    //Add namefield if it doesn't exist
+                    UITextField *exerciseNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, 200, 30)];
+                    exerciseNameTextField.textColor = [UIColor blackColor];
+                    exerciseNameTextField.backgroundColor = [UIColor clearColor];
+                    exerciseNameTextField.adjustsFontSizeToFitWidth = YES;
+                    //exerciseNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+                    exerciseNameTextField.delegate = self;
+                    exerciseNameTextField.tag = NAMEFIELD;
+                    exerciseNameTextField.text = exercise.name;
+
+                    [cell.contentView addSubview:exerciseNameTextField];
+                }
+
+
+                insertTextField.text = [NSString stringWithFormat:@"%i", exercise.seconds];
                 cell.accessoryView = insertTextField;
             }
             break;
         case 2:
             if (indexPath.row == 0) {
                 cell.textLabel.text = @"Rest between reps";
-                insertTextField.text = [NSString stringWithFormat:@"%li", self.timer.interval_between_reps];
+                insertTextField.text = [NSString stringWithFormat:@"%i", self.timer.interval_between_reps];
             } else if (indexPath.row == 1) {
                 cell.textLabel.text = @"Rest between sets";
-                insertTextField.text = [NSString stringWithFormat:@"%li",self.timer.interval_between_sets];
+                insertTextField.text = [NSString stringWithFormat:@"%i",self.timer.interval_between_sets];
             }
             cell.accessoryView = insertTextField;
             break;
         case 3:
             if (indexPath.row == 0) {
                 cell.textLabel.text = @"Warmup";
-                insertTextField.text = [NSString stringWithFormat:@"%li",self.timer.warmup];
+                insertTextField.text = [NSString stringWithFormat:@"%i",self.timer.warmup];
             } else if (indexPath.row == 1) {
                 cell.textLabel.text = @"Cooldown";
-                insertTextField.text = [NSString stringWithFormat:@"%li",self.timer.cooldown];
+                insertTextField.text = [NSString stringWithFormat:@"%i",self.timer.cooldown];
             }
             cell.accessoryView = insertTextField;
             break;
@@ -187,7 +208,7 @@
 - (void)onAddExerciseButtonTapped {
     NSLog(@"Button Pressed");
     Exercise *newExercise = [Exercise new];
-    newExercise.name = [NSString stringWithFormat:@"Exercise %li",self.timer.exercises.count+1];
+    newExercise.name = [NSString stringWithFormat:@"Exercise %u",self.timer.exercises.count+1];
     newExercise.seconds = 0;
 
     NSMutableArray *tempExercises = [NSMutableArray arrayWithArray:self.inputExercises];
@@ -210,14 +231,7 @@
     //New input string
     NSLog(@"%@",proposedNewString);
 
-    //Find IndexPath
-    UIView *cell = textField;
-    while (cell && ![cell isKindOfClass:[UITableViewCell class]])
-        cell = cell.superview;
-
-    //use the UITableViewcell superview to get the NSIndexPath
-    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:cell.center];
-    NSLog(@"%li %li",indexPath.section, indexPath.row);
+    NSIndexPath *indexPath = [self getIndexPathFromTextField:textField];
 
     switch (indexPath.section)
     {
@@ -254,9 +268,39 @@
     return YES;
 }
 
+- (NSIndexPath *)getIndexPathFromTextField:(UITextField *)textField {
+
+    //Find IndexPath
+    UIView *cell = textField;
+    while (cell && ![cell isKindOfClass:[UITableViewCell class]])
+        cell = cell.superview;
+
+    //use the UITableViewcell superview to get the NSIndexPath
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:cell.center];
+    NSLog(@"%i %i",indexPath.section, indexPath.row);
+
+    return indexPath;
+}
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
+
+    NSIndexPath *indexPath = [self getIndexPathFromTextField:textField];
+
+    if (indexPath.section == 1) {
+        Exercise *exercise = self.timer.exercises[indexPath.row];
+
+        //Seconds field
+        if (textField.tag == 0) {
+            exercise.seconds = [textField.text intValue];
+        }
+
+        //Name field
+        if (textField.tag == 1) {
+            exercise.name = textField.text;
+        }
+    }
+
     [textField resignFirstResponder];
     return YES;
 }

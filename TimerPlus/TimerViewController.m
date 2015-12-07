@@ -20,6 +20,8 @@
 @property NSMutableArray *timerState;
 @property int currentTimerState;
 @property NSTimer *aTimer;
+@property NSString *currentExercise;
+@property int exercisePosition;
 
 @end
 
@@ -44,7 +46,9 @@
 
     for (int i=0;i<self.sets;i++) {
         for (int j=0;j<self.timer.exercises.count;j++) {
-            [self.timerState addObject:[NSString stringWithFormat:@"exercise %i",j]];
+            Exercise *exercise = self.timer.exercises[j];
+
+            [self.timerState addObject:[NSString stringWithFormat:@"exercise %i %@",j,exercise.name]];
             if (self.timer.interval_between_reps > 0 && j != self.timer.exercises.count-1) {
                 [self.timerState addObject:@"interval_between_reps"];
             }
@@ -69,8 +73,8 @@
     NSString *currentState = self.timerState[self.currentTimerState];
 
     if ([currentState containsString:@"exercise"]) {
-        int exercisePos = [[currentState componentsSeparatedByString:@" "][1] intValue];
-        Exercise *currentExercise = self.timer.exercises[exercisePos];
+        self.exercisePosition = [[currentState componentsSeparatedByString:@" "][1] intValue];
+        Exercise *currentExercise = self.timer.exercises[self.exercisePosition];
 
         self.intStop = (int)currentExercise.seconds;
     }
@@ -94,8 +98,32 @@
 
 - (void)startTimerWithInterval{
     [self setupTimerIntervalEnd];
-    self.exerciseLabel.text = self.timerState[self.currentTimerState];
+
+    self.exerciseLabel.text = [self getCurrentExerciseStateLabel];
     self.aTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(onTick) userInfo:nil repeats:YES];
+}
+
+
+- (NSString *)getCurrentExerciseStateLabel {
+
+    NSString *currentState = self.timerState[self.currentTimerState];
+    NSString *outputState;
+
+    if ([currentState isEqualToString:@"warmup"]) {
+        outputState = @"Warmup";
+    }
+    if ([currentState isEqualToString:@"cooldown"]) {
+        outputState = @"Cooldown";
+    }
+    if ([currentState isEqualToString:@"interval_between_reps"] || [currentState isEqualToString:@"interval_between_sets"]) {
+        outputState = @"Rest";
+    }
+    if ([currentState containsString:@"exercise"]) {
+        Exercise *exercise = self.timer.exercises[self.exercisePosition];
+        outputState = exercise.name;
+    }
+
+    return outputState;
 }
 
 - (void)resetTimer {
@@ -126,8 +154,6 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [self updateValueLabel];
     });
-
-
 
     if (self.intSeconds > self.intStop) {
         [self stopTimer];
