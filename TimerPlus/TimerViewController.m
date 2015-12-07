@@ -13,6 +13,8 @@
 @interface TimerViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *exerciseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currentTimeLabel;
 @property int intSeconds;
 @property int intStop;
 @property int sets;
@@ -22,6 +24,7 @@
 @property NSTimer *aTimer;
 @property NSString *currentExercise;
 @property int exercisePosition;
+@property int currentTotal;
 
 @end
 
@@ -30,15 +33,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    //Setup timer state
-    // 0 = warmup
-    // 1 = exercise
-    // 2 = cooldown
     self.timerState = [NSMutableArray new];
     self.currentTimerState = 0;
+    self.currentTotal = 0;
 
     self.sets = (int)self.timer.sets;
-    [self resetTimer];
+    [self initDisplay];
 
     if (self.timer.warmup > 0) {
         [self.timerState addObject:@"warmup"];
@@ -68,6 +68,7 @@
     [self startTimerWithInterval];
 }
 
+#pragma mark - Timer methods
 - (void)setupTimerIntervalEnd {
 
     NSString *currentState = self.timerState[self.currentTimerState];
@@ -103,7 +104,51 @@
     self.aTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(onTick) userInfo:nil repeats:YES];
 }
 
+- (void)initDisplay {
+    self.intSeconds = 0;
+    [self updateValueLabel];
+    self.totalTimeLabel.text = [NSString stringWithFormat:@"%i",self.timer.totalTime];
+}
 
+- (void)resetTimer {
+    [self.aTimer invalidate];
+    self.aTimer = nil;
+    self.intSeconds = 0;
+    self.intStop = 0;
+
+    self.currentTimerState++;
+
+    if (self.currentTimerState < self.timerState.count) {
+        [self startTimerWithInterval];
+    }
+}
+
+- (void)stopTimer {
+    [self.aTimer invalidate];
+    self.aTimer = nil;
+    self.intSeconds = 0;
+    self.intStop = 0;
+    self.currentTotal = 0;
+}
+
+- (void)onTick {
+    self.intSeconds++;
+    self.currentTotal++;
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self updateValueLabel];
+    });
+
+    if (self.intSeconds > self.intStop) {
+        [self resetTimer];
+    }
+    if (self.currentTotal > self.timer.totalTime) {
+        [self stopTimer];
+    }
+    
+}
+
+#pragma mark - Retrieve Exercise
 - (NSString *)getCurrentExerciseStateLabel {
 
     NSString *currentState = self.timerState[self.currentTimerState];
@@ -126,43 +171,18 @@
     return outputState;
 }
 
-- (void)resetTimer {
-    self.intSeconds = 0;
-    [self updateValueLabel];
-}
+#pragma mark - IBActions
 
-- (void)stopTimer {
-    [self.aTimer invalidate];
-    self.aTimer = nil;
-    self.intSeconds = 0;
-    self.intStop = 0;
-
-    self.currentTimerState++;
-
-    if (self.currentTimerState < self.timerState.count) {
-        [self startTimerWithInterval];
-    }
-}
-
-- (void)updateValueLabel {
-    self.valueLabel.text = [NSString stringWithFormat:@"%i",self.intSeconds];
-}
-
-- (void)onTick {
-    self.intSeconds++;
-
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self updateValueLabel];
-    });
-
-    if (self.intSeconds > self.intStop) {
-        [self stopTimer];
-    }
-
-}
 - (IBAction)onCloseButtonTapped:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:^{
     }];
+}
+
+#pragma mark - Updated UI
+- (void)updateValueLabel {
+    self.valueLabel.text = [NSString stringWithFormat:@"%i",self.intSeconds];
+
+    self.currentTimeLabel.text = [NSString stringWithFormat:@"%i",self.currentTotal];
 }
 
 @end

@@ -17,5 +17,6 @@
 @property (nonatomic) NSInteger interval_between_sets;
 @property (nonatomic) NSInteger warmup;
 @property (nonatomic) NSInteger cooldown;
+@property (nonatomic) NSInteger totalTime;
 
 @end

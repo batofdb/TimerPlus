@@ -33,6 +33,8 @@
     [self.tableView reloadData];
 }
 
+#pragma mark - Tableview Methods
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     UITextField *insertTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 200, 30)];
@@ -204,6 +206,7 @@
 
 }
 
+#pragma mark - Exercise Actions
 
 - (void)onAddExerciseButtonTapped {
     NSLog(@"Button Pressed");
@@ -223,6 +226,61 @@
     self.timer.exercises = inputExercises;
     [self.tableView reloadData];
 }
+
+- (NSInteger)calculateTotalTime {
+    NSInteger total = 0;
+    total += self.timer.cooldown;
+    total += self.timer.warmup;
+
+    for (int i=0; i<self.timer.sets; i++) {
+        for (int j=0; j< self.timer.exercises.count;j++) {
+            Exercise *exercise = self.timer.exercises[j];
+            total += exercise.seconds;
+            if (j != self.timer.exercises.count-1) {
+                total += self.timer.interval_between_reps;
+            }
+        }
+
+        total += self.timer.interval_between_sets;
+    }
+
+    //Add 1s buffer to reset to 0
+    //1s for each exercise component
+    if (self.timer.cooldown > 0) {
+        total += 1;
+    }
+    if (self.timer.warmup > 0) {
+        total += 1;
+    }
+
+    //Remove 1s from beginning
+    total -= 1;
+
+    total += self.timer.sets;
+
+    if (self.timer.exercises.count > 0)
+        total += ((self.timer.exercises.count -1)+(self.timer.exercises.count))*self.timer.sets;
+
+    return total;
+}
+
+#pragma mark - Helper Methods
+
+- (NSIndexPath *)getIndexPathFromTextField:(UITextField *)textField {
+
+    //Find IndexPath
+    UIView *cell = textField;
+    while (cell && ![cell isKindOfClass:[UITableViewCell class]])
+        cell = cell.superview;
+
+    //use the UITableViewcell superview to get the NSIndexPath
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:cell.center];
+    NSLog(@"%i %i",indexPath.section, indexPath.row);
+
+    return indexPath;
+}
+
+#pragma mark - UITextfield Delegate Methods
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
 
@@ -264,22 +322,8 @@
         default:
             break;
     }
-
+    
     return YES;
-}
-
-- (NSIndexPath *)getIndexPathFromTextField:(UITextField *)textField {
-
-    //Find IndexPath
-    UIView *cell = textField;
-    while (cell && ![cell isKindOfClass:[UITableViewCell class]])
-        cell = cell.superview;
-
-    //use the UITableViewcell superview to get the NSIndexPath
-    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:cell.center];
-    NSLog(@"%i %i",indexPath.section, indexPath.row);
-
-    return indexPath;
 }
 
 
@@ -305,9 +349,12 @@
     return YES;
 }
 
+#pragma mark - Segue
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
     TimerViewController *vc = [segue destinationViewController];
+    self.timer.totalTime = [self calculateTotalTime];
     vc.timer = self.timer;
 }
 
