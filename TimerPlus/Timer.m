@@ -7,6 +7,7 @@
 //
 
 #import "Timer.h"
+#import "Exercise.h"
 
 @implementation Timer
 
@@ -23,6 +24,42 @@
     }
 
     return self;
+}
+
+- (NSString *)convertExercisesToString:(NSMutableArray *)inputArray {
+    NSString *outStr = [NSString stringWithFormat:@""];
+
+    for (Exercise *exercise in inputArray) {
+        NSString *str;
+        if ([inputArray.lastObject isEqual:exercise]) {
+            str = [NSString stringWithFormat:@"%@:%li",exercise.name,exercise.seconds];
+        } else {
+            str = [NSString stringWithFormat:@"%@:%li,",exercise.name,exercise.seconds];
+        }
+
+        outStr = [outStr stringByAppendingString:str];
+    }
+
+    NSLog(@"%@",outStr);
+
+    return outStr;
+}
+
++ (NSArray *)convertStringToExercises:(NSString *)inputStr {
+    NSArray *array = [inputStr componentsSeparatedByString:@","];
+    NSMutableArray *outputArray = [NSMutableArray new];
+
+    for (int i=0;i<array.count;i++) {
+        NSArray *rawExercise = [array[i] componentsSeparatedByString:@":"];
+        Exercise *exercise = [Exercise new];
+        exercise.name = rawExercise.firstObject;
+        exercise.seconds = [rawExercise.lastObject integerValue];
+
+        [outputArray addObject:exercise];
+    }
+
+    NSLog(@"output exercise array");
+    return [outputArray copy];
 }
 
 @end

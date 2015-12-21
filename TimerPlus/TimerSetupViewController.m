@@ -10,6 +10,9 @@
 #import "TimerViewController.h"
 #import "Timer.h"
 #import "Exercise.h"
+#import "AppDelegate.h"
+#import "RightTextFieldTableViewCell.h"
+#import "BothTextFieldTableViewCell.h"
 
 #define SECONDSFIELD 0;
 #define NAMEFIELD 1;
@@ -19,26 +22,17 @@
 
 
 @property (nonatomic) NSMutableArray *inputExercises;
+@property NSManagedObjectContext *moc;
 
 @end
 
 @implementation TimerSetupViewController
 
-- (id)initWithCoder:(NSCoder*)aDecoder
-{
-    if(self = [super initWithCoder:aDecoder])
-    {
-
-        [self.navigationItem.leftBarButtonItem setTarget:self];
-        [self.navigationItem.leftBarButtonItem setAction:@selector(backButtonPressed)];
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    self.moc = delegate.managedObjectContext;
 
     if (!self.timer) {
         self.timer = [[Timer alloc]init];
@@ -62,94 +56,103 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 4 && indexPath.row == 0) {
 
+        [self saveTimer];
         NSLog(@"save");
     }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    UITextField *insertTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 200, 30)];
-    insertTextField.textColor = [UIColor blackColor];
-    insertTextField.backgroundColor = [UIColor clearColor];
-    insertTextField.adjustsFontSizeToFitWidth = YES;
-    insertTextField.textAlignment = NSTextAlignmentRight;
-    insertTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    [insertTextField setKeyboardType:UIKeyboardTypeNumberPad];
-    insertTextField.tag = SECONDSFIELD;
-    insertTextField.delegate = self;
-
-    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-
-
     switch (indexPath.section) {
         case 0:
+        {
+            RightTextFieldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Right"];
             if (indexPath.row == 0) {
-                cell.textLabel.text = @"Name";
-                insertTextField.text = self.timer.name;
+                cell.leftTextLabel.text = @"Name";
+                cell.rightTextField.text = self.timer.name;
             } else if (indexPath.row == 1) {
-                cell.textLabel.text = @"Number of sets";
-                insertTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.sets];
+                cell.leftTextLabel.text = @"Number of sets";
+                cell.rightTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.sets];
             }
-            cell.accessoryView = insertTextField;
+
+            return cell;
             break;
+        }
         case 1:
+        {
+            BothTextFieldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Both"];
+
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+
             if (self.timer.exercises.count == 0) {
-                cell.textLabel.text = @"No exercises";
+                cell.leftTextField.text = @"No exercises";
             } else {
                 //Add exercises
-                cell.textLabel.text = @"";
+                cell.leftTextField.text = @"";
                 Exercise *exercise = self.timer.exercises[indexPath.row];
 
-                if (![cell.contentView viewWithTag:1]) {
-                    //Add namefield if it doesn't exist
-                    UITextField *exerciseNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, 200, 30)];
-                    exerciseNameTextField.textColor = [UIColor blackColor];
-                    exerciseNameTextField.backgroundColor = [UIColor clearColor];
-                    exerciseNameTextField.adjustsFontSizeToFitWidth = YES;
-                    //exerciseNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-                    exerciseNameTextField.delegate = self;
-                    exerciseNameTextField.tag = NAMEFIELD;
-                    exerciseNameTextField.text = exercise.name;
-
-                    [cell.contentView addSubview:exerciseNameTextField];
-                }
-
-
-                insertTextField.text = [NSString stringWithFormat:@"%li", (long)exercise.seconds];
-                cell.accessoryView = insertTextField;
+                cell.leftTextField.text = exercise.name;
+                cell.rightTextField.text = [NSString stringWithFormat:@"%li", (long)exercise.seconds];
             }
+
+            return cell;
             break;
+        }
         case 2:
+        {
+            RightTextFieldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Right"];
+
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
             if (indexPath.row == 0) {
-                cell.textLabel.text = @"Rest between reps";
-                insertTextField.text = [NSString stringWithFormat:@"%li", (long)self.timer.interval_between_reps];
+                cell.leftTextLabel.text = @"Rest between reps";
+                cell.rightTextField.text = [NSString stringWithFormat:@"%li", (long)self.timer.interval_between_reps];
             } else if (indexPath.row == 1) {
-                cell.textLabel.text = @"Rest between sets";
-                insertTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.interval_between_sets];
+                cell.leftTextLabel.text = @"Rest between sets";
+                cell.rightTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.interval_between_sets];
             }
-            cell.accessoryView = insertTextField;
+            return cell;
             break;
+        }
         case 3:
+        {
+            RightTextFieldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Right"];
+
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+
             if (indexPath.row == 0) {
-                cell.textLabel.text = @"Warmup";
-                insertTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.warmup];
+                cell.leftTextLabel.text = @"Warmup";
+                cell.rightTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.warmup];
             } else if (indexPath.row == 1) {
-                cell.textLabel.text = @"Cooldown";
-                insertTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.cooldown];
+                cell.leftTextLabel.text = @"Cooldown";
+                cell.rightTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.cooldown];
             }
-            cell.accessoryView = insertTextField;
+
+            return cell;
             break;
+        }
         case 4:
+        {
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+            
             if (indexPath.row == 0) {
                 cell.textLabel.text = @"Save";
                 cell.textLabel.textAlignment = NSTextAlignmentCenter;
             }
+
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            return cell;
             break;
+        }
         default:
+        {
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
             cell.textLabel.text = @"test";
+
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            return cell;
             break;
+        }
     }
 
-    return cell;
+    return nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -402,10 +405,44 @@
 }
 
 
-#pragma mark - Back button action
+#pragma mark - Save Data
 
-- (void)backButtonPressed{
-    NSLog(@"back button pressed");
+- (void)saveTimer{
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Timer"];
+
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name == %@", self.timer.name];
+    [request setPredicate:predicate];
+
+    NSError *error = nil;
+    NSArray *results = [self.moc executeFetchRequest:request error:&error];
+
+    if (results.count>0) {
+        NSManagedObject *objectToDelete = results.firstObject;
+
+        NSLog(@"found object");
+        [self.moc deleteObject:objectToDelete];
+        [self.moc save:nil];
+    }
+
+    NSManagedObject *coreTimer = [NSEntityDescription insertNewObjectForEntityForName:@"Timer" inManagedObjectContext:self.moc];
+
+    [coreTimer setValue:self.timer.name forKey:@"name"];
+    [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.sets] forKey:@"sets"];
+    [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.interval_between_reps] forKey:@"interval_between_reps"];
+    [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.interval_between_sets] forKey:@"interval_between_sets"];
+    [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.warmup] forKey:@"warmup"];
+    [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.cooldown] forKey:@"cooldown"];
+    [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.totalTime] forKey:@"totalTime"];
+    [coreTimer setValue:[self.timer convertExercisesToString:self.timer.exercises] forKey:@"exercises"];
+
+
+    NSLog(@"%@",[NSString stringWithFormat:@"%ld",(long)self.timer.sets]);
+
+    [self.moc save:&error];
+    if (error) {
+        //Error handling
+    }
+
 }
 
 @end

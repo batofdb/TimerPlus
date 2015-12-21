@@ -10,11 +10,13 @@
 #import "Exercise.h"
 #import "Timer.h"
 #import "TimerSetupViewController.h"
+#import "AppDelegate.h"
 
 @interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property NSManagedObjectContext *moc;
 @property NSMutableArray *workouts;
+@property NSSet *hashTableTimerNames;
 
 @end
 
@@ -22,8 +24,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.workouts = [NSMutableArray new];
 
+    self.hashTableTimerNames = [NSSet new];
+
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    self.moc = delegate.managedObjectContext;
+
+    self.workouts = [NSMutableArray new];
+/*
     Timer *timer1 = [Timer new];
     timer1.name = @"abs";
     timer1.sets = 3;
@@ -95,13 +103,60 @@
     timer3.exercises = [NSMutableArray arrayWithObjects:exercise7, exercise8, exercise9, nil];
 
     [self.workouts addObject:timer3];
-
+*/
     [self.tableView reloadData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
+
+    [self loadTimers];
     [self.tableView reloadData];
+}
+
+- (void)loadTimers {
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Timer"];
+    NSError *error;
+    NSArray *results = [[self.moc executeFetchRequest:request error:&error] mutableCopy];
+
+    [self fetchAllTimers];
+
+    for (int i=0;i<results.count;i++) {
+
+        NSManagedObject *object = results[i];
+
+        Timer *timer = [Timer new];
+        timer.name = [object valueForKey:@"name"];
+        timer.sets = [[object valueForKey:@"sets"] intValue];
+        timer.interval_between_reps = [[object valueForKey:@"interval_between_reps"] intValue];
+        timer.interval_between_sets = [[object valueForKey:@"interval_between_sets"] intValue];
+        timer.warmup = [[object valueForKey:@"warmup"] intValue];
+        timer.cooldown = [[object valueForKey:@"cooldown"] intValue];
+        timer.totalTime = [[object valueForKey:@"totalTime"] intValue];
+        timer.exercises = [[Timer convertStringToExercises:(NSString *)[results[i] exercises]] mutableCopy];
+
+        if (![self.hashTableTimerNames containsObject:timer.name]) {
+            [self.workouts addObject:timer];
+        } else {
+            for (int j=0;j<self.workouts.count;j++) {
+                if ([timer.name isEqualToString:[self.workouts[j] name]])
+                    [self.workouts replaceObjectAtIndex:j withObject:timer];
+            }
+
+        }
+    }
+
+
+
+    if (error) {
+        //Error handling
+    }
+}
+
+- (void)fetchAllTimers {
+    self.hashTableTimerNames = [NSSet setWithArray:[self.workouts valueForKeyPath:@"name"]];
+
+    NSLog(@"here");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

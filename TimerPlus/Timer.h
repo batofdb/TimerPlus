@@ -19,4 +19,8 @@
 @property (nonatomic) NSInteger cooldown;
 @property (nonatomic) NSInteger totalTime;
 
+- (NSString *)convertExercisesToString:(NSMutableArray *)inputArray;
++ (NSArray *)convertStringToExercises:(NSString *)inputStr;
+
+
 @end
