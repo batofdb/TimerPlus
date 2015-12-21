@@ -19,6 +19,7 @@
 		47F6F7D21C0AD13000CD0C48 /* TimerSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F7D11C0AD13000CD0C48 /* TimerSetupViewController.m */; };
 		47F6F7D51C0AD14000CD0C48 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F7D41C0AD14000CD0C48 /* TimerViewController.m */; };
 		47F6F7D81C0ADCC700CD0C48 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F7D71C0ADCC700CD0C48 /* Timer.m */; };
+		47F71A201C18E61E007D76E9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F71A1F1C18E61E007D76E9 /* HomeViewController.m */; };
 		5868BADC984C69F033DB5D5B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B398C8A1D5159FBD0F9BA2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		47F6F7D41C0AD14000CD0C48 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		47F6F7D61C0ADCC700CD0C48 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		47F6F7D71C0ADCC700CD0C48 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		47F71A1E1C18E61E007D76E9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		47F71A1F1C18E61E007D76E9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		4C4973EE24FA717F18125117 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		61B398C8A1D5159FBD0F9BA2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -185,6 +188,8 @@
 				47F6F7D11C0AD13000CD0C48 /* TimerSetupViewController.m */,
 				47F6F7D31C0AD14000CD0C48 /* TimerViewController.h */,
 				47F6F7D41C0AD14000CD0C48 /* TimerViewController.m */,
+				47F71A1E1C18E61E007D76E9 /* HomeViewController.h */,
+				47F71A1F1C18E61E007D76E9 /* HomeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 				47F6F7D21C0AD13000CD0C48 /* TimerSetupViewController.m in Sources */,
 				47E45C271C128E27003F5F6A /* Exercise.m in Sources */,
 				47F6F7A51C0ACD1A00CD0C48 /* TimerPlus.xcdatamodeld in Sources */,
+				47F71A201C18E61E007D76E9 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

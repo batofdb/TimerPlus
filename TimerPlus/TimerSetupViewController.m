@@ -17,24 +17,54 @@
 @interface TimerSetupViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (nonatomic) Timer *timer;
+
 @property (nonatomic) NSMutableArray *inputExercises;
 
 @end
 
 @implementation TimerSetupViewController
 
+- (id)initWithCoder:(NSCoder*)aDecoder
+{
+    if(self = [super initWithCoder:aDecoder])
+    {
+
+        [self.navigationItem.leftBarButtonItem setTarget:self];
+        [self.navigationItem.leftBarButtonItem setAction:@selector(backButtonPressed)];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.timer = [[Timer alloc]init];
-    self.timer.exercises = [NSMutableArray new];
-    self.inputExercises = [NSMutableArray new];
+
+
+
+    if (!self.timer) {
+        self.timer = [[Timer alloc]init];
+
+        if (!self.timer.exercises)
+            self.timer.exercises = [NSMutableArray new];
+    }
+
+    if (!self.timer.exercises)
+        self.inputExercises = [NSMutableArray new];
+    else
+        self.inputExercises = self.timer.exercises;
+
 
     [self.tableView reloadData];
 }
 
 #pragma mark - Tableview Methods
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 4 && indexPath.row == 0) {
+
+        NSLog(@"save");
+    }
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     UITextField *insertTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 200, 30)];
@@ -47,6 +77,8 @@
     insertTextField.tag = SECONDSFIELD;
     insertTextField.delegate = self;
 
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+
 
     switch (indexPath.section) {
         case 0:
@@ -55,7 +87,7 @@
                 insertTextField.text = self.timer.name;
             } else if (indexPath.row == 1) {
                 cell.textLabel.text = @"Number of sets";
-                insertTextField.text = [NSString stringWithFormat:@"%i",self.timer.sets];
+                insertTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.sets];
             }
             cell.accessoryView = insertTextField;
             break;
@@ -82,29 +114,35 @@
                 }
 
 
-                insertTextField.text = [NSString stringWithFormat:@"%i", exercise.seconds];
+                insertTextField.text = [NSString stringWithFormat:@"%li", (long)exercise.seconds];
                 cell.accessoryView = insertTextField;
             }
             break;
         case 2:
             if (indexPath.row == 0) {
                 cell.textLabel.text = @"Rest between reps";
-                insertTextField.text = [NSString stringWithFormat:@"%i", self.timer.interval_between_reps];
+                insertTextField.text = [NSString stringWithFormat:@"%li", (long)self.timer.interval_between_reps];
             } else if (indexPath.row == 1) {
                 cell.textLabel.text = @"Rest between sets";
-                insertTextField.text = [NSString stringWithFormat:@"%i",self.timer.interval_between_sets];
+                insertTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.interval_between_sets];
             }
             cell.accessoryView = insertTextField;
             break;
         case 3:
             if (indexPath.row == 0) {
                 cell.textLabel.text = @"Warmup";
-                insertTextField.text = [NSString stringWithFormat:@"%i",self.timer.warmup];
+                insertTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.warmup];
             } else if (indexPath.row == 1) {
                 cell.textLabel.text = @"Cooldown";
-                insertTextField.text = [NSString stringWithFormat:@"%i",self.timer.cooldown];
+                insertTextField.text = [NSString stringWithFormat:@"%li",(long)self.timer.cooldown];
             }
             cell.accessoryView = insertTextField;
+            break;
+        case 4:
+            if (indexPath.row == 0) {
+                cell.textLabel.text = @"Save";
+                cell.textLabel.textAlignment = NSTextAlignmentCenter;
+            }
             break;
         default:
             cell.textLabel.text = @"test";
@@ -135,6 +173,9 @@
         case 3:
             rows = 2;
             break;
+        case 4:
+            rows = 1;
+            break;
         default:
             rows = 0;
             break;
@@ -148,7 +189,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 6;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -169,7 +210,7 @@
 
         headerBtn.frame = CGRectMake( self.view.frame.size.width-widthButton-12, 0.0, widthButton, 30.0);
         [headerBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [headerBtn setTitle:@"<Put here whatever you want to display>" forState:UIControlStateNormal];
+        [headerBtn setTitle:@"+" forState:UIControlStateNormal];
         [headerBtn addTarget:self action:@selector(onAddExerciseButtonTapped) forControlEvents:UIControlEventTouchUpInside];
         [customView addSubview:headerBtn];
     }
@@ -211,7 +252,7 @@
 - (void)onAddExerciseButtonTapped {
     NSLog(@"Button Pressed");
     Exercise *newExercise = [Exercise new];
-    newExercise.name = [NSString stringWithFormat:@"Exercise %u",self.timer.exercises.count+1];
+    newExercise.name = [NSString stringWithFormat:@"Exercise %lu",self.timer.exercises.count+1];
     newExercise.seconds = 0;
 
     NSMutableArray *tempExercises = [NSMutableArray arrayWithArray:self.inputExercises];
@@ -222,6 +263,7 @@
 
 
 - (void)setInputExercises:(NSMutableArray *)inputExercises {
+
     _inputExercises = inputExercises;
     self.timer.exercises = inputExercises;
     [self.tableView reloadData];
@@ -275,7 +317,7 @@
 
     //use the UITableViewcell superview to get the NSIndexPath
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:cell.center];
-    NSLog(@"%i %i",indexPath.section, indexPath.row);
+    NSLog(@"%li %li",(long)indexPath.section, (long)indexPath.row);
 
     return indexPath;
 }
@@ -356,6 +398,14 @@
     TimerViewController *vc = [segue destinationViewController];
     self.timer.totalTime = [self calculateTotalTime];
     vc.timer = self.timer;
+    
+}
+
+
+#pragma mark - Back button action
+
+- (void)backButtonPressed{
+    NSLog(@"back button pressed");
 }
 
 @end

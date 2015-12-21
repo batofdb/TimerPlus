@@ -107,7 +107,7 @@
 - (void)initDisplay {
     self.intSeconds = 0;
     [self updateValueLabel];
-    self.totalTimeLabel.text = [NSString stringWithFormat:@"%i",self.timer.totalTime];
+    self.totalTimeLabel.text = [NSString stringWithFormat:@"%li",(long)self.timer.totalTime];
 }
 
 - (void)resetTimer {
