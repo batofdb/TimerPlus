@@ -337,10 +337,13 @@
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
 
+
     NSString *proposedNewString = [[textField text] stringByReplacingCharactersInRange:range withString:string];
 
     //New input string
     NSLog(@"%@",proposedNewString);
+
+
 
     NSIndexPath *indexPath = [self getIndexPathFromTextField:textField];
 
