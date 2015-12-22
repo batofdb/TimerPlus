@@ -8,7 +8,7 @@
 
 #import "TimerViewController.h"
 #import "Timer.h"
-#import <AVFoundation/AVFoundation.h>
+#import "AudioAlertManager.h"
 #import "Exercise.h"
 
 
@@ -20,13 +20,14 @@
 @property int intSeconds;
 @property int intStop;
 @property int sets;
-
+@property AudioAlertManager *audioAlertManager;
 @property NSMutableArray *timerState;
 @property int currentTimerState;
 @property NSTimer *aTimer;
 @property NSString *currentExercise;
 @property int exercisePosition;
 @property int currentTotal;
+@property int deltaTime;
 
 @end
 
@@ -35,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    self.audioAlertManager = [AudioAlertManager new];
     self.timerState = [NSMutableArray new];
     self.currentTimerState = 0;
     self.currentTotal = 0;
@@ -142,6 +143,12 @@
         [self updateValueLabel];
     });
 
+    self.deltaTime = self.intStop - self.intSeconds;
+
+    if (self.deltaTime <= 5 && self.deltaTime > 0) {
+        [self.audioAlertManager syncAudioManagerWithCurrentTime:self.intSeconds andTimeLimit:self.intStop];
+    }
+
     if (self.intSeconds > self.intStop) {
         [self resetTimer];
     }
@@ -177,7 +184,10 @@
 #pragma mark - IBActions
 
 - (IBAction)onCloseButtonTapped:(UIButton *)sender {
+
     [self dismissViewControllerAnimated:YES completion:^{
+        [self.audioAlertManager stopAlert];
+        [self stopTimer];
     }];
 }
 

@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface AudioAlertManager : NSObject
 
+- (void)playAlertWithString:(NSString *)str;
+- (void)syncAudioManagerWithCurrentTime:(NSInteger)current andTimeLimit:(NSInteger)endTime;
+- (void)stopAlert;
 @end

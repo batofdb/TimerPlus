@@ -89,7 +89,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pa3-K5-doM">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <subviews>
-                                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kzl-Qa-B1V">
+                                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kzl-Qa-B1V">
                                                             <rect key="frame" x="0.0" y="0.0" width="285" height="43"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -97,7 +97,7 @@
                                                                 <outlet property="delegate" destination="BYZ-38-t0r" id="kZY-Qr-NnN"/>
                                                             </connections>
                                                         </textField>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVj-7l-7Kk">
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVj-7l-7Kk">
                                                             <rect key="frame" x="285" y="0.0" width="285" height="43"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits"/>
