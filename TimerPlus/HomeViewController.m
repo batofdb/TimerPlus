@@ -31,79 +31,6 @@
     self.moc = delegate.managedObjectContext;
 
     self.workouts = [NSMutableArray new];
-/*
-    Timer *timer1 = [Timer new];
-    timer1.name = @"abs";
-    timer1.sets = 3;
-    timer1.cooldown = 10;
-    timer1.warmup = 10;
-    timer1.interval_between_reps = 30;
-    timer1.interval_between_sets = 45;
-
-    Exercise *exercise1 = [Exercise new];
-    exercise1.name = @"pushups";
-    exercise1.seconds = 30;
-
-    Exercise *exercise2 = [Exercise new];
-    exercise2.name = @"pushups";
-    exercise2.seconds = 30;
-
-    Exercise *exercise3 = [Exercise new];
-    exercise3.name = @"pushups";
-    exercise3.seconds = 30;
-
-    timer1.exercises = [NSMutableArray arrayWithObjects:exercise1, exercise2, exercise3, nil];
-
-    [self.workouts addObject:timer1];
-
-    Timer *timer2 = [Timer new];
-    timer2.name = @"allout!";
-    timer2.sets = 4;
-    timer2.cooldown = 6;
-    timer2.warmup = 7;
-    timer2.interval_between_reps = 15;
-    timer2.interval_between_sets = 15;
-
-    Exercise *exercise4 = [Exercise new];
-    exercise4.name = @"pullups";
-    exercise4.seconds = 30;
-
-    Exercise *exercise5 = [Exercise new];
-    exercise5.name = @"situps";
-    exercise5.seconds = 30;
-
-    Exercise *exercise6 = [Exercise new];
-    exercise6.name = @"mountain pushups";
-    exercise6.seconds = 30;
-
-    timer2.exercises = [NSMutableArray arrayWithObjects:exercise4, exercise5, exercise6, nil];
-
-    [self.workouts addObject:timer2];
-
-    Timer *timer3 = [Timer new];
-    timer3.name = @"woday";
-    timer3.sets = 5;
-    timer3.cooldown = 20;
-    timer3.warmup = 20;
-    timer3.interval_between_reps = 50;
-    timer3.interval_between_sets = 50;
-
-    Exercise *exercise7 = [Exercise new];
-    exercise7.name = @"tricep pushdown";
-    exercise7.seconds = 45;
-
-    Exercise *exercise8 = [Exercise new];
-    exercise8.name = @"v-ups";
-    exercise8.seconds = 23;
-
-    Exercise *exercise9 = [Exercise new];
-    exercise9.name = @"jump squats";
-    exercise9.seconds = 67;
-
-    timer3.exercises = [NSMutableArray arrayWithObjects:exercise7, exercise8, exercise9, nil];
-
-    [self.workouts addObject:timer3];
-*/
     [self.tableView reloadData];
 }
 
@@ -117,6 +44,12 @@
 - (void)loadTimers {
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Timer"];
     NSError *error;
+
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name"
+                                                                   ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    [request setSortDescriptors:sortDescriptors];
+
     NSArray *results = [[self.moc executeFetchRequest:request error:&error] mutableCopy];
 
     [self fetchAllTimers];
@@ -133,7 +66,12 @@
         timer.warmup = [[object valueForKey:@"warmup"] intValue];
         timer.cooldown = [[object valueForKey:@"cooldown"] intValue];
         timer.totalTime = [[object valueForKey:@"totalTime"] intValue];
-        timer.exercises = [[Timer convertStringToExercises:(NSString *)[results[i] exercises]] mutableCopy];
+
+        NSString *strExercises = [object valueForKey:@"exercises"];
+        NSLog(@"%@",strExercises);
+
+        if (![strExercises isEqualToString:@""])
+            timer.exercises = [[Timer convertStringToExercises:strExercises] mutableCopy];
 
         if (![self.hashTableTimerNames containsObject:timer.name]) {
             [self.workouts addObject:timer];
@@ -145,8 +83,6 @@
 
         }
     }
-
-
 
     if (error) {
         //Error handling
@@ -173,6 +109,51 @@
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
+}
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+
+        Timer *timer = self.workouts[indexPath.row];
+
+        NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Timer"];
+
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name == %@",timer.name];
+        [request setPredicate:predicate];
+
+        NSError *error = nil;
+        NSArray *results = [self.moc executeFetchRequest:request error:&error];
+
+        if (results.count > 0) {
+            NSManagedObject *objectToDelete = results.firstObject;
+            [self.moc deleteObject:objectToDelete];
+            [self.moc save:&error];
+
+            if (error) {
+                //Error handling
+            } else {
+                [self.workouts removeObjectAtIndex:indexPath.row];
+
+                [self.tableView beginUpdates];
+                [self.tableView deleteRowsAtIndexPaths:@[indexPath]
+                                      withRowAnimation:UITableViewRowAnimationFade];
+                [self.tableView endUpdates];
+
+                
+                [self.tableView reloadData];
+            }
+        }
+
+
+
+
+    }
+}
+
 #pragma mark - Segue Methods
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -184,7 +165,11 @@
         Timer *currentTimer = self.workouts[indexPath.row];
 
         vc.timer = currentTimer;
+
     }
 
 }
+
+#pragma mark - Core Data
+
 @end

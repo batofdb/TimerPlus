@@ -10,6 +10,8 @@
 		47E4328F1C27E46F003E9051 /* RightTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E4328E1C27E46F003E9051 /* RightTextFieldTableViewCell.m */; };
 		47E432921C27E550003E9051 /* BothTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E432911C27E550003E9051 /* BothTextFieldTableViewCell.m */; };
 		47E45C271C128E27003F5F6A /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E45C261C128E27003F5F6A /* Exercise.m */; };
+		47F1413E1C290354002C53CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F1413D1C290354002C53CA /* AVFoundation.framework */; };
+		47F141411C2903A6002C53CA /* AudioAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F141401C2903A6002C53CA /* AudioAlertManager.m */; };
 		47F6F7991C0ACD1A00CD0C48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F7981C0ACD1A00CD0C48 /* main.m */; };
 		47F6F79C1C0ACD1A00CD0C48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F79B1C0ACD1A00CD0C48 /* AppDelegate.m */; };
 		47F6F7A21C0ACD1A00CD0C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F6F7A01C0ACD1A00CD0C48 /* Main.storyboard */; };
@@ -50,6 +52,9 @@
 		47E432911C27E550003E9051 /* BothTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BothTextFieldTableViewCell.m; sourceTree = "<group>"; };
 		47E45C251C128E27003F5F6A /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise.h; sourceTree = "<group>"; };
 		47E45C261C128E27003F5F6A /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
+		47F1413D1C290354002C53CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		47F1413F1C2903A6002C53CA /* AudioAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioAlertManager.h; sourceTree = "<group>"; };
+		47F141401C2903A6002C53CA /* AudioAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioAlertManager.m; sourceTree = "<group>"; };
 		47F6F7941C0ACD1A00CD0C48 /* TimerPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F6F7981C0ACD1A00CD0C48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47F6F79A1C0ACD1A00CD0C48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F1413E1C290354002C53CA /* AVFoundation.framework in Frameworks */,
 				5868BADC984C69F033DB5D5B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +180,8 @@
 				47F6F7D71C0ADCC700CD0C48 /* Timer.m */,
 				47E45C251C128E27003F5F6A /* Exercise.h */,
 				47E45C261C128E27003F5F6A /* Exercise.m */,
+				47F1413F1C2903A6002C53CA /* AudioAlertManager.h */,
+				47F141401C2903A6002C53CA /* AudioAlertManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -216,6 +224,7 @@
 		D9CE561B07DCE058751758F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47F1413D1C290354002C53CA /* AVFoundation.framework */,
 				61B398C8A1D5159FBD0F9BA2 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -409,6 +418,7 @@
 				47F6F7D81C0ADCC700CD0C48 /* Timer.m in Sources */,
 				47E4328F1C27E46F003E9051 /* RightTextFieldTableViewCell.m in Sources */,
 				47F6F7D21C0AD13000CD0C48 /* TimerSetupViewController.m in Sources */,
+				47F141411C2903A6002C53CA /* AudioAlertManager.m in Sources */,
 				47E45C271C128E27003F5F6A /* Exercise.m in Sources */,
 				47F6F7A51C0ACD1A00CD0C48 /* TimerPlus.xcdatamodeld in Sources */,
 				47F71A201C18E61E007D76E9 /* HomeViewController.m in Sources */,

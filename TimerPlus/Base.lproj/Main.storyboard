@@ -86,20 +86,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Pa3-K5-doM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pa3-K5-doM">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <subviews>
-                                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kzl-Qa-B1V">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kzl-Qa-B1V">
+                                                            <rect key="frame" x="0.0" y="0.0" width="285" height="43"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <connections>
                                                                 <outlet property="delegate" destination="BYZ-38-t0r" id="kZY-Qr-NnN"/>
                                                             </connections>
                                                         </textField>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVj-7l-7Kk">
-                                                            <rect key="frame" x="300" y="0.0" width="300" height="43"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVj-7l-7Kk">
+                                                            <rect key="frame" x="285" y="0.0" width="285" height="43"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <connections>
                                                                 <outlet property="delegate" destination="BYZ-38-t0r" id="Yl1-Ld-9AJ"/>
@@ -119,8 +119,8 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Pa3-K5-doM" firstAttribute="leading" secondItem="Jk5-Ch-vfu" secondAttribute="leading" id="5Ef-Ke-9Ws"/>
-                                                <constraint firstAttribute="trailing" secondItem="Pa3-K5-doM" secondAttribute="trailing" id="VfU-Ol-M5c"/>
+                                                <constraint firstItem="Pa3-K5-doM" firstAttribute="leading" secondItem="Jk5-Ch-vfu" secondAttribute="leading" constant="15" id="5Ef-Ke-9Ws"/>
+                                                <constraint firstAttribute="trailing" secondItem="Pa3-K5-doM" secondAttribute="trailing" constant="15" id="VfU-Ol-M5c"/>
                                                 <constraint firstItem="Pa3-K5-doM" firstAttribute="top" secondItem="Jk5-Ch-vfu" secondAttribute="top" id="lId-Fc-jdv"/>
                                                 <constraint firstAttribute="bottom" secondItem="Pa3-K5-doM" secondAttribute="bottom" id="oag-AI-4V4"/>
                                             </constraints>
@@ -138,17 +138,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="obW-3c-R1M">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6V6-pb-EHv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="285" height="43"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zkw-QS-Ak0">
-                                                            <rect key="frame" x="300" y="0.0" width="300" height="43"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zkw-QS-Ak0">
+                                                            <rect key="frame" x="285" y="0.0" width="285" height="43"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <connections>
                                                                 <outlet property="delegate" destination="BYZ-38-t0r" id="Awk-MW-FrN"/>
@@ -168,8 +168,8 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="obW-3c-R1M" firstAttribute="leading" secondItem="62c-Nr-lds" secondAttribute="leading" id="1H3-Ym-cLZ"/>
-                                                <constraint firstAttribute="trailing" secondItem="obW-3c-R1M" secondAttribute="trailing" id="g5V-W2-aha"/>
+                                                <constraint firstItem="obW-3c-R1M" firstAttribute="leading" secondItem="62c-Nr-lds" secondAttribute="leading" constant="15" id="1H3-Ym-cLZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="obW-3c-R1M" secondAttribute="trailing" constant="15" id="g5V-W2-aha"/>
                                                 <constraint firstItem="obW-3c-R1M" firstAttribute="top" secondItem="62c-Nr-lds" secondAttribute="top" id="iU7-OP-ho2"/>
                                                 <constraint firstAttribute="bottom" secondItem="obW-3c-R1M" secondAttribute="bottom" id="yzp-Xc-URV"/>
                                             </constraints>
@@ -189,7 +189,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fyA-uH-zVO">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

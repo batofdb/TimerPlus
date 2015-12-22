@@ -65,6 +65,9 @@
         case 0:
         {
             RightTextFieldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Right"];
+
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            
             if (indexPath.row == 0) {
                 cell.leftTextLabel.text = @"Name";
                 cell.rightTextField.text = self.timer.name;
@@ -83,9 +86,14 @@
             [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
 
             if (self.timer.exercises.count == 0) {
+                cell.leftTextField.enabled = NO;
+                cell.rightTextField.enabled = NO;
                 cell.leftTextField.text = @"No exercises";
+                cell.rightTextField.text = @"";
             } else {
                 //Add exercises
+                cell.leftTextField.enabled = YES;
+                cell.rightTextField.enabled = YES;
                 cell.leftTextField.text = @"";
                 Exercise *exercise = self.timer.exercises[indexPath.row];
 
@@ -420,6 +428,7 @@
         NSManagedObject *objectToDelete = results.firstObject;
 
         NSLog(@"found object");
+
         [self.moc deleteObject:objectToDelete];
         [self.moc save:nil];
     }
@@ -433,10 +442,15 @@
     [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.warmup] forKey:@"warmup"];
     [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.cooldown] forKey:@"cooldown"];
     [coreTimer setValue:[NSNumber numberWithInt:(int)self.timer.totalTime] forKey:@"totalTime"];
-    [coreTimer setValue:[self.timer convertExercisesToString:self.timer.exercises] forKey:@"exercises"];
+
+    if (self.timer.exercises.count > 0)
+        [coreTimer setValue:[self.timer convertExercisesToString:self.timer.exercises] forKey:@"exercises"];
+    else
+        [coreTimer setValue:@"" forKey:@"exercises"];
 
 
     NSLog(@"%@",[NSString stringWithFormat:@"%ld",(long)self.timer.sets]);
+    NSLog(@"%@",[NSString stringWithFormat:@"%@",[self.timer convertExercisesToString:self.timer.exercises]]);
 
     [self.moc save:&error];
     if (error) {

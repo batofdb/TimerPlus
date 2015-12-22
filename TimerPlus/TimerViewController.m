@@ -8,7 +8,9 @@
 
 #import "TimerViewController.h"
 #import "Timer.h"
+#import <AVFoundation/AVFoundation.h>
 #import "Exercise.h"
+
 
 @interface TimerViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *exerciseLabel;
@@ -32,6 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
 
     self.timerState = [NSMutableArray new];
     self.currentTimerState = 0;
