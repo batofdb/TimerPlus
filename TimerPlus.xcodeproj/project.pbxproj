@@ -12,6 +12,10 @@
 		47E45C271C128E27003F5F6A /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E45C261C128E27003F5F6A /* Exercise.m */; };
 		47F1413E1C290354002C53CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F1413D1C290354002C53CA /* AVFoundation.framework */; };
 		47F141411C2903A6002C53CA /* AudioAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F141401C2903A6002C53CA /* AudioAlertManager.m */; };
+		47F141441C2A095E002C53CA /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F141431C2A095E002C53CA /* ProfileViewController.m */; };
+		47F141471C2A21F7002C53CA /* MyTimersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F141461C2A21F7002C53CA /* MyTimersViewController.m */; };
+		47F1414A1C2A2207002C53CA /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F141491C2A2207002C53CA /* FriendsViewController.m */; };
+		47F1414D1C2A2219002C53CA /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F1414C1C2A2219002C53CA /* InboxViewController.m */; };
 		47F6F7991C0ACD1A00CD0C48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F7981C0ACD1A00CD0C48 /* main.m */; };
 		47F6F79C1C0ACD1A00CD0C48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6F79B1C0ACD1A00CD0C48 /* AppDelegate.m */; };
 		47F6F7A21C0ACD1A00CD0C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F6F7A01C0ACD1A00CD0C48 /* Main.storyboard */; };
@@ -55,6 +59,14 @@
 		47F1413D1C290354002C53CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		47F1413F1C2903A6002C53CA /* AudioAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioAlertManager.h; sourceTree = "<group>"; };
 		47F141401C2903A6002C53CA /* AudioAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioAlertManager.m; sourceTree = "<group>"; };
+		47F141421C2A095E002C53CA /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		47F141431C2A095E002C53CA /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		47F141451C2A21F7002C53CA /* MyTimersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTimersViewController.h; sourceTree = "<group>"; };
+		47F141461C2A21F7002C53CA /* MyTimersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTimersViewController.m; sourceTree = "<group>"; };
+		47F141481C2A2207002C53CA /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		47F141491C2A2207002C53CA /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		47F1414B1C2A2219002C53CA /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		47F1414C1C2A2219002C53CA /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
 		47F6F7941C0ACD1A00CD0C48 /* TimerPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F6F7981C0ACD1A00CD0C48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47F6F79A1C0ACD1A00CD0C48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -208,6 +220,14 @@
 				47F6F7D41C0AD14000CD0C48 /* TimerViewController.m */,
 				47F71A1E1C18E61E007D76E9 /* HomeViewController.h */,
 				47F71A1F1C18E61E007D76E9 /* HomeViewController.m */,
+				47F141421C2A095E002C53CA /* ProfileViewController.h */,
+				47F141431C2A095E002C53CA /* ProfileViewController.m */,
+				47F141451C2A21F7002C53CA /* MyTimersViewController.h */,
+				47F141461C2A21F7002C53CA /* MyTimersViewController.m */,
+				47F141481C2A2207002C53CA /* FriendsViewController.h */,
+				47F141491C2A2207002C53CA /* FriendsViewController.m */,
+				47F1414B1C2A2219002C53CA /* InboxViewController.h */,
+				47F1414C1C2A2219002C53CA /* InboxViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -413,6 +433,8 @@
 			files = (
 				47E432921C27E550003E9051 /* BothTextFieldTableViewCell.m in Sources */,
 				47F6F79C1C0ACD1A00CD0C48 /* AppDelegate.m in Sources */,
+				47F1414D1C2A2219002C53CA /* InboxViewController.m in Sources */,
+				47F1414A1C2A2207002C53CA /* FriendsViewController.m in Sources */,
 				47F6F7991C0ACD1A00CD0C48 /* main.m in Sources */,
 				47F6F7D51C0AD14000CD0C48 /* TimerViewController.m in Sources */,
 				47F6F7D81C0ADCC700CD0C48 /* Timer.m in Sources */,
@@ -420,7 +442,9 @@
 				47F6F7D21C0AD13000CD0C48 /* TimerSetupViewController.m in Sources */,
 				47F141411C2903A6002C53CA /* AudioAlertManager.m in Sources */,
 				47E45C271C128E27003F5F6A /* Exercise.m in Sources */,
+				47F141471C2A21F7002C53CA /* MyTimersViewController.m in Sources */,
 				47F6F7A51C0ACD1A00CD0C48 /* TimerPlus.xcdatamodeld in Sources */,
+				47F141441C2A095E002C53CA /* ProfileViewController.m in Sources */,
 				47F71A201C18E61E007D76E9 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
