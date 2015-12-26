@@ -12,20 +12,22 @@
 #import "InboxViewController.h"
 #import "AppDelegate.h"
 
-@interface ProfileViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
+@interface ProfileViewController () <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 @property (weak, nonatomic) IBOutlet UIView *profileBorderView;
 @property (weak, nonatomic) IBOutlet UILabel *fullnameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
-@property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 //@property (nonatomic) AppDelegate *delegate;
 @property (weak, nonatomic) IBOutlet UIView *tableHeaderView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
-
+@property (weak, nonatomic) IBOutlet UIView *backgroundView;
+@property NSArray *items;
+@property (weak, nonatomic) IBOutlet UIView *segmentView;
+@property CGFloat offset_HeaderStop;
 @property CGFloat headerHeight;
 @property NSArray *pageTitles;
+@property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 
 @end
 
@@ -34,154 +36,138 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.offset_HeaderStop = 40.0; // At this offset the background stops its transformation
+
+
+
+
+    self.items = @[@"Full body", @"Abs", @"Leg Day", @"Arms", @"test1",@"test2",@"test3",@"test4",@"test5",@"test6",@"test7",@"test8",@"Full body", @"Abs", @"Leg Day", @"Arms", @"test1",@"test2",@"test3",@"test4",@"test5",@"test6",@"test7",@"test8",@"Full body", @"Abs", @"Leg Day", @"Arms", @"test1",@"test2",@"test3",@"test4",@"test5",@"test6",@"test7",@"test8"];
     //Set height of header
-    self.headerHeight = 250.0;
 
-    NSLog(@"before adding table width:%f",self.tableHeaderView.frame.size.width);
+    self.tableView.backgroundColor = [UIColor clearColor];
 
-    //remove header from tableview to remove tableview dependency
-    self.tableHeaderView = self.tableView.tableHeaderView;
-    self.tableView.tableHeaderView = nil;
+    NSLog(@"table view header height:%f",self.backgroundView.frame.size.height);
 
-    //add header view as a subview
-    [self.tableView addSubview:self.tableHeaderView];
 
-    
-    self.tableView.contentInset = UIEdgeInsetsMake(self.headerHeight, 0, 0, 0);
-    self.tableView.contentOffset = CGPointMake(0, -self.headerHeight);
+    self.tableView.contentInset = UIEdgeInsetsMake(self.backgroundView.frame.size.height, 0, 0, 0);
 
-    [self updateHeaderView];
+    //[self updateHeaderView];
 
-    
-    //self.delegate = [[UIApplication sharedApplication] delegate];
-
-    //Setup page control content view below profile
-    self.pageTitles = @[@"MyTimers", @"Friends", @"Inbox"];
-
-    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ProfileContentPageController"];
-    self.pageViewController.dataSource = self;
-
-    //Constrain height to header
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height);
-
-    [self addChildViewController:self.pageViewController];
-    [self.contentView addSubview:self.pageViewController.view];
-    [self.pageViewController didMoveToParentViewController:self];
-
-    //Setup profile image
     self.profileBorderView.layer.cornerRadius = 5.0;
     self.profileBorderView.clipsToBounds = YES;
     self.profileImageView.layer.cornerRadius = 5.0;
     self.profileImageView.clipsToBounds = YES;
 
-    CGFloat height = self.view.frame.size.height - self.tableView.sectionHeaderHeight - self.tableHeaderView.frame.size.height - self.tabBarController.tabBar.frame.size.height;
-
-    //NSLog(@"width:%f height:%f",tvFrame.size.height,self.tableHeaderView.frame.size.height);
-
-    if (height > 0) { // MIN_HEIGHT is your minimum tableViewFooter height
-        CGRect frame = self.contentView.frame;
-        NSLog(@"%f",frame.size.height);
-
-        self.contentView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, height);
-    }
-
-
     [self.tableView reloadData];
 
 }
 
-- (void)updateHeaderView {
-    CGRect headerRect = CGRectMake(0, -self.headerHeight, self.tableView.frame.size.width, self.tableView.frame.size.height);
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
 
-    NSLog(@"table width:%f table height:%f",self.tableView.frame.size.width, self.tableView.frame.size.height);
+    //Moved the following code from view did load, apparently screen size does not get processed down from 600 to its actual device screen size until view did appear.
+    UIImageView *headerImageView = [[UIImageView alloc] initWithFrame:self.backgroundView.bounds];
+    headerImageView.image = [UIImage imageNamed:@"header_bg"];
+    headerImageView.contentMode = UIViewContentModeScaleAspectFill;
 
-    if (self.tableView.contentOffset.y < self.headerHeight) {
-        headerRect.origin.y = self.tableView.contentOffset.y;
-        headerRect.size.height = -self.tableView.contentOffset.y;
-        //headerRect.size.width = self.tableView.contentSize.width;
-    }
+    NSLog(@"background view height:%f",self.backgroundView.bounds.size.height);
 
-    self.tableHeaderView.frame = headerRect;
+    [self.backgroundView insertSubview:headerImageView belowSubview:self.headerLabel];
+
+    self.backgroundView.clipsToBounds = YES;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self updateHeaderView];
+
+    //Add 20 due to the -20 top layout constraint
+    CGFloat offset = scrollView.contentOffset.y + self.backgroundView.bounds.size.height + 20;
+
+    NSLog(@"offset: %f scroll offset:%f background:%f",offset, scrollView.contentOffset.y, self.backgroundView.bounds.size.height);
+
+    CATransform3D profileTransform = CATransform3DIdentity;
+    CATransform3D tableHeaderTransform = CATransform3DIdentity;
+
+
+    if (offset < 0) {
+
+        //Handle Pull Down
+#pragma mark - Pull Down
+        //Create a scale factor that is proportional to the amount of scroll offset
+        CGFloat tableHeaderScaleFactor = -(offset)/self.backgroundView.bounds.size.height;
+
+        //Calculate the amount of distance the image has shifted from the top after scaling
+        CGFloat tableHeaderSizeVariation = ((self.backgroundView.bounds.size.height * (1.0 + tableHeaderScaleFactor)) - self.backgroundView.bounds.size.height)/2;
+
+        //Translate the view to the top fo the superview
+        tableHeaderTransform = CATransform3DTranslate(tableHeaderTransform, 0, tableHeaderSizeVariation, 0);
+
+        //Scale the image according to distance the user has pulled down on the header
+        tableHeaderTransform = CATransform3DScale(tableHeaderTransform, 1.0 + tableHeaderScaleFactor, 1.0 + tableHeaderScaleFactor, 0);
+
+        self.backgroundView.layer.zPosition = 0;
+        self.headerLabel.hidden = YES;
+
+    } else {
+
+        //Handle scroll up and down
+#pragma mark - Scroll Up/Down
+
+        tableHeaderTransform = CATransform3DTranslate(tableHeaderTransform, 0, MAX(-self.offset_HeaderStop, -offset), 0);
+
+
+        self.headerLabel.hidden = NO;
+
+
+        CGFloat avatarScaleFactor = (MIN(self.offset_HeaderStop, offset)) / self.profileBorderView.bounds.size.height / 1.4; // Slow down the animation
+        CGFloat avatarSizeVariation = ((self.profileBorderView.bounds.size.height * (1.0 + avatarScaleFactor)) - self.profileBorderView.bounds.size.height) / 2.0;
+        profileTransform = CATransform3DTranslate(profileTransform, 0, avatarSizeVariation, 0);
+        profileTransform = CATransform3DScale(profileTransform, 1.0 - avatarScaleFactor, 1.0 - avatarScaleFactor, 0);
+
+
+
+        if (offset <= self.offset_HeaderStop) {
+
+            if (self.profileBorderView.layer.zPosition < self.backgroundView.layer.zPosition) {
+                self.backgroundView.layer.zPosition = 0;
+            }
+
+        } else {
+            if (self.profileBorderView.layer.zPosition >= self.backgroundView.layer.zPosition) {
+                self.backgroundView.layer.zPosition = 2;
+            }
+        }
+    }
+
+    self.backgroundView.layer.transform = tableHeaderTransform;
+    self.profileBorderView.layer.transform = profileTransform;
+
+
+
+
+    CGFloat segmentViewOffset = self.tableHeaderView.frame.size.height - self.segmentView.frame.size.height - offset;
+
+        NSLog(@"segment: %f",segmentViewOffset);
+
+    CATransform3D segmentTransform = CATransform3DIdentity;
+
+    segmentTransform = CATransform3DTranslate(segmentTransform, 0, MAX(segmentViewOffset, -self.offset_HeaderStop), 0);
+
+    self.segmentView.layer.transform = segmentTransform;
+
+
+    // Set scroll view insets just underneath the segment control
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(CGRectGetMaxY(self.segmentView.frame), 0, 0, 0);
+
 }
-
-
-#pragma mark - Page Control Delegate Methods
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
-
-    NSUInteger index = ((MyTimersViewController *)viewController).pageIndex;
-
-    if (index == NSNotFound) {
-        return nil;
-    }
-
-    index++;
-
-    if (index >= [self.pageTitles count]) {
-        return nil;
-    }
-    NSLog(@"After: %li",index);
-    return [self viewControllerAtIndex:index];
-}
-
-- (UIViewController *)viewControllerAtIndex:(NSUInteger)index {
-
-    if (([self.pageTitles count] == 0) || index >= [self.pageTitles count]) {
-        return nil;
-    }
-
-    if (index == 0) {
-        MyTimersViewController *MyTimersViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MyTimersViewController"];
-        MyTimersViewController.pageIndex = index;
-
-        return MyTimersViewController;
-    } else if (index == 1) {
-        FriendsViewController *FriendsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FriendsViewController"];
-        FriendsViewController.pageIndex = index;
-
-        return FriendsViewController;
-    } else if (index == 2) {
-        InboxViewController *InboxViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"InboxViewController"];
-        InboxViewController.pageIndex = index;
-
-        return InboxViewController;
-    }
-
-    return nil;
-
-
-}
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-
-    NSUInteger index = ((MyTimersViewController *) viewController).pageIndex;
-
-    if ((index == 0) || (index == NSNotFound)) {
-        return nil;
-    }
-
-    index--;
-    NSLog(@"Before: %li",index);
-    return [self viewControllerAtIndex:index];
-    
-}
-
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
 
-    //Populate HUD after data is received
-    MyTimersViewController *startingVC = (MyTimersViewController *)[self viewControllerAtIndex:0];
-    NSArray *viewcontrollers = @[startingVC];
-    [self.pageViewController setViewControllers:viewcontrollers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-
-    [self updateHeaderView];
+    //[self updateHeaderView];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.items.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -190,12 +176,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    cell.textLabel.text = @"row";
+    cell.textLabel.text = self.items[indexPath.row];
     return cell;
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"test";
 }
 
 @end
