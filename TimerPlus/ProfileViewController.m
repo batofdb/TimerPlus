@@ -11,6 +11,7 @@
 #import "FriendsViewController.h"
 #import "InboxViewController.h"
 #import "AppDelegate.h"
+#import <FXBlurView.h>
 
 @interface ProfileViewController () <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -25,9 +26,11 @@
 @property NSArray *items;
 @property (weak, nonatomic) IBOutlet UIView *segmentView;
 @property CGFloat offset_HeaderStop;
+@property CGFloat offset_HeaderLabel;
 @property CGFloat headerHeight;
 @property NSArray *pageTitles;
 @property (weak, nonatomic) IBOutlet UILabel *headerLabel;
+@property UIImageView *blurHeaderImageView;
 
 @end
 
@@ -37,7 +40,7 @@
     [super viewDidLoad];
 
     self.offset_HeaderStop = 40.0; // At this offset the background stops its transformation
-
+    self.offset_HeaderLabel = 30.0; // Offset of top layout guide to top of header label
 
 
 
@@ -70,9 +73,14 @@
     headerImageView.image = [UIImage imageNamed:@"header_bg"];
     headerImageView.contentMode = UIViewContentModeScaleAspectFill;
 
-    NSLog(@"background view height:%f",self.backgroundView.bounds.size.height);
-
     [self.backgroundView insertSubview:headerImageView belowSubview:self.headerLabel];
+
+    //Create blue background
+    self.blurHeaderImageView = [[UIImageView alloc] initWithFrame:self.backgroundView.bounds];
+    self.blurHeaderImageView.image = [[UIImage imageNamed:@"header_bg"] blurredImageWithRadius:10 iterations:20 tintColor:[UIColor clearColor]];
+    [self.blurHeaderImageView setContentMode:UIViewContentModeScaleAspectFill];
+    self.blurHeaderImageView.alpha = 0.0;
+    [headerImageView insertSubview:self.blurHeaderImageView aboveSubview:self.headerLabel];
 
     self.backgroundView.clipsToBounds = YES;
 }
@@ -112,19 +120,39 @@
         //Handle scroll up and down
 #pragma mark - Scroll Up/Down
 
+        //Background transform
         tableHeaderTransform = CATransform3DTranslate(tableHeaderTransform, 0, MAX(-self.offset_HeaderStop, -offset), 0);
 
 
+        // Header Label
         self.headerLabel.hidden = NO;
 
+        CGFloat alignToNameLabel = -offset + self.fullnameLabel.frame.origin.y + self.backgroundView.frame.size.height + self.offset_HeaderStop;
+
+        NSLog(@"align offset:%f -- handle origin: %f",alignToNameLabel, self.headerLabel.frame.origin.y);
+        NSLog(@"bg height:%f -- offset stop: %f",self.backgroundView.frame.size.height,self.offset_HeaderStop);
+        NSLog(@"offset %f",offset);
+
+        CGRect newFrame = self.headerLabel.frame;
+
+        newFrame.origin = CGPointMake(self.headerLabel.frame.origin.x, MAX(alignToNameLabel,self.offset_HeaderLabel + self.offset_HeaderStop));
+
+        self.headerLabel.frame = newFrame;
+
+        // Blur
+        self.blurHeaderImageView.alpha = MIN(1.0,(offset - alignToNameLabel)/self.offset_HeaderLabel);
+
+        //Profile transform
 
         CGFloat avatarScaleFactor = (MIN(self.offset_HeaderStop, offset)) / self.profileBorderView.bounds.size.height / 1.4; // Slow down the animation
         CGFloat avatarSizeVariation = ((self.profileBorderView.bounds.size.height * (1.0 + avatarScaleFactor)) - self.profileBorderView.bounds.size.height) / 2.0;
-        profileTransform = CATransform3DTranslate(profileTransform, 0, avatarSizeVariation, 0);
+
+        profileTransform = CATransform3DTranslate(profileTransform, -avatarSizeVariation, avatarSizeVariation, 0);
         profileTransform = CATransform3DScale(profileTransform, 1.0 - avatarScaleFactor, 1.0 - avatarScaleFactor, 0);
+        
 
 
-
+        // Bring profile to front or back depending on scroll offset
         if (offset <= self.offset_HeaderStop) {
 
             if (self.profileBorderView.layer.zPosition < self.backgroundView.layer.zPosition) {
@@ -138,15 +166,16 @@
         }
     }
 
+    //Apply transforms
     self.backgroundView.layer.transform = tableHeaderTransform;
     self.profileBorderView.layer.transform = profileTransform;
 
 
 
-
+    // Segment Transform
     CGFloat segmentViewOffset = self.tableHeaderView.frame.size.height - self.segmentView.frame.size.height - offset;
 
-        NSLog(@"segment: %f",segmentViewOffset);
+
 
     CATransform3D segmentTransform = CATransform3DIdentity;
 

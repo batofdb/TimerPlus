@@ -7,156 +7,148 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		057147F03F69B75FFE95B9DA3C3D4D95 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AAA85A8E821086B1162F285D4B8445 /* img3.png */; };
-		0F5AE962F85FFBC270D0FB6D494265E5 /* NIKFontAwesomeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FFD48B8E172E2B29D30A69351F027 /* NIKFontAwesomeImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		19743179650AC135BB5485C7426A1238 /* FontAwesomeIconFactory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B44FBCA4397A6BEF860BD85A8CF42C56 /* FontAwesomeIconFactory-dummy.m */; };
-		1A2247664F2C2F9F94A6893A59A4E160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		2428F22CAF49F5D7CB62E02EA74A50D7 /* NIKFontAwesomeIconFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB78311FE44CD71A0DF5115A6A57532 /* NIKFontAwesomeIconFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26F00BC67A940D4B772874C1D3376454 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 369294B9FB192FF1EFECA35F508DDE90 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DFE358135ADE191E55BFAD8841E8B1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		2E81D2ADC03665555F3D7CE4DF691D67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506A5B2617A7166468E55C721EA33493 /* UIKit.framework */; };
-		303AFC297F0B68BF84F86F646E3DB087 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DDD6E6D86B7C305F59326A95DE577 /* Pods-dummy.m */; };
-		3754EC58B60A41E89FC539B0BDE2AC47 /* Pods-TimerPlusTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A8BF762DA952988BD19ACD5B6AE3F /* Pods-TimerPlusTests-dummy.m */; };
-		3879D49FBA63EF506CC445D7C8750869 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 855BE2505CE1FF9973C8B98A5CA84C00 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C98E4BB808022E07C8052BF2752B6BF /* CircleProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63271C49FA7B7477F2E2B9EB7C41CA0B /* CircleProgressBar-dummy.m */; };
-		3D7EC3E7F6336B555B785B4DBB24633D /* NIKFontAwesomePathFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF32EA7728940C97E76C728D82BB313 /* NIKFontAwesomePathFactory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3F779FDA68C484ABC2AD01967B96B6F3 /* NIKFontAwesomeIconTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C819DAD7E003A0E0243A220E770B0CA /* NIKFontAwesomeIconTraits.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		409CD8643DA13B60F043F92B1694A934 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F60DB8B11763A438820D808E35345BB7 /* SVProgressHUD.m */; };
-		47D674DCD1B67CCADDB872EA41E6C058 /* MZTimerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DBE6085C333AE4D640A0829FF0730B /* MZTimerLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D199CAE51059034BD3B46F502562E4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		502DC18333CAA39ED757CD5564973CEF /* MZTimerLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783664A9018E4AE35D4FEBC81548A3E /* MZTimerLabel-dummy.m */; };
-		51EBEC93407AD1E78FED5255132D814D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDCDC8219668A958122180B9FC509EB /* QuartzCore.framework */; };
-		54366F1705DC00755B7D24E443484F63 /* NIKFontAwesomeTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B19206FACDCBDACF4EA7A291F268D /* NIKFontAwesomeTabBarItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5C8EB4630C479A23936BF7EFD62A3CA8 /* JSKTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E89CF64F14604B4AD8C666C1287ACA /* JSKTimerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		608214ACF84E5388C4C92E5E2BE3C0F8 /* NIKFontAwesomeIconFactory+iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 55949BE17AE1DDC7EA0026D299352DBB /* NIKFontAwesomeIconFactory+iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61FB026E0A890C2A436D7D09561DA4AE /* JSKTimerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C30E7A10F41F937544D630439F1E3 /* JSKTimerView-dummy.m */; };
-		6B8B4FFB5ED7FAEDBB612247E7B1919E /* NIKFontAwesomeIconFactory+OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 648E2204B806F833EBBA464E0E78F378 /* NIKFontAwesomeIconFactory+OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C575DCD9060CBE2187C6B103CB9040E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		6D1A36A1810A046339122A0424733A20 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DB18DAC9D811970E7808035D197422 /* MZTimerLabel.m */; };
-		7152A770FC6B31F93EDAEB12BA115B84 /* NIKFontAwesomePathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B3D70F90A55368A336F8B4AB12EAA4 /* NIKFontAwesomePathRenderer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		76DC44F0D7883C4926E5DEB6250D84D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		80A24222B7DAC78AC5F4ECDE25716B1F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDCDC8219668A958122180B9FC509EB /* QuartzCore.framework */; };
-		830A1BD47FC453EF07A3717FB198B2B3 /* NIKFontAwesomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 859710ADE53FAEB1F217C98CFA6F9941 /* NIKFontAwesomeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		83B042153C557AD96321848E9CC05DE5 /* img0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C35AADB987E150BC1C6AFBD8DA3B19F /* img0.png */; };
-		87CD17990A95B57D4B6B745130466459 /* Pods-TimerPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C65704761B09879C3CCB80C055D7896E /* Pods-TimerPlus-dummy.m */; };
-		8C954A58782CDA83731EB344E27903DE /* JSKTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6FB0698F0D3054F9F439A3D85A591 /* JSKTimerView.m */; };
-		8F38DD2155792B05CAB7BF0CCCBEF1C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		9CA4DBDFD6F94F062ECBB9E5F8E7B89F /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5606E9CD188E5491DCDD3C8B8D5E1EE9 /* SVProgressHUD-dummy.m */; };
-		9DE41E2419CFE3EAEA415170F8498D70 /* NIKFontAwesomePathFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 17FFCE53DE50ADA8985FF8688316C5B7 /* NIKFontAwesomePathFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9EDE64B208990EC36704498D79B6E292 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C934C761FCDD84CB7024EBDC91F50 /* SVIndefiniteAnimatedView.m */; };
-		9F7B736772CC7B9AA43594FC24470C5A /* CircleProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DB91BE3849D06776D00A83EF4AA49A /* CircleProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1BB775451B8AB602577E831B0173C99 /* NIKFontAwesomeImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDD2D5E39868BB01789FC98F22EFC13 /* NIKFontAwesomeImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2927C8F6E380D13E4AE162194E9D62B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		A76E4957A4049C7BA2D0AA0951093C8F /* NIKFontAwesomeIconFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C6DD80CFF251EB0CCABE4457DBA33E /* NIKFontAwesomeIconFactory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A8DF58383E433C0DB3576529500EFD6C /* Pods-TimerPlusUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3A8ECA7D7B3A7B0B22EF2D67C1D70 /* Pods-TimerPlusUITests-dummy.m */; };
-		B1C61D9B526142E2172365E982CD62A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C0AB3C85FA5E9164DD219A4ABB70A8 /* CoreGraphics.framework */; };
-		B36DCD69E7F87484B423A888F3FD243D /* NIKFontAwesomeIconTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CACA286B786C40FA45608286488A9D6 /* NIKFontAwesomeIconTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B77FAF006669C9A211954F0106FC89F6 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB4CD1FAD6AB9C342808F54EEE122AC /* CircleProgressBar.m */; };
-		C8F3B83F1F3E56AAE24F4D0D1D6F1E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		CA9736EC3BEB71040AFA6BA52FA207C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */; };
-		CB696142320B10990415805CA6D334D0 /* NIKFontAwesomeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7B8FD98537CCE7A3EDB85CD71133DF /* NIKFontAwesomeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4DB5A22E7677A219A684D25D8C90910 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDF39A5A3FA3B0ABBDBA08537DD46E6 /* img2.png */; };
-		D531060C0B6343F4924360F4C08DA5D3 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 696BA7BCB07037ADE43ADC72235F6B3C /* img1.png */; };
-		D87114C766508DB3B963059C675BCEE9 /* NIKFontAwesomeTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFF8F0C67534DB9240F47DFECD3DCEC /* NIKFontAwesomeTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAED6554A9F15BFD63DE67440B0892B0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F81E8DFC2A3B3D39023F9D20076AAD /* CoreText.framework */; };
-		E1965CF66F0A33431DA09A48C9880F81 /* NIKFontAwesomeIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB8B843AA29FABC778D77F1D94992E4 /* NIKFontAwesomeIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3CA57D387C07FFF83D542B8C68936A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506A5B2617A7166468E55C721EA33493 /* UIKit.framework */; };
-		F8EF3D43C145361AF850AE59DF1FAD4E /* NIKFontAwesomePathRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9B2955B29240707865967B4D47EA15 /* NIKFontAwesomePathRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA1C6357C62D516E3B617F9F395F2DD2 /* FontAwesomeIconFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE09546F9E4C65B6C9EF2B222DC3E43 /* FontAwesomeIconFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE9C306C8E62078371EC3C8B4ACF2FAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C0AB3C85FA5E9164DD219A4ABB70A8 /* CoreGraphics.framework */; };
+		0015B2AC36D1502D5F0B2524357A29F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		057147F03F69B75FFE95B9DA3C3D4D95 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CC9B744C311170B4522740527235B7 /* img3.png */; };
+		0F5AE962F85FFBC270D0FB6D494265E5 /* NIKFontAwesomeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C49173B764E06122F055CFC6AC36A22 /* NIKFontAwesomeImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1455697ECC2DF6C0564762F61655CECA /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC653053809F17871796D726B7AAA06 /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19743179650AC135BB5485C7426A1238 /* FontAwesomeIconFactory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDE803AFA2E8C927050445BC7F4014B /* FontAwesomeIconFactory-dummy.m */; };
+		1A2247664F2C2F9F94A6893A59A4E160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		2428F22CAF49F5D7CB62E02EA74A50D7 /* NIKFontAwesomeIconFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 853ECCF83B0A3DC10504B9FDD0E7E6EE /* NIKFontAwesomeIconFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		293282EE2607846CB95749CA6F5020D7 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7351E238342D5269754A11FDAC008EA3 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		295BFD6353D2F26E65351C5773895730 /* Pods-TimerPlus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C65704761B09879C3CCB80C055D7896E /* Pods-TimerPlus-dummy.m */; };
+		2E81D2ADC03665555F3D7CE4DF691D67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9F3EE873280D530ED58097A3A322B /* UIKit.framework */; };
+		380233A564CCC0F5D2BB7F9D9C38EAF2 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EF0A6E1DC90D555B80FE11E32FD6F0 /* SVProgressHUD-dummy.m */; };
+		3C98E4BB808022E07C8052BF2752B6BF /* CircleProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8994B027584218442A0F4C0F63E961 /* CircleProgressBar-dummy.m */; };
+		3D7EC3E7F6336B555B785B4DBB24633D /* NIKFontAwesomePathFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B23B060950F0B1AABDF1F8BE4AA497 /* NIKFontAwesomePathFactory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3E9FE2EB5C6E67DAD379ED9F43071C3B /* FXBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C32161F233AC2AA3580FABC7490864 /* FXBlurView-dummy.m */; };
+		3F779FDA68C484ABC2AD01967B96B6F3 /* NIKFontAwesomeIconTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E5EA00C7409D88E049957E3C25FE4F /* NIKFontAwesomeIconTraits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47D674DCD1B67CCADDB872EA41E6C058 /* MZTimerLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9174DBD5AED7B9824EF97E761873BE88 /* MZTimerLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		502DC18333CAA39ED757CD5564973CEF /* MZTimerLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D724EDAEC64457863D26DE7A46AD95 /* MZTimerLabel-dummy.m */; };
+		54366F1705DC00755B7D24E443484F63 /* NIKFontAwesomeTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB15DC11D95FB1D0FF576A1539DAB629 /* NIKFontAwesomeTabBarItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5C8EB4630C479A23936BF7EFD62A3CA8 /* JSKTimerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE9AFCC95BC127C777D7DB635A8A16C /* JSKTimerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		608214ACF84E5388C4C92E5E2BE3C0F8 /* NIKFontAwesomeIconFactory+iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 34915E36F157E18AC429052178D18DC6 /* NIKFontAwesomeIconFactory+iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61FB026E0A890C2A436D7D09561DA4AE /* JSKTimerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 982E62EA98823C6AA207EDBD18D66BE3 /* JSKTimerView-dummy.m */; };
+		658CB58CCB57329468BA7A46EAF46220 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		68F0A88C75340EC76C36310463B37495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		68F9C97B2C4BAF0F7FBC8B5C1BB55A41 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C51D6492AC10791C00DFEA30EB09425 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B8B4FFB5ED7FAEDBB612247E7B1919E /* NIKFontAwesomeIconFactory+OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C36CC35244D92D95B0D454276D771A /* NIKFontAwesomeIconFactory+OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C575DCD9060CBE2187C6B103CB9040E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		6D1A36A1810A046339122A0424733A20 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C193D366C3037B6B7361D9E1E6C2A4C /* MZTimerLabel.m */; };
+		7152A770FC6B31F93EDAEB12BA115B84 /* NIKFontAwesomePathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 724786999215B73D83CEBBEB174D31C0 /* NIKFontAwesomePathRenderer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7A305EAFC8C50340C9F697720ADC7562 /* Pods-TimerPlusUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3A8ECA7D7B3A7B0B22EF2D67C1D70 /* Pods-TimerPlusUITests-dummy.m */; };
+		7FF7E55F30D4E44F15EAD2DF733D66E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FD073D839FD8E150A2EBC5AF263213 /* QuartzCore.framework */; };
+		80A24222B7DAC78AC5F4ECDE25716B1F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FD073D839FD8E150A2EBC5AF263213 /* QuartzCore.framework */; };
+		830A1BD47FC453EF07A3717FB198B2B3 /* NIKFontAwesomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B358E05026F581DE003FEF78837FF7B0 /* NIKFontAwesomeButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		83B042153C557AD96321848E9CC05DE5 /* img0.png in Resources */ = {isa = PBXBuildFile; fileRef = 84888BA05AAA7A3D3DD7E61D086A78C4 /* img0.png */; };
+		8C954A58782CDA83731EB344E27903DE /* JSKTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7B4FEF4B27590A1F1BA560D8E69612 /* JSKTimerView.m */; };
+		97C39A1CD0CAFC893FDB5603D2E76E8C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AD0E9AEBB3986FE2CCAFD0F4DEA254 /* SVProgressHUD.m */; };
+		9C0661552DBA7B1BE0290ADC86F5009B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FD073D839FD8E150A2EBC5AF263213 /* QuartzCore.framework */; };
+		9DE41E2419CFE3EAEA415170F8498D70 /* NIKFontAwesomePathFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DD28EFD8C41CF221E7EEF86087B76A /* NIKFontAwesomePathFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7B736772CC7B9AA43594FC24470C5A /* CircleProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B7B7CABAB9274D5CE1705D9146C32F /* CircleProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1BB775451B8AB602577E831B0173C99 /* NIKFontAwesomeImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD57DB06BC3889FE25D01C3DBBCDB02D /* NIKFontAwesomeImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4433F38F841F18A5758FB635CFE1BF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		A76E4957A4049C7BA2D0AA0951093C8F /* NIKFontAwesomeIconFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2B6B5548772D29470EF502401F3E3 /* NIKFontAwesomeIconFactory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B1C61D9B526142E2172365E982CD62A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A4923E6F50C996386DC04ABE7BE0DF /* CoreGraphics.framework */; };
+		B36DCD69E7F87484B423A888F3FD243D /* NIKFontAwesomeIconTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4DC7A485DF19A7BEC7170B2A26E946 /* NIKFontAwesomeIconTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3EB9B8BA6AFE582947F45BA5BDDC1D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		B77FAF006669C9A211954F0106FC89F6 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 713599F1B7EDB37B2D36B28F09588D33 /* CircleProgressBar.m */; };
+		C8F3B83F1F3E56AAE24F4D0D1D6F1E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		CA9736EC3BEB71040AFA6BA52FA207C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		CB696142320B10990415805CA6D334D0 /* NIKFontAwesomeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DF6CF65DCCC6EAD575B28E206C07489B /* NIKFontAwesomeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D27E8F321DF34E84AD0FF2B439E18EFB /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DDD6E6D86B7C305F59326A95DE577 /* Pods-dummy.m */; };
+		D4DB5A22E7677A219A684D25D8C90910 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 67D50E86EAAEA00339AF3C97B74C8462 /* img2.png */; };
+		D531060C0B6343F4924360F4C08DA5D3 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = BB47A47E22AA10530B21BB2BEB9C2BEC /* img1.png */; };
+		D87114C766508DB3B963059C675BCEE9 /* NIKFontAwesomeTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F969D8DBBC624C32F3AFBEBC6D296FCC /* NIKFontAwesomeTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8A90EFF17F8E03DCC2EDA93EE5160A5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E64F5B4890BAB561916CCDD2E6C5BF7 /* Accelerate.framework */; };
+		DAED6554A9F15BFD63DE67440B0892B0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E84A3A7CFD76E14655101C109C043F /* CoreText.framework */; };
+		E1965CF66F0A33431DA09A48C9880F81 /* NIKFontAwesomeIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B2913C6440A423A5BC22CA7DEAA4E2B /* NIKFontAwesomeIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB3774E0A0442180CE015AC70748DB21 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D81EBB69B5EBF619D1A8A64AB857370 /* FXBlurView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC191EC09B36D3B0213E321D35A147A2 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A95BDDCC5F102B73676BFE04AA664532 /* SVIndefiniteAnimatedView.m */; };
+		EF64F056C4A3ADAE6B90450078E05BAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */; };
+		F3CA57D387C07FFF83D542B8C68936A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F9F3EE873280D530ED58097A3A322B /* UIKit.framework */; };
+		F8EF3D43C145361AF850AE59DF1FAD4E /* NIKFontAwesomePathRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F11101CEB3311DD22AD97F85F87B516 /* NIKFontAwesomePathRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1C6357C62D516E3B617F9F395F2DD2 /* FontAwesomeIconFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C7362262A9F412BDBC8070BD0993CD /* FontAwesomeIconFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD475883F47B68C89E9487F86580AE2D /* Pods-TimerPlusTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 962A8BF762DA952988BD19ACD5B6AE3F /* Pods-TimerPlusTests-dummy.m */; };
+		FE9C306C8E62078371EC3C8B4ACF2FAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A4923E6F50C996386DC04ABE7BE0DF /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0435F94045ED280A78FEB0DE4D2658FD /* PBXContainerItemProxy */ = {
+		0C11D93F67665785197D3A205E1F2170 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
 			remoteInfo = JSKTimerView;
 		};
-		0A894586545F619332C273EACE29DC3F /* PBXContainerItemProxy */ = {
+		100A6B82C0CC47347B1B7C67C7C056FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
-			remoteInfo = FontAwesomeIconFactory;
+			remoteGlobalIDString = 17392667E38E4938ACA525E988BB433B;
+			remoteInfo = FXBlurView;
 		};
-		0A9D4D315E697ADF8D1010D56B388617 /* PBXContainerItemProxy */ = {
+		1DBA3BBC6EDC5A9E801472FCBA0C79D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B11857FE8088912A72E2AC44134F687A;
+			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
+			remoteInfo = MZTimerLabel;
+		};
+		22DAACBA69D3445046DF7227E417E3EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
+			remoteInfo = MZTimerLabel;
+		};
+		2451FE7AD8B8A1E2A9A4A0201487C06C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17392667E38E4938ACA525E988BB433B;
+			remoteInfo = FXBlurView;
+		};
+		3878EADF0D36FC7449EA2166395BCB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0204C85F4100E883AD9AD7123FE6055D;
 			remoteInfo = SVProgressHUD;
 		};
-		0AC69C10ECD7BE3D627A21C114CDA27B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
-			remoteInfo = CircleProgressBar;
-		};
-		3D2F04BEDA3357723574D09887749FEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B11857FE8088912A72E2AC44134F687A;
-			remoteInfo = SVProgressHUD;
-		};
-		497C1A3E79DC9A47218D499876528B60 /* PBXContainerItemProxy */ = {
+		3D4B7FB6746721F09B75A51E54D1B572 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
 			remoteInfo = JSKTimerView;
 		};
-		49EB4B746A941A7E4D1EE74EAE1234AD /* PBXContainerItemProxy */ = {
+		560E307D5EA00EE501E921113216E3B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
 			remoteInfo = CircleProgressBar;
 		};
-		59850AE710034474C99B84CACB441F24 /* PBXContainerItemProxy */ = {
+		6E5D351A8C36F31678CA666FFF20E809 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
-			remoteInfo = JSKTimerView;
+			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
+			remoteInfo = MZTimerLabel;
 		};
-		61C801ED62CADA1FA91FFDFA92A29D98 /* PBXContainerItemProxy */ = {
+		712735BFAA0BC21C85A7FFF44ADED28D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
 			remoteInfo = CircleProgressBar;
 		};
-		6DD1DBB67126E8D6287FA72CA452BA48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
-			remoteInfo = FontAwesomeIconFactory;
-		};
-		6F46820DA8C156F0AA791EB432C3F23C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B11857FE8088912A72E2AC44134F687A;
-			remoteInfo = SVProgressHUD;
-		};
-		7B1542E6F8B132D31D8E90CF9387FFD3 /* PBXContainerItemProxy */ = {
+		8A99B1ECE301882A9D50CA0827A89841 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
 			remoteInfo = CircleProgressBar;
-		};
-		840C3BE0341339FE2EE64FE18921E31F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
-			remoteInfo = JSKTimerView;
 		};
 		8E74964F793E2B70CD3D4092D1B6CDFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -165,49 +157,91 @@
 			remoteGlobalIDString = 9BD1F0F5C3FF7480748290491B0CE6C2;
 			remoteInfo = "JSKTimerView-JSKTimerView";
 		};
-		9F1142D72AE317D33C153DB183045EC6 /* PBXContainerItemProxy */ = {
+		BDEC575CD213861BDB0F67B035B0949D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
-			remoteInfo = MZTimerLabel;
+			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
+			remoteInfo = FontAwesomeIconFactory;
 		};
-		A04D4CA0E4513AF48A0EF18D6223C54C /* PBXContainerItemProxy */ = {
+		BF0A4670B1ABB0F2383993FD4E59970A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B11857FE8088912A72E2AC44134F687A;
+			remoteGlobalIDString = 0204C85F4100E883AD9AD7123FE6055D;
 			remoteInfo = SVProgressHUD;
 		};
-		AD72FD7B26726243A49A4E33D7EA82CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
-			remoteInfo = MZTimerLabel;
-		};
-		C4C7D944F1E72D46C8A0A361484C3D2B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B180241C64C8328694E67BDDD9D432E2;
-			remoteInfo = MZTimerLabel;
-		};
-		CD95EC0DD695AB46DF0AFC7D9AB8076C /* PBXContainerItemProxy */ = {
+		C0CA8416F3BFEC2463CCFD58A50D3C54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
 			remoteInfo = FontAwesomeIconFactory;
 		};
-		E0642FF7A27FAD80C7C52A30B37ECEB3 /* PBXContainerItemProxy */ = {
+		C355BDAC14F66AA95E7739D8D426A619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0204C85F4100E883AD9AD7123FE6055D;
+			remoteInfo = SVProgressHUD;
+		};
+		CD8B11598288BA37A5F8531DC24C99B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4B44CA33B3FCB0354C4AB6CCC6FAE0;
+			remoteInfo = CircleProgressBar;
+		};
+		DA7FDBBE2830CAF0A29B744729CCCE26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0204C85F4100E883AD9AD7123FE6055D;
+			remoteInfo = SVProgressHUD;
+		};
+		E287D51C8227BB439BAC26BC58E926D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17392667E38E4938ACA525E988BB433B;
+			remoteInfo = FXBlurView;
+		};
+		EDDF4AF63C055F31FBDD4D5C4493466F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
+			remoteInfo = JSKTimerView;
+		};
+		F00D8C2FBAB90DE7FD0B38D2A0A591C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
 			remoteInfo = FontAwesomeIconFactory;
 		};
-		F7C665C49F3BC3CC50C086D59AB184B3 /* PBXContainerItemProxy */ = {
+		F567ED0ADB471EDCEA9782E33B29B14C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B90E40446E4173690DF4E1A808FC8BAF;
+			remoteInfo = JSKTimerView;
+		};
+		F92799B0423B749FC58E89F8BBFDD5CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17392667E38E4938ACA525E988BB433B;
+			remoteInfo = FXBlurView;
+		};
+		FE63733475156A006DDDD0E48CDBE3A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4AECDBFBFFC4466DF47CBF08CC4ACA;
+			remoteInfo = FontAwesomeIconFactory;
+		};
+		FEA855E6A264E20B208FAACC0293D09C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -217,99 +251,106 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006BC6DE9371A989FB691464252F7AE2 /* JSKTimerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSKTimerView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CA66C2E018EB1A29481AF2A793EF96D /* libMZTimerLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMZTimerLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0036651878EA2742451C4EFDDB662CAA /* MZTimerLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZTimerLabel-prefix.pch"; sourceTree = "<group>"; };
+		09B09B1C15F7C2134B6C639CABDA133E /* FXBlurView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FXBlurView.xcconfig; sourceTree = "<group>"; };
+		09B7B7CABAB9274D5CE1705D9146C32F /* CircleProgressBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CircleProgressBar.h; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.h; sourceTree = "<group>"; };
 		12AC8C6DEB924A8676FE8D4C46125CD8 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		14DB18DAC9D811970E7808035D197422 /* MZTimerLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = MZTimerLabel/MZTimerLabel.m; sourceTree = "<group>"; };
 		16E4E7CBF56667A8C69C95C25F5BA78B /* Pods-TimerPlusUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerPlusUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		17FFCE53DE50ADA8985FF8688316C5B7 /* NIKFontAwesomePathFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomePathFactory.h; path = FontAwesomeIconFactory/NIKFontAwesomePathFactory.h; sourceTree = "<group>"; };
-		2338A5A0E832879E6540F40C2E768785 /* CircleProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-prefix.pch"; sourceTree = "<group>"; };
-		27E89CF64F14604B4AD8C666C1287ACA /* JSKTimerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSKTimerView.h; path = Pod/Classes/JSKTimerView.h; sourceTree = "<group>"; };
-		2CACA286B786C40FA45608286488A9D6 /* NIKFontAwesomeIconTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconTypes.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconTypes.h; sourceTree = "<group>"; };
-		31AAA85A8E821086B1162F285D4B8445 /* img3.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img3.png; path = Pod/Assets/img3.png; sourceTree = "<group>"; };
+		1C51D6492AC10791C00DFEA30EB09425 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		1E8988F5A65D15893D45887C638635A7 /* MZTimerLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZTimerLabel.xcconfig; sourceTree = "<group>"; };
+		1F11101CEB3311DD22AD97F85F87B516 /* NIKFontAwesomePathRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomePathRenderer.h; path = FontAwesomeIconFactory/NIKFontAwesomePathRenderer.h; sourceTree = "<group>"; };
+		20409842C60406052B496FFC5CD87155 /* JSKTimerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSKTimerView-prefix.pch"; sourceTree = "<group>"; };
+		24E5BE4935F7705AC2B1EE0303363A15 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25041BD466ED92BFAA402BDFB874573D /* JSKTimerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSKTimerView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C32161F233AC2AA3580FABC7490864 /* FXBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FXBlurView-dummy.m"; sourceTree = "<group>"; };
+		27F6193CB8E1D53212A3F6938EDB93E4 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC653053809F17871796D726B7AAA06 /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = FXBlurView/FXBlurView.h; sourceTree = "<group>"; };
+		32A4923E6F50C996386DC04ABE7BE0DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		3371B9EA9E806DA2FD8A005F2F440948 /* Pods-TimerPlusTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlusTests-resources.sh"; sourceTree = "<group>"; };
-		339C934C761FCDD84CB7024EBDC91F50 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		369294B9FB192FF1EFECA35F508DDE90 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		34915E36F157E18AC429052178D18DC6 /* NIKFontAwesomeIconFactory+iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NIKFontAwesomeIconFactory+iOS.h"; path = "FontAwesomeIconFactory/NIKFontAwesomeIconFactory+iOS.h"; sourceTree = "<group>"; };
 		3766EAE38AC8AA0C2D7F93D3FF964D77 /* Pods-TimerPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3783664A9018E4AE35D4FEBC81548A3E /* MZTimerLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZTimerLabel-dummy.m"; sourceTree = "<group>"; };
 		3860D7FD21A38648204B78061714D2E0 /* Pods-TimerPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		42A3A8ECA7D7B3A7B0B22EF2D67C1D70 /* Pods-TimerPlusUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerPlusUITests-dummy.m"; sourceTree = "<group>"; };
 		42C5CAAC19523A8BC30AB3B135AA76F6 /* Pods-TimerPlusTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerPlusTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		44078DF6907D51AE2939A039E3B27716 /* Pods-TimerPlusTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerPlusTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		45DCE0BB5B51458D01AF434AB3547B5B /* Pods-TimerPlus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerPlus-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4713E8B2B82860B8A768AE605718FF9E /* CircleProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleProgressBar.xcconfig; sourceTree = "<group>"; };
-		47C6DD80CFF251EB0CCABE4457DBA33E /* NIKFontAwesomeIconFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeIconFactory.m; path = FontAwesomeIconFactory/NIKFontAwesomeIconFactory.m; sourceTree = "<group>"; };
-		49DBE6085C333AE4D640A0829FF0730B /* MZTimerLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = MZTimerLabel/MZTimerLabel.h; sourceTree = "<group>"; };
-		4AFF8F0C67534DB9240F47DFECD3DCEC /* NIKFontAwesomeTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeTabBarItem.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeTabBarItem.h; sourceTree = "<group>"; };
-		4CD140B099CEA72C6EF363FE2AD6AAAD /* libCircleProgressBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCircleProgressBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CC9B744C311170B4522740527235B7 /* img3.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img3.png; path = Pod/Assets/img3.png; sourceTree = "<group>"; };
+		49D724EDAEC64457863D26DE7A46AD95 /* MZTimerLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZTimerLabel-dummy.m"; sourceTree = "<group>"; };
+		4A4DC7A485DF19A7BEC7170B2A26E946 /* NIKFontAwesomeIconTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconTypes.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconTypes.h; sourceTree = "<group>"; };
 		4D3F4C2E48278EC6DF283FD3F3B567C0 /* Pods-TimerPlusTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlusTests-frameworks.sh"; sourceTree = "<group>"; };
-		4D9AB6080E49DA1A7785364CFE48314A /* FontAwesomeIconFactory.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesomeIconFactory.xcconfig; sourceTree = "<group>"; };
-		4EDF39A5A3FA3B0ABBDBA08537DD46E6 /* img2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img2.png; path = Pod/Assets/img2.png; sourceTree = "<group>"; };
-		506A5B2617A7166468E55C721EA33493 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4D81BD7390DD652724DC0715E644FB85 /* CircleProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleProgressBar.xcconfig; sourceTree = "<group>"; };
+		4D81EBB69B5EBF619D1A8A64AB857370 /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = FXBlurView/FXBlurView.m; sourceTree = "<group>"; };
+		4E64F5B4890BAB561916CCDD2E6C5BF7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		512CE8A6EDAE91D4B2831BC5766AD3DA /* Pods-TimerPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		55949BE17AE1DDC7EA0026D299352DBB /* NIKFontAwesomeIconFactory+iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NIKFontAwesomeIconFactory+iOS.h"; path = "FontAwesomeIconFactory/NIKFontAwesomeIconFactory+iOS.h"; sourceTree = "<group>"; };
-		5606E9CD188E5491DCDD3C8B8D5E1EE9 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		52C36CC35244D92D95B0D454276D771A /* NIKFontAwesomeIconFactory+OSX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NIKFontAwesomeIconFactory+OSX.h"; path = "FontAwesomeIconFactory/NIKFontAwesomeIconFactory+OSX.h"; sourceTree = "<group>"; };
+		54C7362262A9F412BDBC8070BD0993CD /* FontAwesomeIconFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontAwesomeIconFactory.h; path = FontAwesomeIconFactory/FontAwesomeIconFactory.h; sourceTree = "<group>"; };
+		57B23B060950F0B1AABDF1F8BE4AA497 /* NIKFontAwesomePathFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomePathFactory.m; path = FontAwesomeIconFactory/NIKFontAwesomePathFactory.m; sourceTree = "<group>"; };
 		58ED29653F3748868180BEAE1C31A402 /* Pods-TimerPlusUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlusUITests-frameworks.sh"; sourceTree = "<group>"; };
-		5B0FFD48B8E172E2B29D30A69351F027 /* NIKFontAwesomeImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeImageView.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeImageView.m; sourceTree = "<group>"; };
-		5EB4CD1FAD6AB9C342808F54EEE122AC /* CircleProgressBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CircleProgressBar.m; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.m; sourceTree = "<group>"; };
-		63271C49FA7B7477F2E2B9EB7C41CA0B /* CircleProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleProgressBar-dummy.m"; sourceTree = "<group>"; };
-		63EAF34487A90D23A61D06308769D7CE /* FontAwesomeIconFactory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeIconFactory-prefix.pch"; sourceTree = "<group>"; };
-		648E2204B806F833EBBA464E0E78F378 /* NIKFontAwesomeIconFactory+OSX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NIKFontAwesomeIconFactory+OSX.h"; path = "FontAwesomeIconFactory/NIKFontAwesomeIconFactory+OSX.h"; sourceTree = "<group>"; };
+		5AD7A321C360CE3AB6F119F4A1EFACAF /* JSKTimerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSKTimerView.xcconfig; sourceTree = "<group>"; };
+		5C49173B764E06122F055CFC6AC36A22 /* NIKFontAwesomeImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeImageView.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeImageView.m; sourceTree = "<group>"; };
 		6688D63CE28A2F6AD7CEECCFEE102EFE /* Pods-TimerPlus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlus-resources.sh"; sourceTree = "<group>"; };
-		66CF00D6EBFC19AED5AA4FDB9C3074A4 /* libFontAwesomeIconFactory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFontAwesomeIconFactory.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		696BA7BCB07037ADE43ADC72235F6B3C /* img1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img1.png; path = Pod/Assets/img1.png; sourceTree = "<group>"; };
-		6C819DAD7E003A0E0243A220E770B0CA /* NIKFontAwesomeIconTraits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconTraits.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconTraits.h; sourceTree = "<group>"; };
-		6CF32EA7728940C97E76C728D82BB313 /* NIKFontAwesomePathFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomePathFactory.m; path = FontAwesomeIconFactory/NIKFontAwesomePathFactory.m; sourceTree = "<group>"; };
-		6E4462048D3C0765D34F202F9C248EE3 /* libPods-TimerPlusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7056D1EB6B52AFCF4574133F27877496 /* JSKTimerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSKTimerView-prefix.pch"; sourceTree = "<group>"; };
+		67D50E86EAAEA00339AF3C97B74C8462 /* img2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img2.png; path = Pod/Assets/img2.png; sourceTree = "<group>"; };
+		6B2913C6440A423A5BC22CA7DEAA4E2B /* NIKFontAwesomeIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIcon.h; path = FontAwesomeIconFactory/NIKFontAwesomeIcon.h; sourceTree = "<group>"; };
+		713599F1B7EDB37B2D36B28F09588D33 /* CircleProgressBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CircleProgressBar.m; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.m; sourceTree = "<group>"; };
+		724786999215B73D83CEBBEB174D31C0 /* NIKFontAwesomePathRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomePathRenderer.m; path = FontAwesomeIconFactory/NIKFontAwesomePathRenderer.m; sourceTree = "<group>"; };
+		7351E238342D5269754A11FDAC008EA3 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		74EA082FED02DE642E8BDFD660101549 /* Pods-TimerPlusUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerPlusUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		756F4B952016EFD1094D80FCA38F01D9 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		758CEE2A4A63D3898299857A98E0550C /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = "Font-Awesome/fonts/FontAwesome.otf"; sourceTree = "<group>"; };
-		771C30E7A10F41F937544D630439F1E3 /* JSKTimerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSKTimerView-dummy.m"; sourceTree = "<group>"; };
+		7BA2B6B5548772D29470EF502401F3E3 /* NIKFontAwesomeIconFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeIconFactory.m; path = FontAwesomeIconFactory/NIKFontAwesomeIconFactory.m; sourceTree = "<group>"; };
 		7BC09DDBDE32DF798145E0B9CB4B535A /* Pods-TimerPlus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlus-frameworks.sh"; sourceTree = "<group>"; };
-		7C35AADB987E150BC1C6AFBD8DA3B19F /* img0.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img0.png; path = Pod/Assets/img0.png; sourceTree = "<group>"; };
+		7BE9AFCC95BC127C777D7DB635A8A16C /* JSKTimerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSKTimerView.h; path = Pod/Classes/JSKTimerView.h; sourceTree = "<group>"; };
 		7E4A9548D65FBBA687074776A3A6A74C /* Pods-TimerPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7EB8B843AA29FABC778D77F1D94992E4 /* NIKFontAwesomeIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIcon.h; path = FontAwesomeIconFactory/NIKFontAwesomeIcon.h; sourceTree = "<group>"; };
-		7F4352CCD818C773C0B07A8D02162660 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD9895962E26ED5DD900A613F3494F9 /* Pods-TimerPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlusTests.release.xcconfig"; sourceTree = "<group>"; };
-		855BE2505CE1FF9973C8B98A5CA84C00 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		859710ADE53FAEB1F217C98CFA6F9941 /* NIKFontAwesomeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeButton.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeButton.m; sourceTree = "<group>"; };
+		82E84A3A7CFD76E14655101C109C043F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		84888BA05AAA7A3D3DD7E61D086A78C4 /* img0.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img0.png; path = Pod/Assets/img0.png; sourceTree = "<group>"; };
+		853ECCF83B0A3DC10504B9FDD0E7E6EE /* NIKFontAwesomeIconFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconFactory.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconFactory.h; sourceTree = "<group>"; };
+		876FC1F7C9301901DABC3C7A17AB6E76 /* libPods-TimerPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A43B598F03E6C1DFD0D3BDC5F4FD70 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		8A9B2955B29240707865967B4D47EA15 /* NIKFontAwesomePathRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomePathRenderer.h; path = FontAwesomeIconFactory/NIKFontAwesomePathRenderer.h; sourceTree = "<group>"; };
+		89C9AF163D255445906734EBD252FFA5 /* FontAwesomeIconFactory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeIconFactory-prefix.pch"; sourceTree = "<group>"; };
+		8C193D366C3037B6B7361D9E1E6C2A4C /* MZTimerLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTimerLabel.m; path = MZTimerLabel/MZTimerLabel.m; sourceTree = "<group>"; };
 		8E4DDD6E6D86B7C305F59326A95DE577 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		8E7B8FD98537CCE7A3EDB85CD71133DF /* NIKFontAwesomeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeButton.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeButton.h; sourceTree = "<group>"; };
+		9174DBD5AED7B9824EF97E761873BE88 /* MZTimerLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTimerLabel.h; path = MZTimerLabel/MZTimerLabel.h; sourceTree = "<group>"; };
+		957AEA32E68B268E3B5FAF633CB5B25C /* FontAwesomeIconFactory.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesomeIconFactory.xcconfig; sourceTree = "<group>"; };
 		962A8BF762DA952988BD19ACD5B6AE3F /* Pods-TimerPlusTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerPlusTests-dummy.m"; sourceTree = "<group>"; };
-		99DB91BE3849D06776D00A83EF4AA49A /* CircleProgressBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CircleProgressBar.h; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.h; sourceTree = "<group>"; };
+		96C87A99746FAFE95B8DCF79F7E5A292 /* FXBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FXBlurView-prefix.pch"; sourceTree = "<group>"; };
+		982E62EA98823C6AA207EDBD18D66BE3 /* JSKTimerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSKTimerView-dummy.m"; sourceTree = "<group>"; };
 		9A05A9D932256DE3424764285884C777 /* Pods-TimerPlusUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerPlusUITests-resources.sh"; sourceTree = "<group>"; };
-		A40BAF392E13432DB221826792B9E6D3 /* MZTimerLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZTimerLabel.xcconfig; sourceTree = "<group>"; };
+		9A892A1A9B6136D7EC60285CB51CEE97 /* CircleProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		9C68BE0C7EB8132211A2C5FB39FFB7DB /* libPods-TimerPlusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9DE17C66AAB7CA7A24E7C302EE5758 /* libFXBlurView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFXBlurView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B8B5DEFE4DA31DD21AB410FE04F7ED /* Pods-TimerPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerPlus.release.xcconfig"; sourceTree = "<group>"; };
-		A6501FD8E100FE353C9F218ABD0A3CC3 /* MZTimerLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZTimerLabel-prefix.pch"; sourceTree = "<group>"; };
-		A7B3D70F90A55368A336F8B4AB12EAA4 /* NIKFontAwesomePathRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomePathRenderer.m; path = FontAwesomeIconFactory/NIKFontAwesomePathRenderer.m; sourceTree = "<group>"; };
-		AFE09546F9E4C65B6C9EF2B222DC3E43 /* FontAwesomeIconFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FontAwesomeIconFactory.h; path = FontAwesomeIconFactory/FontAwesomeIconFactory.h; sourceTree = "<group>"; };
-		B44FBCA4397A6BEF860BD85A8CF42C56 /* FontAwesomeIconFactory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeIconFactory-dummy.m"; sourceTree = "<group>"; };
-		B55B19206FACDCBDACF4EA7A291F268D /* NIKFontAwesomeTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeTabBarItem.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeTabBarItem.m; sourceTree = "<group>"; };
+		A95BDDCC5F102B73676BFE04AA664532 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		A9AD0E9AEBB3986FE2CCAFD0F4DEA254 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		B0D8E1652C419C8FCB424DD360CD31A1 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		B358E05026F581DE003FEF78837FF7B0 /* NIKFontAwesomeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeButton.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeButton.m; sourceTree = "<group>"; };
+		B6EF0A6E1DC90D555B80FE11E32FD6F0 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCDD2D5E39868BB01789FC98F22EFC13 /* NIKFontAwesomeImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeImageView.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeImageView.h; sourceTree = "<group>"; };
+		BB47A47E22AA10530B21BB2BEB9C2BEC /* img1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img1.png; path = Pod/Assets/img1.png; sourceTree = "<group>"; };
+		BB8994B027584218442A0F4C0F63E961 /* CircleProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleProgressBar-dummy.m"; sourceTree = "<group>"; };
 		BF2B7934A7365566295C280021101983 /* Pods-TimerPlus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerPlus-acknowledgements.plist"; sourceTree = "<group>"; };
-		BFBB270C70C6B5653461B57845E9BA9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2C0AB3C85FA5E9164DD219A4ABB70A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C039A45080560B7E957DE747C4C85B2E /* libFontAwesomeIconFactory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFontAwesomeIconFactory.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FD073D839FD8E150A2EBC5AF263213 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C3F9F3EE873280D530ED58097A3A322B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C65704761B09879C3CCB80C055D7896E /* Pods-TimerPlus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerPlus-dummy.m"; sourceTree = "<group>"; };
+		C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C9E5EA00C7409D88E049957E3C25FE4F /* NIKFontAwesomeIconTraits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconTraits.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconTraits.h; sourceTree = "<group>"; };
+		CBA3C4188F4DF50E0C051F0E5042D58D /* libJSKTimerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSKTimerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC49995310A52D3F638E0EF17E29DF46 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D4E3C74663FF54E5900D2E0439163BA8 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		D4F1FB952BCE1F7E3615EA8A0B9043E8 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D7182254BB68DD474D741FC93F19DAC7 /* libJSKTimerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSKTimerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D91D1EF6A88FD9601AED9C7FF6D749AF /* libPods-TimerPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAF2073C37711396EDA74C3C2646F78A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		DCB78311FE44CD71A0DF5115A6A57532 /* NIKFontAwesomeIconFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeIconFactory.h; path = FontAwesomeIconFactory/NIKFontAwesomeIconFactory.h; sourceTree = "<group>"; };
-		DFB6FB0698F0D3054F9F439A3D85A591 /* JSKTimerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSKTimerView.m; path = Pod/Classes/JSKTimerView.m; sourceTree = "<group>"; };
-		E12AFBC09441E1D01694CC9682AAD948 /* libPods-TimerPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E367F2B2FD3C57D4D98236C12B303F8D /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		F60DB8B11763A438820D808E35345BB7 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		F9F81E8DFC2A3B3D39023F9D20076AAD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		FBDCDC8219668A958122180B9FC509EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D8AC76FBB92A227E81509BC7A5D3FFBE /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		DA7B4FEF4B27590A1F1BA560D8E69612 /* JSKTimerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSKTimerView.m; path = Pod/Classes/JSKTimerView.m; sourceTree = "<group>"; };
+		DD57DB06BC3889FE25D01C3DBBCDB02D /* NIKFontAwesomeImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeImageView.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeImageView.h; sourceTree = "<group>"; };
+		DDDE803AFA2E8C927050445BC7F4014B /* FontAwesomeIconFactory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesomeIconFactory-dummy.m"; sourceTree = "<group>"; };
+		DDF63659DB537E526CAE85B6FCEAD68B /* libCircleProgressBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCircleProgressBar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6CF65DCCC6EAD575B28E206C07489B /* NIKFontAwesomeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeButton.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeButton.h; sourceTree = "<group>"; };
+		EA06A470B8CA4C4F7C34EE9FA9721B0C /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = "Font-Awesome/fonts/FontAwesome.otf"; sourceTree = "<group>"; };
+		EB15DC11D95FB1D0FF576A1539DAB629 /* NIKFontAwesomeTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomeTabBarItem.m; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeTabBarItem.m; sourceTree = "<group>"; };
+		EE4E01BE13D13BA0AFF5537A8DBE1584 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		F0DD28EFD8C41CF221E7EEF86087B76A /* NIKFontAwesomePathFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomePathFactory.h; path = FontAwesomeIconFactory/NIKFontAwesomePathFactory.h; sourceTree = "<group>"; };
+		F254A01A853C592B95DC4C155D3D032E /* libMZTimerLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMZTimerLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E7C781C81B7B8806A81C622F59EC4C /* libPods-TimerPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimerPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F969D8DBBC624C32F3AFBEBC6D296FCC /* NIKFontAwesomeTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NIKFontAwesomeTabBarItem.h; path = FontAwesomeIconFactory/iOS/NIKFontAwesomeTabBarItem.h; sourceTree = "<group>"; };
 		FD3C4CD5D04DA97480036832261A57AF /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSKTimerView.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,11 +369,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		547565FFF5483FA6B42091091EB0EF01 /* Frameworks */ = {
+		3386AB5337153AFF530E84DF4C89A6EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D199CAE51059034BD3B46F502562E4C /* Foundation.framework in Frameworks */,
+				658CB58CCB57329468BA7A46EAF46220 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4326809DCD2653AB54AC8504BE1A4F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4433F38F841F18A5758FB635CFE1BF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DA8EA427F4174F184E271589D41FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F0A88C75340EC76C36310463B37495 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57EE88D3879D320435BD87C2C42A5968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0015B2AC36D1502D5F0B2524357A29F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,14 +411,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94E5E56FD119471A36EC3016CDEEB67C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F38DD2155792B05CAB7BF0CCCBEF1C6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BBDD7589A0F21BE331F489AD9FB35954 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,20 +421,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE43404FADFC5A3895832B6534862DE4 /* Frameworks */ = {
+		E162F7C065726B15BD6B3EB443F2B2DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DFE358135ADE191E55BFAD8841E8B1E /* Foundation.framework in Frameworks */,
+				EF64F056C4A3ADAE6B90450078E05BAA /* Foundation.framework in Frameworks */,
+				9C0661552DBA7B1BE0290ADC86F5009B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6581EFBBA04479F25138A38C4ACF2D1 /* Frameworks */ = {
+		E9B6BA63A87BA0A419CE15877FA6E48A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2927C8F6E380D13E4AE162194E9D62B /* Foundation.framework in Frameworks */,
-				51EBEC93407AD1E78FED5255132D814D /* QuartzCore.framework in Frameworks */,
+				D8A90EFF17F8E03DCC2EDA93EE5160A5 /* Accelerate.framework in Frameworks */,
+				B3EB9B8BA6AFE582947F45BA5BDDC1D7 /* Foundation.framework in Frameworks */,
+				7FF7E55F30D4E44F15EAD2DF733D66E4 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,26 +450,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF107B769B3C9509DC47071C6869F275 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76DC44F0D7883C4926E5DEB6250D84D3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12B31F86AE133FEEC5DCC225EEE84A11 /* Support Files */ = {
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D9AB6080E49DA1A7785364CFE48314A /* FontAwesomeIconFactory.xcconfig */,
-				B44FBCA4397A6BEF860BD85A8CF42C56 /* FontAwesomeIconFactory-dummy.m */,
-				63EAF34487A90D23A61D06308769D7CE /* FontAwesomeIconFactory-prefix.pch */,
+				BB2D19F474EB9AE3DD919753965567C4 /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FontAwesomeIconFactory";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		135FF1204A497B3E070107B60C5A0D18 /* Targets Support Files */ = {
@@ -424,54 +472,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+		2C4D5EFE07ADFE2EC8E5DFDB70A5AE03 /* CircleProgressBar */ = {
 			isa = PBXGroup;
 			children = (
-				67ACCD40386E4BF5A9E17B8DA0AF47A4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		20BC9BDBC37C1807585BE277F40D79C9 /* JSKTimerView */ = {
-			isa = PBXGroup;
-			children = (
-				27E89CF64F14604B4AD8C666C1287ACA /* JSKTimerView.h */,
-				DFB6FB0698F0D3054F9F439A3D85A591 /* JSKTimerView.m */,
-				D27544AD7672DAFCAEF7FF1020EBFE16 /* Resources */,
-				91C5870C6AE0FE49AC58BCE14F986664 /* Support Files */,
-			);
-			path = JSKTimerView;
-			sourceTree = "<group>";
-		};
-		22BAA8B97D7A10288B6B1E3FA6C9BDD3 /* CircleProgressBar */ = {
-			isa = PBXGroup;
-			children = (
-				99DB91BE3849D06776D00A83EF4AA49A /* CircleProgressBar.h */,
-				5EB4CD1FAD6AB9C342808F54EEE122AC /* CircleProgressBar.m */,
-				EF99BB880CAA016A03DA2B19F0A3AA30 /* Support Files */,
+				09B7B7CABAB9274D5CE1705D9146C32F /* CircleProgressBar.h */,
+				713599F1B7EDB37B2D36B28F09588D33 /* CircleProgressBar.m */,
+				9175C48773ADDE911F1AF2C415F52583 /* Support Files */,
 			);
 			path = CircleProgressBar;
 			sourceTree = "<group>";
 		};
-		2BAE13F0791609D862D4DFB61A69DB53 /* MZTimerLabel */ = {
+		30EB2A054ECFEC3DD4F4693E08A72089 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				49DBE6085C333AE4D640A0829FF0730B /* MZTimerLabel.h */,
-				14DB18DAC9D811970E7808035D197422 /* MZTimerLabel.m */,
-				360FA7748037303F1CF406F725DCCCA4 /* Support Files */,
-			);
-			path = MZTimerLabel;
-			sourceTree = "<group>";
-		};
-		360FA7748037303F1CF406F725DCCCA4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A40BAF392E13432DB221826792B9E6D3 /* MZTimerLabel.xcconfig */,
-				3783664A9018E4AE35D4FEBC81548A3E /* MZTimerLabel-dummy.m */,
-				A6501FD8E100FE353C9F218ABD0A3CC3 /* MZTimerLabel-prefix.pch */,
+				5AD7A321C360CE3AB6F119F4A1EFACAF /* JSKTimerView.xcconfig */,
+				982E62EA98823C6AA207EDBD18D66BE3 /* JSKTimerView-dummy.m */,
+				20409842C60406052B496FFC5CD87155 /* JSKTimerView-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MZTimerLabel";
+			path = "../Target Support Files/JSKTimerView";
+			sourceTree = "<group>";
+		};
+		312D631880F9A7EEC9C3C0992F02DA9E /* JSKTimerView */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9AFCC95BC127C777D7DB635A8A16C /* JSKTimerView.h */,
+				DA7B4FEF4B27590A1F1BA560D8E69612 /* JSKTimerView.m */,
+				5F176AEE9E33FC93D118208BACFA7DB4 /* Resources */,
+				30EB2A054ECFEC3DD4F4693E08A72089 /* Support Files */,
+			);
+			path = JSKTimerView;
 			sourceTree = "<group>";
 		};
 		4D048DE8FF6F282C5B3633A8441DEE14 /* Pods */ = {
@@ -489,62 +519,148 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		5E68D4307CC79A4FA619FE6D864D70DA /* SVProgressHUD */ = {
+		4FCF9F0FB1C994B1C5DB2CEAF9D87AC2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				369294B9FB192FF1EFECA35F508DDE90 /* SVIndefiniteAnimatedView.h */,
-				339C934C761FCDD84CB7024EBDC91F50 /* SVIndefiniteAnimatedView.m */,
-				855BE2505CE1FF9973C8B98A5CA84C00 /* SVProgressHUD.h */,
-				F60DB8B11763A438820D808E35345BB7 /* SVProgressHUD.m */,
-				BC1E4437F5C0C5E85C44207E64252177 /* Resources */,
-				91B53638DC443862C5FED54E6691A5AF /* Support Files */,
+				EA06A470B8CA4C4F7C34EE9FA9721B0C /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5BA59B1BBA5F8A662E453A22489C7DA9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				09B09B1C15F7C2134B6C639CABDA133E /* FXBlurView.xcconfig */,
+				26C32161F233AC2AA3580FABC7490864 /* FXBlurView-dummy.m */,
+				96C87A99746FAFE95B8DCF79F7E5A292 /* FXBlurView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FXBlurView";
+			sourceTree = "<group>";
+		};
+		5EFC5A891BC49269BCC2D39101F87656 /* FontAwesomeIconFactory */ = {
+			isa = PBXGroup;
+			children = (
+				54C7362262A9F412BDBC8070BD0993CD /* FontAwesomeIconFactory.h */,
+				DF6CF65DCCC6EAD575B28E206C07489B /* NIKFontAwesomeButton.h */,
+				B358E05026F581DE003FEF78837FF7B0 /* NIKFontAwesomeButton.m */,
+				6B2913C6440A423A5BC22CA7DEAA4E2B /* NIKFontAwesomeIcon.h */,
+				853ECCF83B0A3DC10504B9FDD0E7E6EE /* NIKFontAwesomeIconFactory.h */,
+				7BA2B6B5548772D29470EF502401F3E3 /* NIKFontAwesomeIconFactory.m */,
+				34915E36F157E18AC429052178D18DC6 /* NIKFontAwesomeIconFactory+iOS.h */,
+				52C36CC35244D92D95B0D454276D771A /* NIKFontAwesomeIconFactory+OSX.h */,
+				C9E5EA00C7409D88E049957E3C25FE4F /* NIKFontAwesomeIconTraits.h */,
+				4A4DC7A485DF19A7BEC7170B2A26E946 /* NIKFontAwesomeIconTypes.h */,
+				DD57DB06BC3889FE25D01C3DBBCDB02D /* NIKFontAwesomeImageView.h */,
+				5C49173B764E06122F055CFC6AC36A22 /* NIKFontAwesomeImageView.m */,
+				F0DD28EFD8C41CF221E7EEF86087B76A /* NIKFontAwesomePathFactory.h */,
+				57B23B060950F0B1AABDF1F8BE4AA497 /* NIKFontAwesomePathFactory.m */,
+				1F11101CEB3311DD22AD97F85F87B516 /* NIKFontAwesomePathRenderer.h */,
+				724786999215B73D83CEBBEB174D31C0 /* NIKFontAwesomePathRenderer.m */,
+				F969D8DBBC624C32F3AFBEBC6D296FCC /* NIKFontAwesomeTabBarItem.h */,
+				EB15DC11D95FB1D0FF576A1539DAB629 /* NIKFontAwesomeTabBarItem.m */,
+				4FCF9F0FB1C994B1C5DB2CEAF9D87AC2 /* Resources */,
+				7AC52627421ADA223D4467EBE417E8E5 /* Support Files */,
+			);
+			path = FontAwesomeIconFactory;
+			sourceTree = "<group>";
+		};
+		5F176AEE9E33FC93D118208BACFA7DB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84888BA05AAA7A3D3DD7E61D086A78C4 /* img0.png */,
+				BB47A47E22AA10530B21BB2BEB9C2BEC /* img1.png */,
+				67D50E86EAAEA00339AF3C97B74C8462 /* img2.png */,
+				48CC9B744C311170B4522740527235B7 /* img3.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		65B39BCACCC1A21A1487036C34D86ABA /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7351E238342D5269754A11FDAC008EA3 /* SVIndefiniteAnimatedView.h */,
+				A95BDDCC5F102B73676BFE04AA664532 /* SVIndefiniteAnimatedView.m */,
+				1C51D6492AC10791C00DFEA30EB09425 /* SVProgressHUD.h */,
+				A9AD0E9AEBB3986FE2CCAFD0F4DEA254 /* SVProgressHUD.m */,
+				66AFD86F9F9D33744F14DCE8D59EADE7 /* Resources */,
+				A72A79E9D9AD14523B7DB73853DEEB7B /* Support Files */,
 			);
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		67ACCD40386E4BF5A9E17B8DA0AF47A4 /* iOS */ = {
+		66AFD86F9F9D33744F14DCE8D59EADE7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C2C0AB3C85FA5E9164DD219A4ABB70A8 /* CoreGraphics.framework */,
-				F9F81E8DFC2A3B3D39023F9D20076AAD /* CoreText.framework */,
-				D06DE372ABB13C90BA607C6CB5F826C4 /* Foundation.framework */,
-				FBDCDC8219668A958122180B9FC509EB /* QuartzCore.framework */,
-				506A5B2617A7166468E55C721EA33493 /* UIKit.framework */,
+				B0D8E1652C419C8FCB424DD360CD31A1 /* SVProgressHUD.bundle */,
 			);
-			name = iOS;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		695AA309C623111482428DAFAC28B346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C4D5EFE07ADFE2EC8E5DFDB70A5AE03 /* CircleProgressBar */,
+				5EFC5A891BC49269BCC2D39101F87656 /* FontAwesomeIconFactory */,
+				6D577D44CC1042A2504BA2D73E42A865 /* FXBlurView */,
+				312D631880F9A7EEC9C3C0992F02DA9E /* JSKTimerView */,
+				742C31A0482D9B365E858452F94A8103 /* MZTimerLabel */,
+				65B39BCACCC1A21A1487036C34D86ABA /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D577D44CC1042A2504BA2D73E42A865 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				2FC653053809F17871796D726B7AAA06 /* FXBlurView.h */,
+				4D81EBB69B5EBF619D1A8A64AB857370 /* FXBlurView.m */,
+				5BA59B1BBA5F8A662E453A22489C7DA9 /* Support Files */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
+		742C31A0482D9B365E858452F94A8103 /* MZTimerLabel */ = {
+			isa = PBXGroup;
+			children = (
+				9174DBD5AED7B9824EF97E761873BE88 /* MZTimerLabel.h */,
+				8C193D366C3037B6B7361D9E1E6C2A4C /* MZTimerLabel.m */,
+				AEFCE387047B5AE20F4A40158CA3F86D /* Support Files */,
+			);
+			path = MZTimerLabel;
+			sourceTree = "<group>";
+		};
+		7AC52627421ADA223D4467EBE417E8E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				957AEA32E68B268E3B5FAF633CB5B25C /* FontAwesomeIconFactory.xcconfig */,
+				DDDE803AFA2E8C927050445BC7F4014B /* FontAwesomeIconFactory-dummy.m */,
+				89C9AF163D255445906734EBD252FFA5 /* FontAwesomeIconFactory-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesomeIconFactory";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				B01A70E909123210CAFA281A2B793F34 /* Pods */,
-				F90D8FF8CF57D0171C80A3AF54529867 /* Products */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				695AA309C623111482428DAFAC28B346 /* Pods */,
+				E1B9EE0992E3A0CE527CEC7D924BE67D /* Products */,
 				135FF1204A497B3E070107B60C5A0D18 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		91B53638DC443862C5FED54E6691A5AF /* Support Files */ = {
+		9175C48773ADDE911F1AF2C415F52583 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D4E3C74663FF54E5900D2E0439163BA8 /* SVProgressHUD.xcconfig */,
-				5606E9CD188E5491DCDD3C8B8D5E1EE9 /* SVProgressHUD-dummy.m */,
-				E367F2B2FD3C57D4D98236C12B303F8D /* SVProgressHUD-prefix.pch */,
+				4D81BD7390DD652724DC0715E644FB85 /* CircleProgressBar.xcconfig */,
+				BB8994B027584218442A0F4C0F63E961 /* CircleProgressBar-dummy.m */,
+				9A892A1A9B6136D7EC60285CB51CEE97 /* CircleProgressBar-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
-			sourceTree = "<group>";
-		};
-		91C5870C6AE0FE49AC58BCE14F986664 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */,
-				771C30E7A10F41F937544D630439F1E3 /* JSKTimerView-dummy.m */,
-				7056D1EB6B52AFCF4574133F27877496 /* JSKTimerView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JSKTimerView";
+			path = "../Target Support Files/CircleProgressBar";
 			sourceTree = "<group>";
 		};
 		91D73610C69C8AC8C8952FE3B4577B4F /* Pods-TimerPlusTests */ = {
@@ -577,24 +693,39 @@
 			path = "Target Support Files/Pods-TimerPlus";
 			sourceTree = "<group>";
 		};
-		B01A70E909123210CAFA281A2B793F34 /* Pods */ = {
+		A72A79E9D9AD14523B7DB73853DEEB7B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				22BAA8B97D7A10288B6B1E3FA6C9BDD3 /* CircleProgressBar */,
-				F26692A5BF82309DA49C36C986270D66 /* FontAwesomeIconFactory */,
-				20BC9BDBC37C1807585BE277F40D79C9 /* JSKTimerView */,
-				2BAE13F0791609D862D4DFB61A69DB53 /* MZTimerLabel */,
-				5E68D4307CC79A4FA619FE6D864D70DA /* SVProgressHUD */,
+				D8AC76FBB92A227E81509BC7A5D3FFBE /* SVProgressHUD.xcconfig */,
+				B6EF0A6E1DC90D555B80FE11E32FD6F0 /* SVProgressHUD-dummy.m */,
+				EE4E01BE13D13BA0AFF5537A8DBE1584 /* SVProgressHUD-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
-		BC1E4437F5C0C5E85C44207E64252177 /* Resources */ = {
+		AEFCE387047B5AE20F4A40158CA3F86D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DAF2073C37711396EDA74C3C2646F78A /* SVProgressHUD.bundle */,
+				1E8988F5A65D15893D45887C638635A7 /* MZTimerLabel.xcconfig */,
+				49D724EDAEC64457863D26DE7A46AD95 /* MZTimerLabel-dummy.m */,
+				0036651878EA2742451C4EFDDB662CAA /* MZTimerLabel-prefix.pch */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/MZTimerLabel";
+			sourceTree = "<group>";
+		};
+		BB2D19F474EB9AE3DD919753965567C4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E64F5B4890BAB561916CCDD2E6C5BF7 /* Accelerate.framework */,
+				32A4923E6F50C996386DC04ABE7BE0DF /* CoreGraphics.framework */,
+				82E84A3A7CFD76E14655101C109C043F /* CoreText.framework */,
+				C666CB433C72ECD612D671A46137FFBA /* Foundation.framework */,
+				C2FD073D839FD8E150A2EBC5AF263213 /* QuartzCore.framework */,
+				C3F9F3EE873280D530ED58097A3A322B /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		C34C92F45AA54BC2E91E7709A03701C8 /* Pods-TimerPlusUITests */ = {
@@ -612,76 +743,20 @@
 			path = "Target Support Files/Pods-TimerPlusUITests";
 			sourceTree = "<group>";
 		};
-		CBCCFF7A37E45C1FA70E15BF2D258696 /* Resources */ = {
+		E1B9EE0992E3A0CE527CEC7D924BE67D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				758CEE2A4A63D3898299857A98E0550C /* FontAwesome.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		D27544AD7672DAFCAEF7FF1020EBFE16 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7C35AADB987E150BC1C6AFBD8DA3B19F /* img0.png */,
-				696BA7BCB07037ADE43ADC72235F6B3C /* img1.png */,
-				4EDF39A5A3FA3B0ABBDBA08537DD46E6 /* img2.png */,
-				31AAA85A8E821086B1162F285D4B8445 /* img3.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		EF99BB880CAA016A03DA2B19F0A3AA30 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4713E8B2B82860B8A768AE605718FF9E /* CircleProgressBar.xcconfig */,
-				63271C49FA7B7477F2E2B9EB7C41CA0B /* CircleProgressBar-dummy.m */,
-				2338A5A0E832879E6540F40C2E768785 /* CircleProgressBar-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CircleProgressBar";
-			sourceTree = "<group>";
-		};
-		F26692A5BF82309DA49C36C986270D66 /* FontAwesomeIconFactory */ = {
-			isa = PBXGroup;
-			children = (
-				AFE09546F9E4C65B6C9EF2B222DC3E43 /* FontAwesomeIconFactory.h */,
-				8E7B8FD98537CCE7A3EDB85CD71133DF /* NIKFontAwesomeButton.h */,
-				859710ADE53FAEB1F217C98CFA6F9941 /* NIKFontAwesomeButton.m */,
-				7EB8B843AA29FABC778D77F1D94992E4 /* NIKFontAwesomeIcon.h */,
-				DCB78311FE44CD71A0DF5115A6A57532 /* NIKFontAwesomeIconFactory.h */,
-				47C6DD80CFF251EB0CCABE4457DBA33E /* NIKFontAwesomeIconFactory.m */,
-				55949BE17AE1DDC7EA0026D299352DBB /* NIKFontAwesomeIconFactory+iOS.h */,
-				648E2204B806F833EBBA464E0E78F378 /* NIKFontAwesomeIconFactory+OSX.h */,
-				6C819DAD7E003A0E0243A220E770B0CA /* NIKFontAwesomeIconTraits.h */,
-				2CACA286B786C40FA45608286488A9D6 /* NIKFontAwesomeIconTypes.h */,
-				BCDD2D5E39868BB01789FC98F22EFC13 /* NIKFontAwesomeImageView.h */,
-				5B0FFD48B8E172E2B29D30A69351F027 /* NIKFontAwesomeImageView.m */,
-				17FFCE53DE50ADA8985FF8688316C5B7 /* NIKFontAwesomePathFactory.h */,
-				6CF32EA7728940C97E76C728D82BB313 /* NIKFontAwesomePathFactory.m */,
-				8A9B2955B29240707865967B4D47EA15 /* NIKFontAwesomePathRenderer.h */,
-				A7B3D70F90A55368A336F8B4AB12EAA4 /* NIKFontAwesomePathRenderer.m */,
-				4AFF8F0C67534DB9240F47DFECD3DCEC /* NIKFontAwesomeTabBarItem.h */,
-				B55B19206FACDCBDACF4EA7A291F268D /* NIKFontAwesomeTabBarItem.m */,
-				CBCCFF7A37E45C1FA70E15BF2D258696 /* Resources */,
-				12B31F86AE133FEEC5DCC225EEE84A11 /* Support Files */,
-			);
-			path = FontAwesomeIconFactory;
-			sourceTree = "<group>";
-		};
-		F90D8FF8CF57D0171C80A3AF54529867 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				006BC6DE9371A989FB691464252F7AE2 /* JSKTimerView.bundle */,
-				4CD140B099CEA72C6EF363FE2AD6AAAD /* libCircleProgressBar.a */,
-				66CF00D6EBFC19AED5AA4FDB9C3074A4 /* libFontAwesomeIconFactory.a */,
-				D7182254BB68DD474D741FC93F19DAC7 /* libJSKTimerView.a */,
-				0CA66C2E018EB1A29481AF2A793EF96D /* libMZTimerLabel.a */,
-				BFBB270C70C6B5653461B57845E9BA9E /* libPods.a */,
-				D91D1EF6A88FD9601AED9C7FF6D749AF /* libPods-TimerPlus.a */,
-				6E4462048D3C0765D34F202F9C248EE3 /* libPods-TimerPlusTests.a */,
-				E12AFBC09441E1D01694CC9682AAD948 /* libPods-TimerPlusUITests.a */,
-				7F4352CCD818C773C0B07A8D02162660 /* libSVProgressHUD.a */,
+				25041BD466ED92BFAA402BDFB874573D /* JSKTimerView.bundle */,
+				DDF63659DB537E526CAE85B6FCEAD68B /* libCircleProgressBar.a */,
+				C039A45080560B7E957DE747C4C85B2E /* libFontAwesomeIconFactory.a */,
+				9E9DE17C66AAB7CA7A24E7C302EE5758 /* libFXBlurView.a */,
+				CBA3C4188F4DF50E0C051F0E5042D58D /* libJSKTimerView.a */,
+				F254A01A853C592B95DC4C155D3D032E /* libMZTimerLabel.a */,
+				24E5BE4935F7705AC2B1EE0303363A15 /* libPods.a */,
+				876FC1F7C9301901DABC3C7A17AB6E76 /* libPods-TimerPlus.a */,
+				9C68BE0C7EB8132211A2C5FB39FFB7DB /* libPods-TimerPlusTests.a */,
+				F4E7C781C81B7B8806A81C622F59EC4C /* libPods-TimerPlusUITests.a */,
+				27F6193CB8E1D53212A3F6938EDB93E4 /* libSVProgressHUD.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -732,79 +807,102 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0688168D068C1EBB7D59E9A1ECCCC32 /* Headers */ = {
+		AD0243C9F60455791C793B449BE8FEE3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26F00BC67A940D4B772874C1D3376454 /* SVIndefiniteAnimatedView.h in Headers */,
-				3879D49FBA63EF506CC445D7C8750869 /* SVProgressHUD.h in Headers */,
+				293282EE2607846CB95749CA6F5020D7 /* SVIndefiniteAnimatedView.h in Headers */,
+				68F9C97B2C4BAF0F7FBC8B5C1BB55A41 /* SVProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1FF1281ED23B218E66B0EEA6EA2D49C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1455697ECC2DF6C0564762F61655CECA /* FXBlurView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3F8F97420F7975303EE4D8B98B765640 /* Pods-TimerPlusUITests */ = {
+		0204C85F4100E883AD9AD7123FE6055D /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 889DE60672E8B1E0741EECC2B2C74B82 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusUITests" */;
+			buildConfigurationList = DE31E9FB82DDA29FAC4FFBB2263D02B2 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				FE2B5E5D874EBE090ED00B2B95A6A6EF /* Sources */,
-				CE43404FADFC5A3895832B6534862DE4 /* Frameworks */,
+				3880EA68EF0220A41412267807476CE9 /* Sources */,
+				E162F7C065726B15BD6B3EB443F2B2DD /* Frameworks */,
+				AD0243C9F60455791C793B449BE8FEE3 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5439C734165E752BA1C44C8E2BB88CA4 /* PBXTargetDependency */,
-				C7535D65002AA62014A9BA9CEA0967D3 /* PBXTargetDependency */,
-				261651A4E2699A1C629E33D7F009E43C /* PBXTargetDependency */,
-				EB0B8A3B6FF63D49E2A16E0E7D09FE64 /* PBXTargetDependency */,
-				0AA32279BF6CDA324DBE3BDADDB8DF7F /* PBXTargetDependency */,
 			);
-			name = "Pods-TimerPlusUITests";
-			productName = "Pods-TimerPlusUITests";
-			productReference = E12AFBC09441E1D01694CC9682AAD948 /* libPods-TimerPlusUITests.a */;
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 27F6193CB8E1D53212A3F6938EDB93E4 /* libSVProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		53EE98CF0C086911FC7552A87CFE1B3C /* Pods */ = {
+		17392667E38E4938ACA525E988BB433B /* FXBlurView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E85C4E6C5A9D708DAE4E2C1E477620B9 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 3C696658A2DAFD99DBCB7FDF9A1FE6D4 /* Build configuration list for PBXNativeTarget "FXBlurView" */;
 			buildPhases = (
-				52D64D25BF0B61AECCF76A09A69A5463 /* Sources */,
-				94E5E56FD119471A36EC3016CDEEB67C /* Frameworks */,
+				7F0EF89CD9AEB6C9CE7FE1822BD25254 /* Sources */,
+				E9B6BA63A87BA0A419CE15877FA6E48A /* Frameworks */,
+				E1FF1281ED23B218E66B0EEA6EA2D49C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB3B041CF2F074485E586A0993FDE3DE /* PBXTargetDependency */,
-				09373CE74D0915A63E82C74AE02BA451 /* PBXTargetDependency */,
-				2FAEDDCC262A3BFBFE12B14F227E8B2F /* PBXTargetDependency */,
-				D43463309FA3B755E42D4816B256CBEB /* PBXTargetDependency */,
-				7C21D4230D4000D3A8EC7F53B7682DB0 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = BFBB270C70C6B5653461B57845E9BA9E /* libPods.a */;
+			name = FXBlurView;
+			productName = FXBlurView;
+			productReference = 9E9DE17C66AAB7CA7A24E7C302EE5758 /* libFXBlurView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		975767608F8B9ACC7C3B10095E6703E6 /* Pods-TimerPlusTests */ = {
+		992231E26CF2B42BDB278235D0BFF647 /* Pods-TimerPlusTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F76C20271BB557BC3BFE4D5A237D6D63 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusTests" */;
+			buildConfigurationList = 7063E7DDD94F9723B370B35EF57EE3F6 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusTests" */;
 			buildPhases = (
-				E288D883675423A9D0E7A70394096327 /* Sources */,
-				547565FFF5483FA6B42091091EB0EF01 /* Frameworks */,
+				E8D147B27415DD7E8620801B32B322DF /* Sources */,
+				4326809DCD2653AB54AC8504BE1A4F7D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B00E3E7FB7AFD533CCF8A14AC927C8A1 /* PBXTargetDependency */,
-				B18F39FB1370C978C2CDE704B9E050AC /* PBXTargetDependency */,
-				726FC830C7E455A593D90619D8ED6C04 /* PBXTargetDependency */,
-				06E4A0361C5FD4A56D3E22ADFD0787F2 /* PBXTargetDependency */,
-				94DD0D815E3FB2981D255A60A10E36D1 /* PBXTargetDependency */,
+				1DC1559F95105BE5AB1184F4FC0A189C /* PBXTargetDependency */,
+				BC608CB321CC96E02E65C649807D58D6 /* PBXTargetDependency */,
+				1472A2F1ECF235871EAFF0EECE106474 /* PBXTargetDependency */,
+				31C9A6648F3239B9FA720BE08E9989C3 /* PBXTargetDependency */,
+				AB2A6288EF46E3B3A34C8F4DCCFBD33F /* PBXTargetDependency */,
+				46529D2B40BB207AE9D95927A9044B6D /* PBXTargetDependency */,
 			);
 			name = "Pods-TimerPlusTests";
 			productName = "Pods-TimerPlusTests";
-			productReference = 6E4462048D3C0765D34F202F9C248EE3 /* libPods-TimerPlusTests.a */;
+			productReference = 9C68BE0C7EB8132211A2C5FB39FFB7DB /* libPods-TimerPlusTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9A6B0E7DEECA3329D306B71DF89DAF56 /* Pods-TimerPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BBE71FE1A3332E6BE282151CC0AAFB /* Build configuration list for PBXNativeTarget "Pods-TimerPlus" */;
+			buildPhases = (
+				6AFE221751536AAB04B983C9C0EA3DE9 /* Sources */,
+				3386AB5337153AFF530E84DF4C89A6EC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A28F485D7AF224C02A59B0152B23EE8 /* PBXTargetDependency */,
+				70F709EF35E6329B339FF362B31BA212 /* PBXTargetDependency */,
+				DCC61BACEB754E589C65412EFE29F396 /* PBXTargetDependency */,
+				F4114C35D71F611AD873460E9DA53199 /* PBXTargetDependency */,
+				02EBF416E941D292C4DB46822EFF15A6 /* PBXTargetDependency */,
+				F344C8A15CAC0BA488792F0DA0203AE0 /* PBXTargetDependency */,
+			);
+			name = "Pods-TimerPlus";
+			productName = "Pods-TimerPlus";
+			productReference = 876FC1F7C9301901DABC3C7A17AB6E76 /* libPods-TimerPlus.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9BD1F0F5C3FF7480748290491B0CE6C2 /* JSKTimerView-JSKTimerView */ = {
@@ -821,25 +919,8 @@
 			);
 			name = "JSKTimerView-JSKTimerView";
 			productName = "JSKTimerView-JSKTimerView";
-			productReference = 006BC6DE9371A989FB691464252F7AE2 /* JSKTimerView.bundle */;
+			productReference = 25041BD466ED92BFAA402BDFB874573D /* JSKTimerView.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7614F818B813FB52E2F6852EDD4D12A8 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
-			buildPhases = (
-				B883C5048E562D0E856A42CAB302015E /* Sources */,
-				D6581EFBBA04479F25138A38C4ACF2D1 /* Frameworks */,
-				D0688168D068C1EBB7D59E9A1ECCCC32 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SVProgressHUD;
-			productName = SVProgressHUD;
-			productReference = 7F4352CCD818C773C0B07A8D02162660 /* libSVProgressHUD.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 		B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */ = {
 			isa = PBXNativeTarget;
@@ -855,28 +936,7 @@
 			);
 			name = MZTimerLabel;
 			productName = MZTimerLabel;
-			productReference = 0CA66C2E018EB1A29481AF2A793EF96D /* libMZTimerLabel.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B8791EC8A22E56A7969AC8182F5BE3E0 /* Pods-TimerPlus */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E09CE71C8915378303B71644F801DCD3 /* Build configuration list for PBXNativeTarget "Pods-TimerPlus" */;
-			buildPhases = (
-				0C96137E5D74F951E444BD77230DD30B /* Sources */,
-				FF107B769B3C9509DC47071C6869F275 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BC40895BFA1E8D46A1E1C2DF6B3EF230 /* PBXTargetDependency */,
-				48818B7DD276ED46DA58C286E5A2A9B1 /* PBXTargetDependency */,
-				06EBAC2018ABC20EC24AA71182891642 /* PBXTargetDependency */,
-				2B7B1BCED422CD960D1BC51DBCB9E9C9 /* PBXTargetDependency */,
-				74583456B50501A626ECF928F022B868 /* PBXTargetDependency */,
-			);
-			name = "Pods-TimerPlus";
-			productName = "Pods-TimerPlus";
-			productReference = D91D1EF6A88FD9601AED9C7FF6D749AF /* libPods-TimerPlus.a */;
+			productReference = F254A01A853C592B95DC4C155D3D032E /* libMZTimerLabel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */ = {
@@ -894,7 +954,51 @@
 			);
 			name = JSKTimerView;
 			productName = JSKTimerView;
-			productReference = D7182254BB68DD474D741FC93F19DAC7 /* libJSKTimerView.a */;
+			productReference = CBA3C4188F4DF50E0C051F0E5042D58D /* libJSKTimerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E646DA572F3FBA1899F20C83028686E1 /* Pods-TimerPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D0056759E6F44C82C41EA8BCE1F4103 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusUITests" */;
+			buildPhases = (
+				B26B66978E68BDEC6683E4B5DC7A93CF /* Sources */,
+				52DA8EA427F4174F184E271589D41FF8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FCA4239DF47558D3EAD8CF99CD33F37 /* PBXTargetDependency */,
+				154ED7B5D7F27D6D8D93C7D026DC79F5 /* PBXTargetDependency */,
+				AE07935A19F38DFA87A0C61673385BD0 /* PBXTargetDependency */,
+				4EEF1E40FECF29B8AF499EBC4AC72C86 /* PBXTargetDependency */,
+				5EA11F0BE88F3A8C54DAFFB870E0356E /* PBXTargetDependency */,
+				01A379C7576DFC816A9488733C26706C /* PBXTargetDependency */,
+			);
+			name = "Pods-TimerPlusUITests";
+			productName = "Pods-TimerPlusUITests";
+			productReference = F4E7C781C81B7B8806A81C622F59EC4C /* libPods-TimerPlusUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E945D11BE7A22E763FD6F531D645E12A /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FCA1CEC9996C4F8B91E9899169A755D /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				F4DBCD724F983BE24808436ACA5D8704 /* Sources */,
+				57EE88D3879D320435BD87C2C42A5968 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8C73252D68FF86B4E47311AA3A95032 /* PBXTargetDependency */,
+				B41F9F11B2B095BEB411078874FC0B6D /* PBXTargetDependency */,
+				E5E6D4A569AD59D11615868881686EC9 /* PBXTargetDependency */,
+				CE516270706D1F091BC27A563C9F1680 /* PBXTargetDependency */,
+				E1C129DCE28C0799DF1CA0450AA95B2E /* PBXTargetDependency */,
+				33FE665031C06D5AD25B403B06EE9A0E /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 24E5BE4935F7705AC2B1EE0303363A15 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */ = {
@@ -911,7 +1015,7 @@
 			);
 			name = FontAwesomeIconFactory;
 			productName = FontAwesomeIconFactory;
-			productReference = 66CF00D6EBFC19AED5AA4FDB9C3074A4 /* libFontAwesomeIconFactory.a */;
+			productReference = C039A45080560B7E957DE747C4C85B2E /* libFontAwesomeIconFactory.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */ = {
@@ -928,7 +1032,7 @@
 			);
 			name = CircleProgressBar;
 			productName = CircleProgressBar;
-			productReference = 4CD140B099CEA72C6EF363FE2AD6AAAD /* libCircleProgressBar.a */;
+			productReference = DDF63659DB537E526CAE85B6FCEAD68B /* libCircleProgressBar.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -948,20 +1052,21 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F90D8FF8CF57D0171C80A3AF54529867 /* Products */;
+			productRefGroup = E1B9EE0992E3A0CE527CEC7D924BE67D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */,
 				ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */,
+				17392667E38E4938ACA525E988BB433B /* FXBlurView */,
 				B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */,
 				9BD1F0F5C3FF7480748290491B0CE6C2 /* JSKTimerView-JSKTimerView */,
 				B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */,
-				53EE98CF0C086911FC7552A87CFE1B3C /* Pods */,
-				B8791EC8A22E56A7969AC8182F5BE3E0 /* Pods-TimerPlus */,
-				975767608F8B9ACC7C3B10095E6703E6 /* Pods-TimerPlusTests */,
-				3F8F97420F7975303EE4D8B98B765640 /* Pods-TimerPlusUITests */,
-				B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */,
+				E945D11BE7A22E763FD6F531D645E12A /* Pods */,
+				9A6B0E7DEECA3329D306B71DF89DAF56 /* Pods-TimerPlus */,
+				992231E26CF2B42BDB278235D0BFF647 /* Pods-TimerPlusTests */,
+				E646DA572F3FBA1899F20C83028686E1 /* Pods-TimerPlusUITests */,
+				0204C85F4100E883AD9AD7123FE6055D /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
@@ -981,14 +1086,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C96137E5D74F951E444BD77230DD30B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87CD17990A95B57D4B6B745130466459 /* Pods-TimerPlus-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0CE6E00666DFA1C10B1FAB148592992C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1003,11 +1100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52D64D25BF0B61AECCF76A09A69A5463 /* Sources */ = {
+		3880EA68EF0220A41412267807476CE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				303AFC297F0B68BF84F86F646E3DB087 /* Pods-dummy.m in Sources */,
+				EC191EC09B36D3B0213E321D35A147A2 /* SVIndefiniteAnimatedView.m in Sources */,
+				380233A564CCC0F5D2BB7F9D9C38EAF2 /* SVProgressHUD-dummy.m in Sources */,
+				97C39A1CD0CAFC893FDB5603D2E76E8C /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,6 +1116,23 @@
 			files = (
 				3C98E4BB808022E07C8052BF2752B6BF /* CircleProgressBar-dummy.m in Sources */,
 				B77FAF006669C9A211954F0106FC89F6 /* CircleProgressBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AFE221751536AAB04B983C9C0EA3DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295BFD6353D2F26E65351C5773895730 /* Pods-TimerPlus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F0EF89CD9AEB6C9CE7FE1822BD25254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E9FE2EB5C6E67DAD379ED9F43071C3B /* FXBlurView-dummy.m in Sources */,
+				EB3774E0A0442180CE015AC70748DB21 /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,76 +1161,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B883C5048E562D0E856A42CAB302015E /* Sources */ = {
+		B26B66978E68BDEC6683E4B5DC7A93CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EDE64B208990EC36704498D79B6E292 /* SVIndefiniteAnimatedView.m in Sources */,
-				9CA4DBDFD6F94F062ECBB9E5F8E7B89F /* SVProgressHUD-dummy.m in Sources */,
-				409CD8643DA13B60F043F92B1694A934 /* SVProgressHUD.m in Sources */,
+				7A305EAFC8C50340C9F697720ADC7562 /* Pods-TimerPlusUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E288D883675423A9D0E7A70394096327 /* Sources */ = {
+		E8D147B27415DD7E8620801B32B322DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3754EC58B60A41E89FC539B0BDE2AC47 /* Pods-TimerPlusTests-dummy.m in Sources */,
+				FD475883F47B68C89E9487F86580AE2D /* Pods-TimerPlusTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE2B5E5D874EBE090ED00B2B95A6A6EF /* Sources */ = {
+		F4DBCD724F983BE24808436ACA5D8704 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8DF58383E433C0DB3576529500EFD6C /* Pods-TimerPlusUITests-dummy.m in Sources */,
+				D27E8F321DF34E84AD0FF2B439E18EFB /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06E4A0361C5FD4A56D3E22ADFD0787F2 /* PBXTargetDependency */ = {
+		01A379C7576DFC816A9488733C26706C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 0204C85F4100E883AD9AD7123FE6055D /* SVProgressHUD */;
+			targetProxy = 3878EADF0D36FC7449EA2166395BCB36 /* PBXContainerItemProxy */;
+		};
+		02EBF416E941D292C4DB46822EFF15A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MZTimerLabel;
 			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
-			targetProxy = AD72FD7B26726243A49A4E33D7EA82CD /* PBXContainerItemProxy */;
+			targetProxy = 1DBA3BBC6EDC5A9E801472FCBA0C79D0 /* PBXContainerItemProxy */;
 		};
-		06EBAC2018ABC20EC24AA71182891642 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JSKTimerView;
-			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
-			targetProxy = 59850AE710034474C99B84CACB441F24 /* PBXContainerItemProxy */;
-		};
-		09373CE74D0915A63E82C74AE02BA451 /* PBXTargetDependency */ = {
+		1472A2F1ECF235871EAFF0EECE106474 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FontAwesomeIconFactory;
 			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
-			targetProxy = E0642FF7A27FAD80C7C52A30B37ECEB3 /* PBXContainerItemProxy */;
+			targetProxy = BDEC575CD213861BDB0F67B035B0949D /* PBXContainerItemProxy */;
 		};
-		0AA32279BF6CDA324DBE3BDADDB8DF7F /* PBXTargetDependency */ = {
+		154ED7B5D7F27D6D8D93C7D026DC79F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FXBlurView;
+			target = 17392667E38E4938ACA525E988BB433B /* FXBlurView */;
+			targetProxy = F92799B0423B749FC58E89F8BBFDD5CA /* PBXContainerItemProxy */;
+		};
+		1DC1559F95105BE5AB1184F4FC0A189C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleProgressBar;
+			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
+			targetProxy = CD8B11598288BA37A5F8531DC24C99B7 /* PBXContainerItemProxy */;
+		};
+		2A28F485D7AF224C02A59B0152B23EE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleProgressBar;
+			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
+			targetProxy = 560E307D5EA00EE501E921113216E3B1 /* PBXContainerItemProxy */;
+		};
+		31C9A6648F3239B9FA720BE08E9989C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSKTimerView;
+			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
+			targetProxy = 0C11D93F67665785197D3A205E1F2170 /* PBXContainerItemProxy */;
+		};
+		33FE665031C06D5AD25B403B06EE9A0E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */;
-			targetProxy = 3D2F04BEDA3357723574D09887749FEF /* PBXContainerItemProxy */;
-		};
-		261651A4E2699A1C629E33D7F009E43C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JSKTimerView;
-			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
-			targetProxy = 0435F94045ED280A78FEB0DE4D2658FD /* PBXContainerItemProxy */;
-		};
-		2B7B1BCED422CD960D1BC51DBCB9E9C9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MZTimerLabel;
-			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
-			targetProxy = C4C7D944F1E72D46C8A0A361484C3D2B /* PBXContainerItemProxy */;
-		};
-		2FAEDDCC262A3BFBFE12B14F227E8B2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JSKTimerView;
-			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
-			targetProxy = 840C3BE0341339FE2EE64FE18921E31F /* PBXContainerItemProxy */;
+			target = 0204C85F4100E883AD9AD7123FE6055D /* SVProgressHUD */;
+			targetProxy = C355BDAC14F66AA95E7739D8D426A619 /* PBXContainerItemProxy */;
 		};
 		445AF8A894BBF83E6E18089BDCA9FEDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1122,88 +1242,118 @@
 			target = 9BD1F0F5C3FF7480748290491B0CE6C2 /* JSKTimerView-JSKTimerView */;
 			targetProxy = 8E74964F793E2B70CD3D4092D1B6CDFF /* PBXContainerItemProxy */;
 		};
-		48818B7DD276ED46DA58C286E5A2A9B1 /* PBXTargetDependency */ = {
+		46529D2B40BB207AE9D95927A9044B6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FontAwesomeIconFactory;
-			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
-			targetProxy = 0A894586545F619332C273EACE29DC3F /* PBXContainerItemProxy */;
+			name = SVProgressHUD;
+			target = 0204C85F4100E883AD9AD7123FE6055D /* SVProgressHUD */;
+			targetProxy = DA7FDBBE2830CAF0A29B744729CCCE26 /* PBXContainerItemProxy */;
 		};
-		5439C734165E752BA1C44C8E2BB88CA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircleProgressBar;
-			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
-			targetProxy = 0AC69C10ECD7BE3D627A21C114CDA27B /* PBXContainerItemProxy */;
-		};
-		726FC830C7E455A593D90619D8ED6C04 /* PBXTargetDependency */ = {
+		4EEF1E40FECF29B8AF499EBC4AC72C86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JSKTimerView;
 			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
-			targetProxy = 497C1A3E79DC9A47218D499876528B60 /* PBXContainerItemProxy */;
+			targetProxy = 3D4B7FB6746721F09B75A51E54D1B572 /* PBXContainerItemProxy */;
 		};
-		74583456B50501A626ECF928F022B868 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */;
-			targetProxy = A04D4CA0E4513AF48A0EF18D6223C54C /* PBXContainerItemProxy */;
-		};
-		7C21D4230D4000D3A8EC7F53B7682DB0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */;
-			targetProxy = 6F46820DA8C156F0AA791EB432C3F23C /* PBXContainerItemProxy */;
-		};
-		94DD0D815E3FB2981D255A60A10E36D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = B11857FE8088912A72E2AC44134F687A /* SVProgressHUD */;
-			targetProxy = 0A9D4D315E697ADF8D1010D56B388617 /* PBXContainerItemProxy */;
-		};
-		B00E3E7FB7AFD533CCF8A14AC927C8A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircleProgressBar;
-			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
-			targetProxy = 49EB4B746A941A7E4D1EE74EAE1234AD /* PBXContainerItemProxy */;
-		};
-		B18F39FB1370C978C2CDE704B9E050AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FontAwesomeIconFactory;
-			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
-			targetProxy = CD95EC0DD695AB46DF0AFC7D9AB8076C /* PBXContainerItemProxy */;
-		};
-		BC40895BFA1E8D46A1E1C2DF6B3EF230 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircleProgressBar;
-			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
-			targetProxy = 61C801ED62CADA1FA91FFDFA92A29D98 /* PBXContainerItemProxy */;
-		};
-		C7535D65002AA62014A9BA9CEA0967D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FontAwesomeIconFactory;
-			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
-			targetProxy = 6DD1DBB67126E8D6287FA72CA452BA48 /* PBXContainerItemProxy */;
-		};
-		CB3B041CF2F074485E586A0993FDE3DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CircleProgressBar;
-			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
-			targetProxy = 7B1542E6F8B132D31D8E90CF9387FFD3 /* PBXContainerItemProxy */;
-		};
-		D43463309FA3B755E42D4816B256CBEB /* PBXTargetDependency */ = {
+		5EA11F0BE88F3A8C54DAFFB870E0356E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MZTimerLabel;
 			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
-			targetProxy = F7C665C49F3BC3CC50C086D59AB184B3 /* PBXContainerItemProxy */;
+			targetProxy = 22DAACBA69D3445046DF7227E417E3EF /* PBXContainerItemProxy */;
 		};
-		EB0B8A3B6FF63D49E2A16E0E7D09FE64 /* PBXTargetDependency */ = {
+		6FCA4239DF47558D3EAD8CF99CD33F37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleProgressBar;
+			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
+			targetProxy = 8A99B1ECE301882A9D50CA0827A89841 /* PBXContainerItemProxy */;
+		};
+		70F709EF35E6329B339FF362B31BA212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FXBlurView;
+			target = 17392667E38E4938ACA525E988BB433B /* FXBlurView */;
+			targetProxy = 2451FE7AD8B8A1E2A9A4A0201487C06C /* PBXContainerItemProxy */;
+		};
+		A8C73252D68FF86B4E47311AA3A95032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleProgressBar;
+			target = ED4B44CA33B3FCB0354C4AB6CCC6FAE0 /* CircleProgressBar */;
+			targetProxy = 712735BFAA0BC21C85A7FFF44ADED28D /* PBXContainerItemProxy */;
+		};
+		AB2A6288EF46E3B3A34C8F4DCCFBD33F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MZTimerLabel;
 			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
-			targetProxy = 9F1142D72AE317D33C153DB183045EC6 /* PBXContainerItemProxy */;
+			targetProxy = FEA855E6A264E20B208FAACC0293D09C /* PBXContainerItemProxy */;
+		};
+		AE07935A19F38DFA87A0C61673385BD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeIconFactory;
+			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
+			targetProxy = C0CA8416F3BFEC2463CCFD58A50D3C54 /* PBXContainerItemProxy */;
+		};
+		B41F9F11B2B095BEB411078874FC0B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FXBlurView;
+			target = 17392667E38E4938ACA525E988BB433B /* FXBlurView */;
+			targetProxy = E287D51C8227BB439BAC26BC58E926D8 /* PBXContainerItemProxy */;
+		};
+		BC608CB321CC96E02E65C649807D58D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FXBlurView;
+			target = 17392667E38E4938ACA525E988BB433B /* FXBlurView */;
+			targetProxy = 100A6B82C0CC47347B1B7C67C7C056FE /* PBXContainerItemProxy */;
+		};
+		CE516270706D1F091BC27A563C9F1680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSKTimerView;
+			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
+			targetProxy = EDDF4AF63C055F31FBDD4D5C4493466F /* PBXContainerItemProxy */;
+		};
+		DCC61BACEB754E589C65412EFE29F396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeIconFactory;
+			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
+			targetProxy = F00D8C2FBAB90DE7FD0B38D2A0A591C6 /* PBXContainerItemProxy */;
+		};
+		E1C129DCE28C0799DF1CA0450AA95B2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZTimerLabel;
+			target = B180241C64C8328694E67BDDD9D432E2 /* MZTimerLabel */;
+			targetProxy = 6E5D351A8C36F31678CA666FFF20E809 /* PBXContainerItemProxy */;
+		};
+		E5E6D4A569AD59D11615868881686EC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesomeIconFactory;
+			target = ED4AECDBFBFFC4466DF47CBF08CC4ACA /* FontAwesomeIconFactory */;
+			targetProxy = FE63733475156A006DDDD0E48CDBE3A4 /* PBXContainerItemProxy */;
+		};
+		F344C8A15CAC0BA488792F0DA0203AE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 0204C85F4100E883AD9AD7123FE6055D /* SVProgressHUD */;
+			targetProxy = BF0A4670B1ABB0F2383993FD4E59970A /* PBXContainerItemProxy */;
+		};
+		F4114C35D71F611AD873460E9DA53199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSKTimerView;
+			target = B90E40446E4173690DF4E1A808FC8BAF /* JSKTimerView */;
+			targetProxy = F567ED0ADB471EDCEA9782E33B29B14C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0025B81C452C8142D5549E48CA076719 /* Debug */ = {
+		09A6778DDA5EFEDE4B13DF86E0B3A7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD7A321C360CE3AB6F119F4A1EFACAF /* JSKTimerView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JSKTimerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		14D801D1145AC7599CE5C7444C86C555 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88A43B598F03E6C1DFD0D3BDC5F4FD70 /* Pods.debug.xcconfig */;
 			buildSettings = {
@@ -1220,38 +1370,9 @@
 			};
 			name = Debug;
 		};
-		09A6778DDA5EFEDE4B13DF86E0B3A7EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = JSKTimerView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		0F05D134B8B215C25AFE2A50481B2B3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3766EAE38AC8AA0C2D7F93D3FF964D77 /* Pods-TimerPlusUITests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		176AB6FB9FAD80C605EFC3C07E0B20D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A40BAF392E13432DB221826792B9E6D3 /* MZTimerLabel.xcconfig */;
+			baseConfigurationReference = 1E8988F5A65D15893D45887C638635A7 /* MZTimerLabel.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MZTimerLabel/MZTimerLabel-prefix.pch";
@@ -1267,9 +1388,26 @@
 			};
 			name = Release;
 		};
+		2B7659FDDBF88E352122031598E56CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512CE8A6EDAE91D4B2831BC5766AD3DA /* Pods-TimerPlusTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		32EC6EBB1D47D84DCCB8C240C31A3A30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4713E8B2B82860B8A768AE605718FF9E /* CircleProgressBar.xcconfig */;
+			baseConfigurationReference = 4D81BD7390DD652724DC0715E644FB85 /* CircleProgressBar.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/CircleProgressBar/CircleProgressBar-prefix.pch";
@@ -1285,9 +1423,27 @@
 			};
 			name = Release;
 		};
-		39FF1B9ACBB2D14DA05C15D8F053FE80 /* Release */ = {
+		3363D5867CD80D9319EFB8B2AB2D515D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E4A9548D65FBBA687074776A3A6A74C /* Pods-TimerPlusUITests.release.xcconfig */;
+			baseConfigurationReference = D8AC76FBB92A227E81509BC7A5D3FFBE /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5038D2E944CE008AEDB06911C6AE8157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC49995310A52D3F638E0EF17E29DF46 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1304,7 +1460,7 @@
 		};
 		614E54B0C5DD12A1223EE86E5CF6609F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D9AB6080E49DA1A7785364CFE48314A /* FontAwesomeIconFactory.xcconfig */;
+			baseConfigurationReference = 957AEA32E68B268E3B5FAF633CB5B25C /* FontAwesomeIconFactory.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeIconFactory/FontAwesomeIconFactory-prefix.pch";
@@ -1320,9 +1476,26 @@
 			};
 			name = Release;
 		};
+		64DD86959C76EFC50C09780A2FFAD464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B8B5DEFE4DA31DD21AB410FE04F7ED /* Pods-TimerPlus.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		6534229CDD80E662E688DA0B558CD3B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D9AB6080E49DA1A7785364CFE48314A /* FontAwesomeIconFactory.xcconfig */;
+			baseConfigurationReference = 957AEA32E68B268E3B5FAF633CB5B25C /* FontAwesomeIconFactory.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/FontAwesomeIconFactory/FontAwesomeIconFactory-prefix.pch";
@@ -1340,7 +1513,7 @@
 		};
 		67532D88E69ED2904E6E6AF9C457CD0F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */;
+			baseConfigurationReference = 5AD7A321C360CE3AB6F119F4A1EFACAF /* JSKTimerView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = JSKTimerView;
@@ -1350,14 +1523,14 @@
 			};
 			name = Release;
 		};
-		6994F8413D40BE73A70DC465149346E2 /* Release */ = {
+		730F97191F488D9C8BFF113C332090A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4E3C74663FF54E5900D2E0439163BA8 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = D8AC76FBB92A227E81509BC7A5D3FFBE /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1366,28 +1539,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
-		};
-		73438EAA553CE5A1AE83950D2E039011 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FD9895962E26ED5DD900A613F3494F9 /* Pods-TimerPlusTests.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 		8327A385B41FF8D850C14CC7C661F280 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A40BAF392E13432DB221826792B9E6D3 /* MZTimerLabel.xcconfig */;
+			baseConfigurationReference = 1E8988F5A65D15893D45887C638635A7 /* MZTimerLabel.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MZTimerLabel/MZTimerLabel-prefix.pch";
@@ -1403,12 +1559,12 @@
 			};
 			name = Debug;
 		};
-		8CEF72FBDABA911D603DBD36C0684FFD /* Debug */ = {
+		863B5383FF92FA40A9626F575D692428 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4E3C74663FF54E5900D2E0439163BA8 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 09B09B1C15F7C2134B6C639CABDA133E /* FXBlurView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/FXBlurView/FXBlurView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -1421,26 +1577,9 @@
 			};
 			name = Debug;
 		};
-		8EC09E5667746A01C32F981AF8510077 /* Debug */ = {
+		A43616C2F17E468126D078126DBF6D7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 512CE8A6EDAE91D4B2831BC5766AD3DA /* Pods-TimerPlusTests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A4C4562E304A3A40AE54B4BD615EDAB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC49995310A52D3F638E0EF17E29DF46 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 7E4A9548D65FBBA687074776A3A6A74C /* Pods-TimerPlusUITests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1494,26 +1633,27 @@
 			};
 			name = Debug;
 		};
-		C0D1CEB83B6F3516F5813C332AC447A5 /* Debug */ = {
+		B0FA08E9D3330A29760D324153D4EF45 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3860D7FD21A38648204B78061714D2E0 /* Pods-TimerPlus.debug.xcconfig */;
+			baseConfigurationReference = 09B09B1C15F7C2134B6C639CABDA133E /* FXBlurView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FXBlurView/FXBlurView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		C7797EF45024833E2A6D3F33A30D9F65 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */;
+			baseConfigurationReference = 5AD7A321C360CE3AB6F119F4A1EFACAF /* JSKTimerView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JSKTimerView/JSKTimerView-prefix.pch";
@@ -1529,9 +1669,26 @@
 			};
 			name = Debug;
 		};
-		C9BA221F9BED3BC932F209D972B9EFEE /* Release */ = {
+		D135C2619A3E5E5396F89D5723D8AF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4B8B5DEFE4DA31DD21AB410FE04F7ED /* Pods-TimerPlus.release.xcconfig */;
+			baseConfigurationReference = 3766EAE38AC8AA0C2D7F93D3FF964D77 /* Pods-TimerPlusUITests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D714641E614D52E6079F7658DB2287E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD9895962E26ED5DD900A613F3494F9 /* Pods-TimerPlusTests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1548,7 +1705,7 @@
 		};
 		E0B2601AAE95580A2969AAFC67A1985C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4713E8B2B82860B8A768AE605718FF9E /* CircleProgressBar.xcconfig */;
+			baseConfigurationReference = 4D81BD7390DD652724DC0715E644FB85 /* CircleProgressBar.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/CircleProgressBar/CircleProgressBar-prefix.pch";
@@ -1559,6 +1716,23 @@
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E5E3C7A0D51919BAF5FBA16F449A33A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3860D7FD21A38648204B78061714D2E0 /* Pods-TimerPlus.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -1600,7 +1774,7 @@
 		};
 		FE469745C1D849F023B2E7DA8FDA3A1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDDE4EB44587BB4D94EC9C5B42A1970E /* JSKTimerView.xcconfig */;
+			baseConfigurationReference = 5AD7A321C360CE3AB6F119F4A1EFACAF /* JSKTimerView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JSKTimerView/JSKTimerView-prefix.pch";
@@ -1619,6 +1793,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0FCA1CEC9996C4F8B91E9899169A755D /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14D801D1145AC7599CE5C7444C86C555 /* Debug */,
+				5038D2E944CE008AEDB06911C6AE8157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		243E6D786F65B7FA177169D604DF6079 /* Build configuration list for PBXNativeTarget "CircleProgressBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1637,20 +1820,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7614F818B813FB52E2F6852EDD4D12A8 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+		3C696658A2DAFD99DBCB7FDF9A1FE6D4 /* Build configuration list for PBXNativeTarget "FXBlurView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8CEF72FBDABA911D603DBD36C0684FFD /* Debug */,
-				6994F8413D40BE73A70DC465149346E2 /* Release */,
+				863B5383FF92FA40A9626F575D692428 /* Debug */,
+				B0FA08E9D3330A29760D324153D4EF45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		889DE60672E8B1E0741EECC2B2C74B82 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusUITests" */ = {
+		7063E7DDD94F9723B370B35EF57EE3F6 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F05D134B8B215C25AFE2A50481B2B3D /* Debug */,
-				39FF1B9ACBB2D14DA05C15D8F053FE80 /* Release */,
+				2B7659FDDBF88E352122031598E56CF9 /* Debug */,
+				D714641E614D52E6079F7658DB2287E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D0056759E6F44C82C41EA8BCE1F4103 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D135C2619A3E5E5396F89D5723D8AF88 /* Debug */,
+				A43616C2F17E468126D078126DBF6D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1682,29 +1874,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E09CE71C8915378303B71644F801DCD3 /* Build configuration list for PBXNativeTarget "Pods-TimerPlus" */ = {
+		DE31E9FB82DDA29FAC4FFBB2263D02B2 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0D1CEB83B6F3516F5813C332AC447A5 /* Debug */,
-				C9BA221F9BED3BC932F209D972B9EFEE /* Release */,
+				730F97191F488D9C8BFF113C332090A6 /* Debug */,
+				3363D5867CD80D9319EFB8B2AB2D515D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E85C4E6C5A9D708DAE4E2C1E477620B9 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		E9BBE71FE1A3332E6BE282151CC0AAFB /* Build configuration list for PBXNativeTarget "Pods-TimerPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0025B81C452C8142D5549E48CA076719 /* Debug */,
-				A4C4562E304A3A40AE54B4BD615EDAB9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F76C20271BB557BC3BFE4D5A237D6D63 /* Build configuration list for PBXNativeTarget "Pods-TimerPlusTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8EC09E5667746A01C32F981AF8510077 /* Debug */,
-				73438EAA553CE5A1AE83950D2E039011 /* Release */,
+				E5E3C7A0D51919BAF5FBA16F449A33A5 /* Debug */,
+				64DD86959C76EFC50C09780A2FFAD464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

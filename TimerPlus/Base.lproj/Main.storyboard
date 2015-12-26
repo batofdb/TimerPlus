@@ -540,14 +540,14 @@
                                             <constraint firstAttribute="width" constant="42" id="r6S-Iy-Vvu"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.85098039219999999" green="0.63921568630000003" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="KVe-P0-pCO"/>
-                                    <constraint firstItem="jVg-WI-jIJ" firstAttribute="top" secondItem="bQJ-LG-hFs" secondAttribute="top" constant="200" id="rSa-uY-iNd"/>
+                                    <constraint firstItem="jVg-WI-jIJ" firstAttribute="top" secondItem="bQJ-LG-hFs" secondAttribute="top" constant="200" id="g90-Bk-e2L"/>
                                     <constraint firstAttribute="centerX" secondItem="jVg-WI-jIJ" secondAttribute="centerX" id="w1g-GI-a25"/>
                                 </constraints>
                             </view>
@@ -559,7 +559,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPi-t9-n2m">
-                                            <rect key="frame" x="40" y="-26" width="80" height="80"/>
+                                            <rect key="frame" x="20" y="-26" width="80" height="80"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_default" translatesAutoresizingMaskIntoConstraints="NO" id="xBg-69-H09">
                                                     <rect key="frame" x="5" y="5" width="70" height="70"/>
@@ -584,7 +584,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Last" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hid-Zx-tVU">
-                                            <rect key="frame" x="40" y="59" width="250" height="21"/>
+                                            <rect key="frame" x="20" y="59" width="250" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="268" id="Mqi-7r-QXU"/>
                                                 <constraint firstAttribute="height" constant="21" id="Msp-b3-rU4"/>
@@ -600,7 +600,7 @@
                                             </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fw-jU-tMl">
-                                            <rect key="frame" x="40" y="82" width="268" height="21"/>
+                                            <rect key="frame" x="20" y="82" width="268" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="NwL-Wc-NDz"/>
                                                 <constraint firstAttribute="width" constant="268" id="ULR-IP-RTc"/>
@@ -627,7 +627,7 @@
                                         <constraint firstItem="0fw-jU-tMl" firstAttribute="leading" secondItem="cPi-t9-n2m" secondAttribute="leading" id="Bmo-C1-aBM"/>
                                         <constraint firstItem="0fw-jU-tMl" firstAttribute="top" secondItem="hid-Zx-tVU" secondAttribute="bottom" constant="2" id="JB4-L0-sDg"/>
                                         <constraint firstItem="hid-Zx-tVU" firstAttribute="top" secondItem="cPi-t9-n2m" secondAttribute="bottom" constant="5" id="pJS-gI-WGG"/>
-                                        <constraint firstItem="cPi-t9-n2m" firstAttribute="leading" secondItem="rZw-NO-4mj" secondAttribute="leading" constant="40" id="sTT-1f-EeG"/>
+                                        <constraint firstItem="cPi-t9-n2m" firstAttribute="leading" secondItem="rZw-NO-4mj" secondAttribute="leading" constant="20" id="sTT-1f-EeG"/>
                                         <constraint firstItem="cPi-t9-n2m" firstAttribute="top" secondItem="rZw-NO-4mj" secondAttribute="top" constant="-26" id="wZM-vH-Sn1"/>
                                     </constraints>
                                     <variation key="default">
