@@ -11,6 +11,23 @@
 
 @implementation Timer
 
+@dynamic sets;
+@dynamic name;
+@dynamic exercises;
+@dynamic interval_between_reps;
+@dynamic interval_between_sets;
+@dynamic warmup;
+@dynamic cooldown;
+@dynamic totalTime;
+
++ (NSString *)parseClassName {
+    return @"Timer";
+}
+
++ (void)load {
+    [self registerSubclass];
+}
+
 - (instancetype) init {
     self = [super init];
     if (self) {

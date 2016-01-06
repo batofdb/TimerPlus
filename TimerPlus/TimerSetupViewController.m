@@ -50,16 +50,19 @@
     [self.tableView reloadData];
 }
 
-#pragma mark - Tableview Methods
-
-
+#pragma mark - Save Method
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 4 && indexPath.row == 0) {
 
-        [self saveTimer];
+        //[self saveTimerWithParse];
+        [self saveTimerWithCoreData];
         NSLog(@"save");
     }
 }
+
+
+#pragma mark - Tableview Methods
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.section) {
         case 0:
@@ -416,9 +419,9 @@
 }
 
 
-#pragma mark - Save Data
+#pragma mark - Core Data Save
 
-- (void)saveTimer{
+- (void)saveTimerWithCoreData {
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Timer"];
 
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name == %@", self.timer.name];
@@ -459,6 +462,12 @@
     if (error) {
         //Error handling
     }
+
+}
+
+#pragma mark - Parse Save
+
+- (void)saveTimerWithParse {
 
 }
 

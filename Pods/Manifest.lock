@@ -1,9 +1,12 @@
 PODS:
+  - Bolts/Tasks (1.5.0)
   - CircleProgressBar (0.21)
   - FontAwesomeIconFactory (2.1.1)
   - FXBlurView (1.6.4)
   - JSKTimerView (0.4.1)
   - MZTimerLabel (0.5.4)
+  - Parse (1.11.0):
+    - Bolts/Tasks (~> 1.5)
   - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
@@ -12,14 +15,17 @@ DEPENDENCIES:
   - FXBlurView (~> 1.6)
   - JSKTimerView
   - MZTimerLabel
+  - Parse
   - SVProgressHUD
 
 SPEC CHECKSUMS:
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
   CircleProgressBar: 4ce12ddcdc5673cc9f0fb83f6ec7b2a53ecb28df
   FontAwesomeIconFactory: bb9ce26d3dd13044854a82d380023c8e7d3ebf1a
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   JSKTimerView: 6e773cc20f87e3af98b9fe242492f38055f55cc8
   MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
+  Parse: 886af46a0a677402f6374bb97ac212e795f70afe
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
 COCOAPODS: 0.39.0

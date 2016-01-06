@@ -6,6 +6,7 @@ pod 'JSKTimerView'
 pod 'MZTimerLabel'
 pod 'CircleProgressBar', '~> 0.21'
 pod 'FXBlurView', '~> 1.6'
+pod 'Parse'
 
 # Uncomment this line if you're using Swift
 # use_frameworks!

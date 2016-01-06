@@ -10,4 +10,14 @@
 
 @implementation Exercise
 
+@dynamic name;
+@dynamic seconds;
+
++ (NSString *)parseClassName {
+    return @"Exercise";
+}
+
++ (void)load {
+    [self registerSubclass];
+}
 @end

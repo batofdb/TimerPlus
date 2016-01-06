@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    // Initialize Parse.
+    [Parse setApplicationId:@"63t0BlMn9a7zaCaGL4FPrveRdu3rGy6UPiRAnvfK"
+                  clientKey:@"sRIqGQvfwLiKoUVfm7EAH6iWvjFZjrr4VZRM2RnC"];
+
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+    /*
+    if (![User currentUser]){
+        self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+        UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"AccessGlass" bundle:nil];
+        UIViewController *vc= [loginStoryboard instantiateViewControllerWithIdentifier:@"OnboardViewController"];
+        [self.window setRootViewController:vc];
+        [self.window makeKeyAndVisible];
+    } else if([User currentUser]){
+        self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *vc= [mainStoryboard instantiateViewControllerWithIdentifier:@"main"];
+        [self.window setRootViewController:vc];
+        [self.window makeKeyAndVisible];
+    }
+     */
+
     return YES;
 }
 

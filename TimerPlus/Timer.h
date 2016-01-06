@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface Timer : NSObject
+@interface Timer : PFObject <PFSubclassing>
 
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSInteger sets;
@@ -19,6 +20,7 @@
 @property (nonatomic) NSInteger cooldown;
 @property (nonatomic) NSInteger totalTime;
 
++ (NSString *)parseClassName;
 - (NSString *)convertExercisesToString:(NSMutableArray *)inputArray;
 + (NSArray *)convertStringToExercises:(NSString *)inputStr;
 

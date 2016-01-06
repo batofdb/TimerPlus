@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47E2A9E51C3D9298005886AE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E2A9E41C3D9298005886AE /* User.m */; };
 		47E4328F1C27E46F003E9051 /* RightTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E4328E1C27E46F003E9051 /* RightTextFieldTableViewCell.m */; };
 		47E432921C27E550003E9051 /* BothTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E432911C27E550003E9051 /* BothTextFieldTableViewCell.m */; };
 		47E45C271C128E27003F5F6A /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E45C261C128E27003F5F6A /* Exercise.m */; };
@@ -50,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		101B7F1F2203F9754234A89F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		47E2A9E31C3D9297005886AE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		47E2A9E41C3D9298005886AE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		47E4328D1C27E46F003E9051 /* RightTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightTextFieldTableViewCell.h; sourceTree = "<group>"; };
 		47E4328E1C27E46F003E9051 /* RightTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightTextFieldTableViewCell.m; sourceTree = "<group>"; };
 		47E432901C27E550003E9051 /* BothTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BothTextFieldTableViewCell.h; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 				47E45C261C128E27003F5F6A /* Exercise.m */,
 				47F1413F1C2903A6002C53CA /* AudioAlertManager.h */,
 				47F141401C2903A6002C53CA /* AudioAlertManager.m */,
+				47E2A9E31C3D9297005886AE /* User.h */,
+				47E2A9E41C3D9298005886AE /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E2A9E51C3D9298005886AE /* User.m in Sources */,
 				47E432921C27E550003E9051 /* BothTextFieldTableViewCell.m in Sources */,
 				47F6F79C1C0ACD1A00CD0C48 /* AppDelegate.m in Sources */,
 				47F1414D1C2A2219002C53CA /* InboxViewController.m in Sources */,

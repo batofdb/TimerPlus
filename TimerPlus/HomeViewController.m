@@ -11,6 +11,7 @@
 #import "Timer.h"
 #import "TimerSetupViewController.h"
 #import "AppDelegate.h"
+#import "User.h"
 
 @interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -31,7 +32,17 @@
     self.moc = delegate.managedObjectContext;
 
     self.workouts = [NSMutableArray new];
-    [self.tableView reloadData];
+
+    if ([User currentUser]) {
+        NSLog(@"logged in");
+    } else {
+        [User logInWithUsernameInBackground:@"francisb" password:@"Pizza1234" block:^(PFUser * _Nullable user, NSError * _Nullable error) {
+            NSLog(@"logged in with francis");
+            [self.tableView reloadData];
+        }];
+    }
+
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -45,8 +56,7 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Timer"];
     NSError *error;
 
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name"
-                                                                   ascending:YES];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     [request setSortDescriptors:sortDescriptors];
 

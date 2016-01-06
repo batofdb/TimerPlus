@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface Exercise : NSObject
+
+@interface Exercise : PFObject <PFSubclassing>
 
 @property NSString *name;
 @property NSInteger seconds;
