@@ -18,6 +18,7 @@
 @property NSManagedObjectContext *moc;
 @property NSMutableArray *workouts;
 @property NSSet *hashTableTimerNames;
+@property User *user;
 
 @end
 
@@ -34,10 +35,13 @@
     self.workouts = [NSMutableArray new];
 
     if ([User currentUser]) {
-        NSLog(@"logged in");
+
+        self.user = [User currentUser];
+        NSLog(@"logged in as %@", self.user.username);
     } else {
         [User logInWithUsernameInBackground:@"francisb" password:@"Pizza1234" block:^(PFUser * _Nullable user, NSError * _Nullable error) {
             NSLog(@"logged in with francis");
+            self.user = [User currentUser];
             [self.tableView reloadData];
         }];
     }
@@ -48,11 +52,19 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
 
-    [self loadTimers];
+    [self loadTimersWithParse];
+    //[self loadTimersWithCoreData];
     [self.tableView reloadData];
 }
 
-- (void)loadTimers {
+
+- (void)loadTimersWithParse {
+    if ([User currentUser]) {
+        NSLog(@"Loading timers from Parse");
+    }
+}
+
+- (void)loadTimersWithCoreData {
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Timer"];
     NSError *error;
 
@@ -170,13 +182,17 @@
 
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
 
+    TimerSetupViewController *vc = segue.destinationViewController;
+
+    vc.user = self.user;
+
     if ([segue.identifier isEqualToString: @"ExistingWorkoutSegue"]) {
-        TimerSetupViewController *vc = segue.destinationViewController;
         Timer *currentTimer = self.workouts[indexPath.row];
-
         vc.timer = currentTimer;
-
     }
+
+
+
 
 }
 

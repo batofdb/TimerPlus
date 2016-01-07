@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 
+@class User;
 
 @interface Exercise : PFObject <PFSubclassing>
 
 @property NSString *name;
 @property NSInteger seconds;
+@property (nonatomic) User *createdBy;
 
 @end

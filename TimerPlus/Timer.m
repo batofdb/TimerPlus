@@ -27,7 +27,7 @@
 + (void)load {
     [self registerSubclass];
 }
-
+/*
 - (instancetype) init {
     self = [super init];
     if (self) {
@@ -41,7 +41,7 @@
     }
 
     return self;
-}
+}*/
 
 - (NSString *)convertExercisesToString:(NSMutableArray *)inputArray {
     NSString *outStr = [NSString stringWithFormat:@""];

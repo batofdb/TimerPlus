@@ -13,6 +13,8 @@
 #import "AppDelegate.h"
 #import "RightTextFieldTableViewCell.h"
 #import "BothTextFieldTableViewCell.h"
+#import "User.h"
+#import "TimerManager.h"
 
 #define SECONDSFIELD 0;
 #define NAMEFIELD 1;
@@ -23,6 +25,7 @@
 
 @property (nonatomic) NSMutableArray *inputExercises;
 @property NSManagedObjectContext *moc;
+
 
 @end
 
@@ -35,8 +38,13 @@
     self.moc = delegate.managedObjectContext;
 
     if (!self.timer) {
-        self.timer = [[Timer alloc]init];
-
+        self.timer = [Timer object];
+        self.timer.name = @"New Timer";
+        self.timer.sets = 0;
+        self.timer.interval_between_reps = 0;
+        self.timer.interval_between_sets = 0;
+        self.timer.warmup = 0;
+        self.timer.cooldown = 0;
         if (!self.timer.exercises)
             self.timer.exercises = [NSMutableArray new];
     }
@@ -54,8 +62,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 4 && indexPath.row == 0) {
 
-        //[self saveTimerWithParse];
-        [self saveTimerWithCoreData];
+        [self saveTimerWithParse];
+        //[self saveTimerWithCoreData];
         NSLog(@"save");
     }
 }
@@ -265,9 +273,11 @@
 
 - (void)onAddExerciseButtonTapped {
     NSLog(@"Button Pressed");
-    Exercise *newExercise = [Exercise new];
+    Exercise *newExercise = [Exercise object];
     newExercise.name = [NSString stringWithFormat:@"Exercise %lu",self.timer.exercises.count+1];
     newExercise.seconds = 0;
+    newExercise.createdBy = self.user;
+    NSLog(@"logged in as %@", self.user.username);
 
     NSMutableArray *tempExercises = [NSMutableArray arrayWithArray:self.inputExercises];
     [tempExercises addObject:newExercise];
@@ -413,7 +423,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
     TimerViewController *vc = [segue destinationViewController];
-    self.timer.totalTime = [self calculateTotalTime];
     vc.timer = self.timer;
     
 }
@@ -422,6 +431,8 @@
 #pragma mark - Core Data Save
 
 - (void)saveTimerWithCoreData {
+    [self saveCommon];
+    
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Timer"];
 
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name == %@", self.timer.name];
@@ -468,7 +479,20 @@
 #pragma mark - Parse Save
 
 - (void)saveTimerWithParse {
+    [self saveCommon];
 
+
+    TimerManager *timerActivity = [TimerManager object];
+    [timerActivity createTimerForUser:self.user withTimer:self.timer withMessage:@""];
+
+    [timerActivity saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        NSLog(@"saved in parse");
+    }];
+
+}
+
+- (void)saveCommon {
+    self.timer.totalTime = [self calculateTotalTime];
 }
 
 @end

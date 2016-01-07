@@ -12,6 +12,7 @@
 
 @dynamic name;
 @dynamic seconds;
+@dynamic createdBy;
 
 + (NSString *)parseClassName {
     return @"Exercise";
