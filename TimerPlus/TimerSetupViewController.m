@@ -422,6 +422,8 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
+    self.timer.totalTime = [self calculateTotalTime];
+
     TimerViewController *vc = [segue destinationViewController];
     vc.timer = self.timer;
     

@@ -12,6 +12,6 @@
 
 @interface TimerViewController : UIViewController
 
-@property Timer *timer;
+@property (nonatomic) Timer *timer;
 
 @end
